@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ProyectoLibros</string>
+
+    <!--Menu bottom cliemte-->
+    <string name="Menu_dashboard_cl">Dashboard</string>
+    <string name="Menu_subir_cl">Subir</string>
+    <string name="Menu_favoritos_cl">Favoritos</string>
+    <string name="Menu_cuenta_cl">Cuenta</string>
+
+    <string name="Txt_rol">Elegir Tipo de cuenta </string>
+    <string name="Btn_rol_administrador">Admin</string>
+    <string name="Btn_rol_cliente">Cliente</string>
+    <string name="TtxRegistroAdmin">Registro </string>
+
+    <string name="Et_nombres">Nombres</string>
+    <string name="Et_apellidos">Apellidos</string>
+    <string name="Et_user">Nombre Usuario</string>
+    <string name="Et_password_admin">Contraseña</string>
+    <string name="Et_password_adminR">Cofirmar Contraseña</string>
+    <string name="Et_email">Email</string>
+    <string name="Btn_registrar_admin">Regitrarme</string>
+    <string name="CerrarSesion">Cerrar Sesion</string>
+
+
+    <string name="Btn_login_admin">Iniciar</string>
+    <string name="Btn_registro_login">Registrarme</string>
+
+
+    <string name="Btn_agregar_categoria">Agregar categoría</string>
+    <string name="Txt_agregar_categoria">Agregar categoria</string>
+    <string name="Et_categoria">Ingrese categoría</string>
+    <string name="Agregar_categoria_BD"> Agregar</string>
+    
+
+    <string name="Item_nombre_cat_a">Nombre categoria</string>
+    <string name="Buscar_categoria">Buscar categoria</string>
+
+
+
+    <string name="TxtLoginAdmin">Login</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

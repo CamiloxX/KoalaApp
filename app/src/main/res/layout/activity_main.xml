@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/toolbaRLAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height">
+        <TextView
+            android:id="@+id/Titulo_RL_Admin"
+            android:text="@string/Titulo_RL_Admin"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <View
+        android:background="#cccccc"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+<FrameLayout
+    android:id="@+id/Fragments_Admin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbaRLAdmin"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Bottom_nav_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottom_cliente"
+        app:labelVisibilityMode="labeled"/>
+</RelativeLayout>

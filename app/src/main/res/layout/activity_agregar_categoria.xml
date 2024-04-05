@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Administrador.Fragmentos_Admin.Agregar_Categoria">
+
+
+
+    <!-- Tool bar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRLAgregarC"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+        <ImageButton
+            android:id="@+id/Ib_regresar"
+            android:src="@drawable/ic_regresar"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Txt_agregar_categoria">
+
+        </TextView>
+
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_below="@+id/toolbarRLAgregarC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <EditText
+                android:id="@+id/Et_categoria"
+                android:hint="@string/Et_categoria"
+                android:inputType="textPersonName|textCapSentences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_categoria"
+                android:drawablePadding="10dp">
+
+            </EditText>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Agregar_categoria_BD"
+                android:text="@string/Agregar_categoria_BD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

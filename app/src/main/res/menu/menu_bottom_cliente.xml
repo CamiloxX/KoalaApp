@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Menu_dashboard_cl"
+        android:title="@string/Menu_dashboard_cl"
+        android:icon="@drawable/ic_menu_cl"/>
+    <item
+        android:id="@+id/Menu_subir_cl"
+        android:title="@string/Menu_subir_cl"
+        android:icon="@drawable/ic_subir_cl"/>
+    <item
+        android:id="@+id/Menu_favoritos_cl"
+        android:title="@string/Menu_favoritos_cl"
+        android:icon="@drawable/ic_favoritos"/>
+    <item
+        android:id="@+id/Menu_cuenta_cl"
+        android:title="@string/Menu_cuenta_cl"
+        android:icon="@drawable/ic_cuenta_cl"/>
+</menu>

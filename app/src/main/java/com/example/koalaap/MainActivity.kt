@@ -8,6 +8,8 @@ import android.widget.Toast
 import com.example.koalaap.Administrador.Fragmentos_Admin.Fragment_admin_cuenta
 import com.example.koalaap.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.example.koalaap.Administrador.Fragmentos_Admin.Fragment_admin_archivo
+
 
 private lateinit var binding: ActivityMainBinding
 private lateinit var firebaseAuth: FirebaseAuth
@@ -32,6 +34,10 @@ class MainActivity : AppCompatActivity() {
                     VerFragmentoCuenta()
                     true
 
+                }
+                R.id.Menu_subir_cl->{
+                    VerFragmentoArchivo()
+                    true
                 }
                 else->{
                     false
@@ -60,6 +66,16 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.commit()
 
     }
+    private fun VerFragmentoArchivo() {
+        val nombre_titulo = "Archivo"
+        binding.TituloRLAdmin.text = nombre_titulo
+
+        val fragment = Fragment_admin_archivo()
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(binding.FragmentsAdmin.id, fragment, "Fragment Archivo")
+        fragmentTransaction.commit()
+    }
+
     private fun ComprobarSesion() {
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser == null) {

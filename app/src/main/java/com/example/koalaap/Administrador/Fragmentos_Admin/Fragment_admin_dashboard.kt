@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.koalaap.Administrador.AdaptadorCategoria
+import com.example.koalaap.Administrador.Agregar_PDF
 import com.example.koalaap.Administrador.ModeloCategoria
 import com.example.koalaap.databinding.FragmentAdminDashboardBinding
 import com.google.firebase.database.*
@@ -61,8 +62,10 @@ class Fragment_admin_dashboard : Fragment(){
         }
 
         binding.AgregarPdf.setOnClickListener{
-
+            val intent = Intent(mContext, Agregar_PDF::class.java)
+            startActivity(intent)
         }
+
 
     }
 

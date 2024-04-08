@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+
+        <!--Visualizar el nombre de la categoría-->
+        <TextView
+            android:id="@+id/Item_nombre_cat_a"
+            android:text="@string/Item_nombre_cat_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
+            
+        </TextView>
+
+
+
+        <!--Eliminar la categoria-->
+        <ImageButton
+            android:id="@+id/Eliminar_cat"
+            android:src="@drawable/ic_eliminar_cat"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+        </ImageButton>
+        
+        
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

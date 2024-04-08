@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="ic_koala_background">#45A68D</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="m_bottom_height">60dp</dimen>
+    <dimen name="m_toolbar_height">55dp</dimen>
+    <string name="Agregar_categoria_BD"> Agregar</string>
+    <string name="Btn_agregar_categoria">Agregar categoría</string>
+    <string name="Btn_login_admin">Iniciar</string>
+    <string name="Btn_registrar_admin">Regitrarme</string>
+    <string name="Btn_registro_login">Registrarme</string>
+    <string name="Btn_rol_administrador">Admin</string>
+    <string name="Btn_rol_cliente">Cliente</string>
+    <string name="Btn_subir_pdf">Subir PDF</string>
+    <string name="Buscar_categoria">Buscar categoria</string>
+    <string name="CerrarSesion">Cerrar Sesion</string>
+    <string name="Et_Descripcion_pdf">Descripcion PDF</string>
+    <string name="Et_apellidos">Apellidos</string>
+    <string name="Et_categoria">Ingrese categoría</string>
+    <string name="Et_email">Email</string>
+    <string name="Et_nombres">Nombres</string>
+    <string name="Et_password_admin">Contraseña</string>
+    <string name="Et_password_adminR">Cofirmar Contraseña</string>
+    <string name="Et_pdf">Titulo PDF</string>
+    <string name="Et_user">Nombre Usuario</string>
+    <string name="Item_nombre_cat_a">Nombre categoria</string>
+    <string name="Menu_cuenta_cl">Cuenta</string>
+    <string name="Menu_dashboard_cl">Dashboard</string>
+    <string name="Menu_favoritos_cl">Favoritos</string>
+    <string name="Menu_subir_cl">Subir</string>
+    <string name="Titulo_RL_Admin">Titulo</string>
+    <string name="TtxRegistroAdmin">Registro </string>
+    <string name="Tv_categoria_libro">Categoria</string>
+    <string name="TxtLoginAdmin">Login</string>
+    <string name="Txt_Agregar_pdf">Agregar PDF</string>
+    <string name="Txt_agregar_categoria">Agregar categoria</string>
+    <string name="Txt_rol">Elegir Tipo de cuenta </string>
+    <string name="app_name">ProyectoLibros</string>
+    <string name="gcm_defaultSenderId" translatable="false">1064191765387</string>
+    <string name="google_api_key" translatable="false">AIzaSyCRc2C_gLTaoRCBCXoHiJF8q4T8iC-jrH0</string>
+    <string name="google_app_id" translatable="false">1:1064191765387:android:e7a27ed7ec360334d81d8e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCRc2C_gLTaoRCBCXoHiJF8q4T8iC-jrH0</string>
+    <string name="google_storage_bucket" translatable="false">koalapp-19fe0.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="project_id" translatable="false">koalapp-19fe0</string>
+    <style name="Base.Theme.ProyectoLibros" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.ProyectoLibros" parent="Base.Theme.ProyectoLibros"/>
+</resources>

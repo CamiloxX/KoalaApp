@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProyectoLibros"
         tools:targetApi="31">
         <activity
+            android:name=".Administrador.Agregar_PDF"
+            android:exported="false" />
+        <activity
             android:name=".Administrador.Fragmentos_Admin.Agregar_Categoria"
             android:exported="false" />
         <activity

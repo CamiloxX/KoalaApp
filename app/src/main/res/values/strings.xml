@@ -30,13 +30,19 @@
     <string name="Txt_agregar_categoria">Agregar categoria</string>
     <string name="Et_categoria">Ingrese categoría</string>
     <string name="Agregar_categoria_BD"> Agregar</string>
-    
+
 
     <string name="Item_nombre_cat_a">Nombre categoria</string>
     <string name="Buscar_categoria">Buscar categoria</string>
 
 
-
+    
+    <string name="Txt_Agregar_pdf">Agregar PDF</string>
+    <string name="Et_pdf">Titulo PDF</string>
+    <string name="Et_Descripcion_pdf">Descripcion PDF</string>
+    <string name="Tv_categoria_libro">Categoria</string>
+    <string name="Btn_subir_pdf">Subir PDF</string>
+    
     <string name="TxtLoginAdmin">Login</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,0 +1,322 @@
+[
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-hdpi_registrologo_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-hdpi\\registrologo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_cerrar_sesion.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_cerrar_sesion.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_activity_registrar_admin.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\activity_registrar_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xhdpi_ic_koala_foreground.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xhdpi\\ic_koala_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_forma_edittext.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\forma_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_activity_agregar_categoria.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\activity_agregar_categoria.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxhdpi_ic_koala.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxhdpi\\ic_koala.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-mdpi_registrologo_foreground.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-mdpi\\registrologo_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_categoria.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_categoria.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-anydpi-v26_ic_koala.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-anydpi-v26\\ic_koala.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-hdpi_ic_koala_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-hdpi\\ic_koala_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-anydpi-v26_registrologo_round.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-anydpi-v26\\registrologo_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_activity_bienvenida.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\activity_bienvenida.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxhdpi_registrologo_foreground.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxhdpi\\registrologo_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_fragment_admin_cuenta.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\fragment_admin_cuenta.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_fragment_admin_dashboard.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\fragment_admin_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_item_categoria_admin.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\item_categoria_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_eliminar_cat.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_eliminar_cat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxhdpi_ic_koala_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxhdpi\\ic_koala_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxhdpi_registrologo.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxhdpi\\registrologo.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_bienvenida_img.png.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\bienvenida_img.png"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-mdpi_ic_koala.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-mdpi\\ic_koala.webp"
+    },
+    {
+        "merged": "com.example.koalaap.app-merged_res-36:/layout_activity_agregar_pdf.xml.flat",
+        "source": "com.example.koalaap.app-main-38:/layout/activity_agregar_pdf.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_activity_login_admin.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\activity_login_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-mdpi_registrologo_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-mdpi\\registrologo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxxhdpi_registrologo.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxxhdpi\\registrologo.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xhdpi_registrologo_foreground.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xhdpi\\registrologo_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_pdf.png.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\pdf.png"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_fragment_admin_archivo.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\fragment_admin_archivo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-mdpi_ic_koala_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-mdpi\\ic_koala_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxhdpi_ic_koala_foreground.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxhdpi\\ic_koala_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxxhdpi_ic_koala_foreground.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxxhdpi\\ic_koala_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_favoritos.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_favoritos.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_subir_cl.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_subir_cl.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_activity_agregar_pdf.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\activity_agregar_pdf.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-pngs-31:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-hdpi_ic_koala_foreground.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-hdpi\\ic_koala_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-mdpi_registrologo.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-mdpi\\registrologo.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxxhdpi_registrologo_foreground.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxxhdpi\\registrologo_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_cuenta_cl.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_cuenta_cl.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xhdpi_registrologo_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xhdpi\\registrologo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\layout_activity_elegir_rol.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\layout\\activity_elegir_rol.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-mdpi_ic_koala_foreground.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-mdpi\\ic_koala_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xhdpi_ic_koala.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xhdpi\\ic_koala.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-hdpi_registrologo_foreground.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-hdpi\\registrologo_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_abajo.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_abajo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-hdpi_ic_koala.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-hdpi\\ic_koala.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-anydpi-v26_ic_koala_round.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-anydpi-v26\\ic_koala_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxxhdpi_registrologo_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxxhdpi\\registrologo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_buscar.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_buscar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxxhdpi_ic_koala.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxxhdpi\\ic_koala.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_menu_cl.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_menu_cl.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxhdpi_registrologo_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxhdpi\\registrologo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_pdf.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_pdf.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xhdpi_ic_koala_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xhdpi\\ic_koala_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-hdpi_registrologo.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-hdpi\\registrologo.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_siguiente.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_siguiente.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xxxhdpi_ic_koala_round.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xxxhdpi\\ic_koala_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_registrologo_background.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\registrologo_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\menu_menu_bottom_cliente.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\menu\\menu_bottom_cliente.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-xhdpi_registrologo.webp.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-xhdpi\\registrologo.webp"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\mipmap-anydpi-v26_registrologo.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\mipmap-anydpi-v26\\registrologo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_adjuntar_pdf.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_adjuntar_pdf.xml"
+    },
+    {
+        "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-36:\\drawable_ic_regresar.xml.flat",
+        "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-38:\\drawable\\ic_regresar.xml"
+    }
+]

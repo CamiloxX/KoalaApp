@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Administrador.Fragmentos_Admin.Fragment_admin_dashboard">
+
+    <EditText
+        android:id="@+id/Buscar_categoria"
+        android:hint="@string/Buscar_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_buscar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp">
+
+    </EditText>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/categoriasRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Buscar_categoria"
+        android:layout_above="@+id/Ll_dashboard"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        tools:listitem="@layout/item_categoria_admin"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/Ll_dashboard"
+    android:orientation="horizontal"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    >
+
+     <!--Agregar categoria -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Btn_agregar_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Btn_agregar_categoria"
+        android:layout_weight="1">
+    </com.google.android.material.button.MaterialButton>
+
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/Agregar_pdf"
+           android:src="@drawable/ic_pdf"
+           android:layout_marginStart="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+       </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

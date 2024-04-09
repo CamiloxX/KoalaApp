@@ -33,6 +33,9 @@ public final class ActivityAgregarPdfBinding implements ViewBinding {
   public final MaterialButton BtnSubirPdf;
 
   @NonNull
+  public final EditText EtDescripcionPdf;
+
+  @NonNull
   public final EditText EtPdf;
 
   @NonNull
@@ -49,13 +52,15 @@ public final class ActivityAgregarPdfBinding implements ViewBinding {
 
   private ActivityAgregarPdfBinding(@NonNull RelativeLayout rootView,
       @NonNull LinearLayoutCompat AdjuntarPdf, @NonNull ImageButton AdjuntarPdfIb,
-      @NonNull MaterialButton BtnSubirPdf, @NonNull EditText EtPdf, @NonNull ImageButton IbRegresar,
+      @NonNull MaterialButton BtnSubirPdf, @NonNull EditText EtDescripcionPdf,
+      @NonNull EditText EtPdf, @NonNull ImageButton IbRegresar,
       @NonNull LinearLayoutCompat LlAdjuntarpdf, @NonNull TextView TvCategoriaLibro,
       @NonNull RelativeLayout toolbarRLAgregarPdf) {
     this.rootView = rootView;
     this.AdjuntarPdf = AdjuntarPdf;
     this.AdjuntarPdfIb = AdjuntarPdfIb;
     this.BtnSubirPdf = BtnSubirPdf;
+    this.EtDescripcionPdf = EtDescripcionPdf;
     this.EtPdf = EtPdf;
     this.IbRegresar = IbRegresar;
     this.LlAdjuntarpdf = LlAdjuntarpdf;
@@ -108,6 +113,12 @@ public final class ActivityAgregarPdfBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.Et_Descripcion_pdf;
+      EditText EtDescripcionPdf = ViewBindings.findChildViewById(rootView, id);
+      if (EtDescripcionPdf == null) {
+        break missingId;
+      }
+
       id = R.id.Et_pdf;
       EditText EtPdf = ViewBindings.findChildViewById(rootView, id);
       if (EtPdf == null) {
@@ -139,7 +150,8 @@ public final class ActivityAgregarPdfBinding implements ViewBinding {
       }
 
       return new ActivityAgregarPdfBinding((RelativeLayout) rootView, AdjuntarPdf, AdjuntarPdfIb,
-          BtnSubirPdf, EtPdf, IbRegresar, LlAdjuntarpdf, TvCategoriaLibro, toolbarRLAgregarPdf);
+          BtnSubirPdf, EtDescripcionPdf, EtPdf, IbRegresar, LlAdjuntarpdf, TvCategoriaLibro,
+          toolbarRLAgregarPdf);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

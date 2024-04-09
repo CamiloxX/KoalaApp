@@ -90,6 +90,7 @@
             android:layout_marginEnd="30dp"
             android:layout_marginTop="5dp">
             <EditText
+                android:id="@+id/Et_Descripcion_pdf"
                 android:hint="@string/Et_Descripcion_pdf"
                 android:drawableStart="@drawable/ic_pdf"
                 android:drawablePadding="10dp"
@@ -102,7 +103,7 @@
         <!--Categoria seleccionada -->
         <TextView
             android:id="@+id/Tv_categoria_libro"
-            android:text="@string/Tv_categoria_libro"
+            android:hint="@string/Tv_categoria_libro"
             android:layout_width="match_parent"
             app:drawableStartCompat="@drawable/ic_categoria"
             app:drawableEndCompat="@drawable/ic_abajo"

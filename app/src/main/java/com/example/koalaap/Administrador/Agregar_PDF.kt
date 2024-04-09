@@ -19,6 +19,11 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.koalaap.Elegir_Rol
+import com.google.android.gms.tasks.Task
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.storage.FirebaseStorage
+
+
 
 
 class Agregar_PDF : AppCompatActivity() {
@@ -61,6 +66,80 @@ class Agregar_PDF : AppCompatActivity() {
     private var categoria = ""
     private fun ValidarInformacion() {
         titulo= binding.EtPdf.text.toString().trim()
+        descripcion = binding.EtDescripcionPdf.text.toString().trim()
+        categoria = binding.TvCategoriaLibro.text.toString().trim()
+
+        if (titulo.isEmpty()){
+Toast.makeText(this, "Ingrese Titulo", Toast.LENGTH_SHORT).show()
+        }
+        else if(descripcion.isEmpty()){
+            Toast.makeText(this,"Ingrese Descripcion", Toast.LENGTH_SHORT).show()
+        }
+        else if (categoria.isEmpty()){
+            Toast.makeText(this ,"Seleccione Categoria", Toast.LENGTH_SHORT).show()
+
+        }
+        else if(pdfUri==null){
+            Toast.makeText(this ,"Adjunte un PDF", Toast.LENGTH_SHORT).show()
+        }
+        else{
+            SubirPdfStore()
+        }
+    }
+
+    private fun SubirPdfStore() {
+    progressDialog.setMessage("Subiendo PDF :D")
+        progressDialog.show()
+        val tiempo = System.currentTimeMillis()
+        val ruta_pdf = "PDF/$tiempo"
+        val storageReference = FirebaseStorage.getInstance().getReference(ruta_pdf)
+        storageReference.putFile(pdfUri!!)
+            .addOnSuccessListener {tarea->
+                val uriTask : Task<Uri> = tarea.storage.downloadUrl
+                while (!uriTask.isSuccessful);
+                val UrlPdfSubido = "${uriTask.result}"
+                SubirPdfBD(UrlPdfSubido,tiempo)
+            }
+            .addOnFailureListener{ e->
+                progressDialog.dismiss()
+                Toast.makeText(this ,"Ha fallado la subida del archivo ,debido a ${e.message}", Toast.LENGTH_SHORT).show()
+
+            }
+
+    }
+
+    private fun SubirPdfBD(urlPdfSubido: String, tiempo: Long) {
+    progressDialog.setMessage("Subido pdf a la BD")
+    val uid = firebaseAuth.uid
+        val hashMap : HashMap<String, Any> = HashMap()
+        hashMap["uid"] = "$uid"
+        hashMap["id"]= "$tiempo"
+        hashMap["titulo"]= titulo
+        hashMap["descripcion"]= descripcion
+        hashMap["categoria"]= categoria
+        hashMap["url"]= urlPdfSubido
+        hashMap["tiempo"] = tiempo
+        hashMap["contadorVistas"]= 0
+        hashMap["contadorDescargas"] = 0
+
+
+        val ref = FirebaseDatabase.getInstance().getReference( "Libros")
+        ref.child("$tiempo")
+            .setValue(hashMap)
+            .addOnSuccessListener {
+                progressDialog.dismiss()
+                Toast.makeText(this ,"Libro subido con exito",Toast.LENGTH_SHORT).show()
+                binding.EtPdf.setText("")
+                binding.EtDescripcionPdf.setText("")
+                binding.TvCategoriaLibro.setText("")
+                pdfUri = null
+            }
+
+            .addOnFailureListener {e->
+                 progressDialog.dismiss()
+                Toast.makeText(this ,"Ha fallado la subida del archivo ,debido a ${e.message}",Toast.LENGTH_SHORT).show()
+
+            }
 
 
     }

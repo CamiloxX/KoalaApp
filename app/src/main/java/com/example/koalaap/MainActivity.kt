@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun VerFragmentoArchivo() {
-        val nombre_titulo = "Archivo"
+        val nombre_titulo = ""
         binding.TituloRLAdmin.text = nombre_titulo
 
         val fragment = Fragment_admin_archivo()

@@ -12,7 +12,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 
-private lateinit var firebaseAuth: FirebaseAuth
+ private lateinit var firebaseAuth: FirebaseAuth
 class Bienvenida : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

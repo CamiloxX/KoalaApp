@@ -7,34 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".Administrador.Fragmentos_Admin.Fragment_admin_archivo">
 <!--ToolBar-->
+
+    <!--Adjuntar-->
+
     <RelativeLayout
         android:id="@+id/toolbarRLAgregarPdf"
         android:layout_width="match_parent"
         android:layout_height="@dimen/m_toolbar_height">
-    <ImageButton
-        android:id="@id/Ib_regresar"
-        android:src="@drawable/ic_regresar"
-        android:background="@android:color/transparent"
-        android:padding="10dp"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="@string/Txt_Agregar_pdf"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#cccccc"
-        android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Txt_Agregar_pdf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc" />
 
 
-</RelativeLayout>
+    </RelativeLayout>
 
-    <!--Adjuntar-->
-<androidx.appcompat.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
     android:id="@+id/AdjuntarPdf"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -90,6 +86,7 @@
             android:layout_marginEnd="30dp"
             android:layout_marginTop="5dp">
             <EditText
+                android:id="@+id/Et_Descripcion_pdf"
                 android:hint="@string/Et_Descripcion_pdf"
                 android:drawableStart="@drawable/ic_pdf"
                 android:drawablePadding="10dp"

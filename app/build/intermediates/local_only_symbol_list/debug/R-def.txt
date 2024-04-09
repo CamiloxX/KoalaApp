@@ -39,6 +39,7 @@ id Btn_subir_pdf
 id Buscar_categoria
 id CerrarSesion
 id Eliminar_cat
+id Et_Descripcion_pdf
 id Et_apellidos_admin
 id Et_categoria
 id Et_email_admin

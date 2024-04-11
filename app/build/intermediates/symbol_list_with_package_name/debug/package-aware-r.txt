@@ -1012,6 +1012,10 @@ attr rotationCenterId
 attr round
 attr roundPercent
 attr saturation
+attr sb_handlerColor
+attr sb_horizontal
+attr sb_indicatorColor
+attr sb_indicatorTextColor
 attr scaleFromTextSize
 attr scopeUris
 attr scrimAnimationDuration
@@ -2092,6 +2096,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2907,6 +2912,10 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -3024,6 +3033,10 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable default_scroll_handle_bottom
+drawable default_scroll_handle_left
+drawable default_scroll_handle_right
+drawable default_scroll_handle_top
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3055,6 +3068,7 @@ drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_mas_opciones
 drawable ic_menu_cl
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
@@ -3163,6 +3177,7 @@ id CerrarSesion
 id Eliminar_cat
 id Et_Descripcion_pdf
 id Et_apellidos_admin
+id Et_buscar_libro_admin
 id Et_categoria
 id Et_email_admin
 id Et_nombres_admin
@@ -3172,6 +3187,7 @@ id Et_pdf
 id Et_user_admin
 id FUNCTION
 id Fragments_Admin
+id Ib_mas_opciones
 id Ib_regresar
 id Item_nombre_cat_a
 id Ll_adjuntarpdf
@@ -3182,6 +3198,8 @@ id Menu_dashboard_cl
 id Menu_favoritos_cl
 id Menu_subir_cl
 id NO_DEBUG
+id RLPdf
+id Rv_libros_admin
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3191,6 +3209,14 @@ id TOP_END
 id TOP_START
 id Titulo_RL_Admin
 id Tv_categoria_libro
+id Txt_categoria_libro
+id Txt_categoria_libro_admin
+id Txt_descripcion_libro_item
+id Txt_fecha_libro_admin
+id Txt_tamanio_libro_admin
+id Txt_titulo_libro
+id Txt_titulo_libro_item
+id VisualizadorPDF
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3225,6 +3251,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id action0
 id actionDown
 id actionDownUp
 id actionUp
@@ -3285,6 +3312,7 @@ id browser_actions_menu_view
 id buttonPanel
 id cache_measures
 id callMeasure
+id cancel_action
 id cancel_button
 id carryVelocity
 id categoriasRv
@@ -3363,6 +3391,7 @@ id elastic
 id embed
 id end
 id endToStart
+id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -3456,6 +3485,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id media_actions
 id message
 id middle
 id mini
@@ -3543,6 +3573,7 @@ id pin
 id position
 id postLayout
 id pressed
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -3612,6 +3643,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id status_bar_latest_event_content
 id stop
 id stretch
 id submenuarrow
@@ -3657,6 +3689,7 @@ id toolbaRLAdmin
 id toolbaRLAdminR
 id toolbarRLAgregarC
 id toolbarRLAgregarPdf
+id toolbarRLListarPdf
 id toolbarRLLogin
 id toolbarTitulo
 id top
@@ -3813,6 +3846,7 @@ layout activity_agregar_categoria
 layout activity_agregar_pdf
 layout activity_bienvenida
 layout activity_elegir_rol
+layout activity_lista_pdf_admin
 layout activity_login_admin
 layout activity_main
 layout activity_registrar_admin
@@ -3840,6 +3874,7 @@ layout fragment_admin_dashboard
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_categoria_admin
+layout item_libro_admin
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3893,8 +3928,17 @@ layout mtrl_search_bar
 layout mtrl_search_view
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout select_dialog_item_material
@@ -3942,7 +3986,15 @@ string Tv_categoria_libro
 string TxtLoginAdmin
 string Txt_Agregar_pdf
 string Txt_agregar_categoria
+string Txt_buscar_libro_admin
+string Txt_categoria_libro
+string Txt_categoria_libro_admin
+string Txt_descripcion_libro_item
+string Txt_fecha_libro_admin
 string Txt_rol
+string Txt_tamanio_libro_admin
+string Txt_titulo_libro
+string Txt_titulo_libro_item
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4593,9 +4645,14 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow
@@ -5377,6 +5434,7 @@ styleable RangeSlider minSeparation values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
 styleable ScrimInsetsFrameLayout insetForeground
+styleable ScrollBar sb_handlerColor sb_horizontal sb_indicatorColor sb_indicatorTextColor
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchBar android_textAppearance android_text android_hint backgroundTint defaultMarginsEnabled defaultScrollFlagsEnabled elevation forceDefaultNavigationOnClickListener hideNavigationIcon navigationIconTint strokeColor strokeWidth tintNavigationIcon
 styleable SearchView android_textAppearance android_focusable android_maxWidth android_text android_hint android_inputType android_imeOptions animateMenuItems animateNavigationIcon autoShowKeyboard backHandlingEnabled backgroundTint closeIcon commitIcon defaultQueryHint goIcon headerLayout hideNavigationIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon searchPrefixText submitBackground suggestionRowLayout useDrawerArrowDrawable voiceIcon

@@ -10,8 +10,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_koala_round"
         android:supportsRtl="true"
+        android:name=".Administrador.MisFunciones"
         android:theme="@style/Theme.ProyectoLibros"
         tools:targetApi="31">
+        <activity
+            android:name=".Administrador.ListaPdfAdmin"
+            android:exported="false" />
         <activity
             android:name=".Administrador.Agregar_PDF"
             android:exported="false" />

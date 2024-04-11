@@ -79,7 +79,8 @@ class Fragment_admin_archivo : Fragment() {
             }
         })
     }
-
+    private var id_categoria = ""
+    private var titulo_categoria = ""
     private fun seleccionarCategoria() {
         val categoriasArray = arrayOfNulls<String>(categoriaArrayList.size)
         for (i in categoriasArray.indices) {
@@ -90,6 +91,8 @@ class Fragment_admin_archivo : Fragment() {
             val builder = AlertDialog.Builder(it)
             builder.setTitle("Seleccionar categoría")
                 .setItems(categoriasArray) { _, which ->
+                    id_categoria = categoriaArrayList[which].id
+                    titulo_categoria = categoriaArrayList[which].categoria
                     categoria = categoriaArrayList[which].categoria
                     binding.TvCategoriaLibro.text = categoria
                 }
@@ -147,7 +150,7 @@ class Fragment_admin_archivo : Fragment() {
         hashMap["id"] = "$tiempo"
         hashMap["titulo"] = titulo
         hashMap["descripcion"] = descripcion
-        hashMap["categoria"] = categoria
+        hashMap["categoria"] = id_categoria
         hashMap["url"] = urlPdfSubido
         hashMap["tiempo"] = tiempo
         hashMap["contadorVistas"] = 0

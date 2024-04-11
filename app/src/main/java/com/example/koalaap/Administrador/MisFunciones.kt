@@ -30,7 +30,7 @@ class MisFunciones : Application() {
         }
 
         fun CargarTamanioPdf(pdfUrL: String, pdfTitulo : String, tamanio : TextView){
-            val ref = FirebaseStorage.getInstance().getReference(pdfUrL)
+            val ref = FirebaseStorage.getInstance().getReferenceFromUrl(pdfUrL)
             ref.metadata
                 .addOnSuccessListener {metadata->
                     val bytes = metadata.sizeBytes.toDouble()
@@ -56,7 +56,7 @@ class MisFunciones : Application() {
         fun CargarPdfUrl (
             pdfUrL: String, pdfTitulo: String, pdfView: PDFView, progressBar: ProgressBar,
             paginaTv: TextView?){
-            val ref = FirebaseStorage.getInstance().getReference(pdfUrL)
+            val ref = FirebaseStorage.getInstance().getReferenceFromUrl(pdfUrL)
             ref.getBytes(Constantes.Maximo_bytes_pdf)
                 .addOnSuccessListener {bytes->
                     pdfView.fromBytes(bytes)

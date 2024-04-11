@@ -19,6 +19,7 @@
     <uses-permission android:name="com.example.koalaap.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
+        android:name="com.example.koalaap.Administrador.MisFunciones"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -31,6 +32,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.ProyectoLibros" >
+        <activity
+            android:name="com.example.koalaap.Administrador.ListaPdfAdmin"
+            android:exported="false" />
         <activity
             android:name="com.example.koalaap.Administrador.Agregar_PDF"
             android:exported="false" />

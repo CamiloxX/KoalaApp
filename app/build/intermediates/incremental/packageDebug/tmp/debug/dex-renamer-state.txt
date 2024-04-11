@@ -1,11 +1,11 @@
-#Tue Apr 09 18:30:58 COT 2024
-base.0=C\:\\Users\\Camilo\\Desktop\\ProyectoLibros\\Koalas\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\Camilo\\Desktop\\ProyectoLibros\\Koalas\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\Camilo\\Desktop\\ProyectoLibros\\Koalas\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-base.3=C\:\\Users\\Camilo\\Desktop\\ProyectoLibros\\Koalas\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.4=C\:\\Users\\Camilo\\Desktop\\ProyectoLibros\\Koalas\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.5=C\:\\Users\\Camilo\\Desktop\\ProyectoLibros\\Koalas\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.6=C\:\\Users\\Camilo\\Desktop\\ProyectoLibros\\Koalas\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Wed Apr 10 22:19:16 COT 2024
+base.0=C\:\\Users\\Andres\\AndroidStudioProjects\\KoalaApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\Andres\\AndroidStudioProjects\\KoalaApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\Andres\\AndroidStudioProjects\\KoalaApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\Andres\\AndroidStudioProjects\\KoalaApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.4=C\:\\Users\\Andres\\AndroidStudioProjects\\KoalaApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.5=C\:\\Users\\Andres\\AndroidStudioProjects\\KoalaApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.6=C\:\\Users\\Andres\\AndroidStudioProjects\\KoalaApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex

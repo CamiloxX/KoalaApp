@@ -35,7 +35,15 @@
     <string name="TxtLoginAdmin">Login</string>
     <string name="Txt_Agregar_pdf">Agregar PDF</string>
     <string name="Txt_agregar_categoria">Agregar categoria</string>
+    <string name="Txt_buscar_libro_admin">Buscar Libro</string>
+    <string name="Txt_categoria_libro">Categoria</string>
+    <string name="Txt_categoria_libro_admin">Categoria</string>
+    <string name="Txt_descripcion_libro_item">Descripcion Libro</string>
+    <string name="Txt_fecha_libro_admin">dd/MM/YYYY</string>
     <string name="Txt_rol">Elegir Tipo de cuenta </string>
+    <string name="Txt_tamanio_libro_admin">5MB</string>
+    <string name="Txt_titulo_libro">Libros</string>
+    <string name="Txt_titulo_libro_item">Titulo Libro</string>
     <string name="app_name">ProyectoLibros</string>
     <string name="gcm_defaultSenderId" translatable="false">1064191765387</string>
     <string name="google_api_key" translatable="false">AIzaSyCRc2C_gLTaoRCBCXoHiJF8q4T8iC-jrH0</string>

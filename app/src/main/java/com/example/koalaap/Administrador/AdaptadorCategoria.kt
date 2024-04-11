@@ -10,6 +10,7 @@ import android.widget.TextView
 import com.example.koalaap.databinding.FragmentAdminDashboardBinding
 import com.example.koalaap.databinding.ItemCategoriaAdminBinding
 import android.content.Context
+import android.content.Intent
 import android.widget.Filter
 import android.widget.Filterable
 import android.widget.Toast
@@ -45,13 +46,14 @@ class AdaptadorCategoria : RecyclerView.Adapter<AdaptadorCategoria.HolderCategor
     }
 
     override fun onBindViewHolder(holder: HolderCategoria, position: Int) {
-val modelo= categoriaArrayList[position]
+        val modelo= categoriaArrayList[position]
         val id=modelo.id
         val categoria= modelo.categoria
         val tiempo= modelo.tiempo
         val uid=modelo.uid
 
         holder.categoriaTv.text=categoria
+
         holder.eliminarCatIb.setOnClickListener{
 
             val builder= AlertDialog.Builder(m_context)
@@ -66,6 +68,13 @@ val modelo= categoriaArrayList[position]
                     a.dismiss()
                 }
             builder.show()
+        }
+
+        holder.itemView.setOnClickListener{
+            val intent = Intent(m_context, ListaPdfAdmin::class.java)
+            intent.putExtra("idCategoria", id )
+            intent.putExtra("tituloCategoria", categoria )
+            m_context.startActivity(intent)
         }
     }
 

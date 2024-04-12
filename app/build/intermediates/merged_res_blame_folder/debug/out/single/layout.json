@@ -16,8 +16,8 @@
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\layout\\activity_registrar_admin.xml"
     },
     {
-        "merged": "com.example.koalaap.app-mergeDebugResources-37:/layout/activity_lista_pdf_admin.xml",
-        "source": "com.example.koalaap.app-main-40:/layout/activity_lista_pdf_admin.xml"
+        "merged": "com.example.koalaap.app-mergeDebugResources-37:/layout/activity_actualizar_libro.xml",
+        "source": "com.example.koalaap.app-main-40:/layout/activity_actualizar_libro.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-37:\\layout\\activity_agregar_categoria.xml",
@@ -54,5 +54,9 @@
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-37:\\layout\\item_categoria_admin.xml",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\layout\\item_categoria_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-37:\\layout\\activity_actualizar_libro.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\layout\\activity_actualizar_libro.xml"
     }
 ]

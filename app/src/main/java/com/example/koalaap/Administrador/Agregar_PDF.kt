@@ -1,7 +1,9 @@
 package com.example.koalaap.Administrador
 
 import android.app.ProgressDialog
+import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
@@ -18,6 +20,7 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.ContextCompat
 import com.example.koalaap.Elegir_Rol
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.ktx.auth
@@ -50,7 +53,12 @@ class Agregar_PDF : AppCompatActivity() {
         }
 
         binding.AdjuntarPdfIb.setOnClickListener {
-            ElegirPdf()
+            if (ContextCompat.checkSelfPermission(this@Agregar_PDF,
+                android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
+                ElegirPdf()
+            }else{
+                SolicitudPermisioAccederArchivos.launch(android.Manifest.permission.READ_EXTERNAL_STORAGE)
+            }
         }
 
         binding.TvCategoriaLibro.setOnClickListener {
@@ -203,6 +211,20 @@ Toast.makeText(this, "Ingrese Titulo", Toast.LENGTH_SHORT).show()
         }
 
     )
+
+    private val SolicitudPermisioAccederArchivos =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()){Permiso->
+            if(Permiso){
+                //Si el permiso fue concedido
+                ElegirPdf()
+            }else{
+                //Si el permiso No fue concedido
+                Toast.makeText(this,"El permiso para acceder al gestor de archivos no ha sido concedido",
+                Toast.LENGTH_SHORT).show()
+            }
+
+        }
+
 }
 
 

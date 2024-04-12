@@ -2,6 +2,8 @@ package com.example.koalaap.Administrador
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.Display.Mode
 import com.example.koalaap.R
 import com.example.koalaap.databinding.ActivityListaPdfAdminBinding
@@ -10,6 +12,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.getValue
+import java.lang.Exception
 
 class ListaPdfAdmin : AppCompatActivity() {
 
@@ -32,7 +35,29 @@ class ListaPdfAdmin : AppCompatActivity() {
 
         binding.TxtCategoriaLibro.text = tituloCategoria
 
+        binding.IbRegresar.setOnClickListener(){
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         listarLibros()
+
+        binding.EtBuscarLibroAdmin.addTextChangedListener(object : TextWatcher{
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun onTextChanged(libro: CharSequence?, start: Int, before: Int, count: Int) {
+                try {
+                    adaptadorPdfAdmin.filter.filter(libro)
+                }catch (e:Exception){
+
+                }
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+
+            }
+        })
     }
 
     private fun listarLibros() {

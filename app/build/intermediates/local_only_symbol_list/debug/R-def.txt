@@ -5,6 +5,7 @@ color ic_koala_background
 color white
 dimen m_bottom_height
 dimen m_toolbar_height
+drawable actualizar_info
 drawable bienvenida_img
 drawable forma_edittext
 drawable ic_abajo
@@ -30,6 +31,7 @@ id AdjuntarPdfIb
 id Agregar_categoria_BD
 id Agregar_pdf
 id Bottom_nav_cliente
+id Btn_actualizar_libro
 id Btn_agregar_categoria
 id Btn_login_admin
 id Btn_register
@@ -40,6 +42,7 @@ id Btn_subir_pdf
 id Buscar_categoria
 id CerrarSesion
 id Eliminar_cat
+id EtTituloLibro
 id Et_Descripcion_pdf
 id Et_apellidos_admin
 id Et_buscar_libro_admin
@@ -54,6 +57,7 @@ id Fragments_Admin
 id Ib_mas_opciones
 id Ib_regresar
 id Item_nombre_cat_a
+id IvActualizarL
 id Ll_adjuntarpdf
 id Ll_dashboard
 id Menu_cuenta_cl
@@ -77,6 +81,7 @@ id imageView
 id imageView2
 id progressBar
 id textViewTitulo
+id toolbaRLActualizar
 id toolbaRLAdmin
 id toolbaRLAdminR
 id toolbarRLAgregarC
@@ -84,6 +89,7 @@ id toolbarRLAgregarPdf
 id toolbarRLListarPdf
 id toolbarRLLogin
 id toolbarTitulo
+layout activity_actualizar_libro
 layout activity_agregar_categoria
 layout activity_agregar_pdf
 layout activity_bienvenida
@@ -107,6 +113,7 @@ mipmap registrologo
 mipmap registrologo_foreground
 mipmap registrologo_round
 string Agregar_categoria_BD
+string Btn_actualizar_libro
 string Btn_agregar_categoria
 string Btn_login_admin
 string Btn_registrar_admin
@@ -135,6 +142,7 @@ string TtxRegistroAdmin
 string Tv_categoria_libro
 string TxtLoginAdmin
 string Txt_Agregar_pdf
+string Txt_actualizar_libro
 string Txt_agregar_categoria
 string Txt_buscar_libro_admin
 string Txt_categoria_libro

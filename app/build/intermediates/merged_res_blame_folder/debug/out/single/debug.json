@@ -28,6 +28,10 @@
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\mipmap-xxxhdpi\\ic_koala_round.webp"
     },
     {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-38:\\layout_activity_actualizar_libro.xml.flat",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\layout\\activity_actualizar_libro.xml"
+    },
+    {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-38:\\drawable_pdf.png.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\drawable\\pdf.png"
     },
@@ -232,6 +236,10 @@
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\drawable-night\\ic_mas_opciones.xml"
     },
     {
+        "merged": "com.example.koalaap.app-merged_res-38:/layout_activity_actualizar_libro.xml.flat",
+        "source": "com.example.koalaap.app-main-40:/layout/activity_actualizar_libro.xml"
+    },
+    {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-38:\\layout_activity_login_admin.xml.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\layout\\activity_login_admin.xml"
     },
@@ -246,6 +254,10 @@
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-38:\\mipmap-mdpi_registrologo_round.webp.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\mipmap-mdpi\\registrologo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-38:\\drawable_actualizar_info.png.flat",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\drawable\\actualizar_info.png"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-38:\\layout_activity_agregar_pdf.xml.flat",
@@ -286,10 +298,6 @@
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-38:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-40:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "com.example.koalaap.app-merged_res-38:/layout_activity_lista_pdf_admin.xml.flat",
-        "source": "com.example.koalaap.app-main-40:/layout/activity_lista_pdf_admin.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-38:\\mipmap-hdpi_ic_launcher.webp.flat",

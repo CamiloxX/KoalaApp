@@ -3003,6 +3003,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable actualizar_info
 drawable avd_hide_password
 drawable avd_show_password
 drawable bienvenida_img
@@ -3164,6 +3165,7 @@ id Agregar_pdf
 id BOTTOM_END
 id BOTTOM_START
 id Bottom_nav_cliente
+id Btn_actualizar_libro
 id Btn_agregar_categoria
 id Btn_login_admin
 id Btn_register
@@ -3175,6 +3177,7 @@ id Buscar_categoria
 id CTRL
 id CerrarSesion
 id Eliminar_cat
+id EtTituloLibro
 id Et_Descripcion_pdf
 id Et_apellidos_admin
 id Et_buscar_libro_admin
@@ -3190,6 +3193,7 @@ id Fragments_Admin
 id Ib_mas_opciones
 id Ib_regresar
 id Item_nombre_cat_a
+id IvActualizarL
 id Ll_adjuntarpdf
 id Ll_dashboard
 id META
@@ -3685,6 +3689,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbaRLActualizar
 id toolbaRLAdmin
 id toolbaRLAdminR
 id toolbarRLAgregarC
@@ -3842,6 +3847,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_actualizar_libro
 layout activity_agregar_categoria
 layout activity_agregar_pdf
 layout activity_bienvenida
@@ -3957,6 +3963,7 @@ mipmap registrologo_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep
 string Agregar_categoria_BD
+string Btn_actualizar_libro
 string Btn_agregar_categoria
 string Btn_login_admin
 string Btn_registrar_admin
@@ -3985,6 +3992,7 @@ string TtxRegistroAdmin
 string Tv_categoria_libro
 string TxtLoginAdmin
 string Txt_Agregar_pdf
+string Txt_actualizar_libro
 string Txt_agregar_categoria
 string Txt_buscar_libro_admin
 string Txt_categoria_libro

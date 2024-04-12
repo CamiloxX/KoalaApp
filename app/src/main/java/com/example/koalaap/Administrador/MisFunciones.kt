@@ -1,6 +1,7 @@
 package com.example.koalaap.Administrador
 
 import android.app.Application
+import android.app.ProgressDialog
 import android.text.format.DateFormat
 import android.view.View
 import android.widget.ProgressBar
@@ -13,6 +14,8 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.storage.FirebaseStorage
 import java.util.Calendar
 import java.util.Locale
+import android.content.Context
+import android.widget.Toast
 
 class MisFunciones : Application() {
 
@@ -103,6 +106,37 @@ class MisFunciones : Application() {
                         TODO("Not yet implemented")
                     }
                 })
+        }
+
+        fun EliminarLibro (context: Context, idlibro:String, urlLibro: String, tituloLibro: String){
+            val progressDialog = ProgressDialog(context)
+            progressDialog.setTitle("Espere por favor")
+            progressDialog.setMessage("Eliminado $tituloLibro")
+            progressDialog.setCanceledOnTouchOutside(false)
+            progressDialog.show()
+
+            val storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(urlLibro)
+            storageReference.delete()
+                .addOnSuccessListener {
+                    val ref = FirebaseDatabase.getInstance().getReference("Libros")
+                    ref.child(idlibro)
+                        .removeValue()
+                        .addOnSuccessListener {
+                            progressDialog.dismiss()
+                            Toast.makeText(context,"El libro se ha eliminado correctamente",Toast.LENGTH_SHORT).show()
+                        }
+                        .addOnFailureListener{e->
+                            progressDialog.dismiss()
+                            Toast.makeText(context,"Fallo la eliminacion a ${e.message}",Toast.LENGTH_SHORT).show()
+                        }
+
+                }
+                .addOnFailureListener{e->
+                    progressDialog.dismiss()
+                    Toast.makeText(context,"Fallo la eliminacion a ${e.message}",Toast.LENGTH_SHORT).show()
+
+                }
+
         }
 
     }

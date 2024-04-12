@@ -48,7 +48,7 @@
     <!--Buscar Libro-->
     <EditText
         android:id="@+id/Et_buscar_libro_admin"
-        android:text="@string/Txt_buscar_libro_admin"
+        android:hint="@string/Txt_buscar_libro_admin"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"

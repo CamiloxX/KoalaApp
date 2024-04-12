@@ -6,6 +6,7 @@
     <dimen name="m_bottom_height">60dp</dimen>
     <dimen name="m_toolbar_height">55dp</dimen>
     <string name="Agregar_categoria_BD"> Agregar</string>
+    <string name="Btn_actualizar_libro">Actualizar</string>
     <string name="Btn_agregar_categoria">Agregar categoría</string>
     <string name="Btn_login_admin">Iniciar</string>
     <string name="Btn_registrar_admin">Regitrarme</string>
@@ -34,6 +35,7 @@
     <string name="Tv_categoria_libro">Categoria</string>
     <string name="TxtLoginAdmin">Login</string>
     <string name="Txt_Agregar_pdf">Agregar PDF</string>
+    <string name="Txt_actualizar_libro">Actualizar libro</string>
     <string name="Txt_agregar_categoria">Agregar categoria</string>
     <string name="Txt_buscar_libro_admin">Buscar Libro</string>
     <string name="Txt_categoria_libro">Categoria</string>

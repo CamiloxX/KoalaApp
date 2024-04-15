@@ -2,10 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
-    
+
     <application
         android:name=".Administrador.MisFunciones"
         android:allowBackup="true"
@@ -17,6 +18,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoLibros"
         tools:targetApi="31">
+        <activity
+            android:name=".LeerLibro"
+            android:exported="false" />
+        <activity
+            android:name=".Administrador.DetalleLibro"
+            android:exported="false" />
         <activity
             android:name=".Administrador.ActualizarLibro"
             android:exported="false" />

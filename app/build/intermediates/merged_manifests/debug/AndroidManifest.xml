@@ -34,6 +34,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProyectoLibros" >
         <activity
+            android:name="com.example.koalaap.LeerLibro"
+            android:exported="false" />
+        <activity
+            android:name="com.example.koalaap.Administrador.DetalleLibro"
+            android:exported="false" />
+        <activity
             android:name="com.example.koalaap.Administrador.ActualizarLibro"
             android:exported="false" />
         <activity

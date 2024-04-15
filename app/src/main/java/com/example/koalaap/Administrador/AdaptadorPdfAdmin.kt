@@ -72,7 +72,11 @@ class AdaptadorPdfAdmin : RecyclerView.Adapter<AdaptadorPdfAdmin.HolderPdfAdmin>
             verOpciones(modelo, holder)
             
         }
-
+         holder.itemView.setOnClickListener{
+             val intent = Intent(m_context, DetalleLibro::class.java)
+             intent.putExtra("idLibro",pdfId)
+             m_context.startActivity(intent)
+         }
     }
 
     private fun verOpciones(modelo: Modelopdf, holder: AdaptadorPdfAdmin.HolderPdfAdmin) {

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeerLibro">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRLLeerLibro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height">
+
+        <ImageButton
+            android:id="@+id/Ib_regresar"
+            android:src="@drawable/ic_regresar"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/Txt_leer_libro"
+            android:text="@string/Txt_leer_libro"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+
+
+    </RelativeLayout>
+    
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/VisualizadorPDF"
+        android:layout_below="@+id/toolbarRLLeerLibro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.github.barteksc.pdfviewer.PDFView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+    
+</RelativeLayout>

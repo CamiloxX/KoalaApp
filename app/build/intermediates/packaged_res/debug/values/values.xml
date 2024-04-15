@@ -8,6 +8,7 @@
     <string name="Agregar_categoria_BD"> Agregar</string>
     <string name="Btn_actualizar_libro">Actualizar</string>
     <string name="Btn_agregar_categoria">Agregar categoría</string>
+    <string name="Btn_leer_libro"> Leer </string>
     <string name="Btn_login_admin">Iniciar</string>
     <string name="Btn_registrar_admin">Regitrarme</string>
     <string name="Btn_registro_login">Registrarme</string>
@@ -38,22 +39,39 @@
     <string name="Txt_actualizar_libro">Actualizar libro</string>
     <string name="Txt_agregar_categoria">Agregar categoria</string>
     <string name="Txt_buscar_libro_admin">Buscar Libro</string>
+    <string name="Txt_categoria_D">Categoria:</string>
     <string name="Txt_categoria_libro">Categoria</string>
     <string name="Txt_categoria_libro_admin">Categoria</string>
+    <string name="Txt_descargas_D">Descargas:</string>
+    <string name="Txt_descripcion_D">Descripción:</string>
     <string name="Txt_descripcion_libro_item">Descripcion Libro</string>
+    <string name="Txt_detalle_libro">Detalle libro</string>
+    <string name="Txt_fecha_D">Fecha:</string>
     <string name="Txt_fecha_libro_admin">dd/MM/YYYY</string>
+    <string name="Txt_leer_libro">Lectura de libro</string>
+    <string name="Txt_paginas_D">Páginas:</string>
     <string name="Txt_rol">Elegir Tipo de cuenta </string>
+    <string name="Txt_tamanio_D">Tamaño:</string>
     <string name="Txt_tamanio_libro_admin">5MB</string>
     <string name="Txt_titulo_libro">Libros</string>
     <string name="Txt_titulo_libro_item">Titulo Libro</string>
+    <string name="Txt_vistas_D">Vistas:</string>
     <string name="app_name">ProyectoLibros</string>
+    <string name="categoria_D"> -- </string>
+    <string name="descargas_D"> -- </string>
+    <string name="descripcion_D"> -- </string>
+    <string name="fecha_D"> -- </string>
     <string name="gcm_defaultSenderId" translatable="false">1064191765387</string>
     <string name="google_api_key" translatable="false">AIzaSyCRc2C_gLTaoRCBCXoHiJF8q4T8iC-jrH0</string>
     <string name="google_app_id" translatable="false">1:1064191765387:android:e7a27ed7ec360334d81d8e</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCRc2C_gLTaoRCBCXoHiJF8q4T8iC-jrH0</string>
     <string name="google_storage_bucket" translatable="false">koalapp-19fe0.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="paginas_D"> -- </string>
     <string name="project_id" translatable="false">koalapp-19fe0</string>
+    <string name="tamanio_D"> -- </string>
+    <string name="titulo_libro_D">Titulo Libro</string>
+    <string name="vistas_D"> -- </string>
     <style name="Base.Theme.ProyectoLibros" parent="Theme.Material3.DayNight.NoActionBar">
         
         

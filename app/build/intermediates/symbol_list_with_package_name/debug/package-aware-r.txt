@@ -3066,6 +3066,7 @@ drawable ic_favoritos
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_leer_libro
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3167,6 +3168,7 @@ id BOTTOM_START
 id Bottom_nav_cliente
 id Btn_actualizar_libro
 id Btn_agregar_categoria
+id Btn_leer_libro
 id Btn_login_admin
 id Btn_register
 id Btn_registrar_Admin
@@ -3217,6 +3219,7 @@ id Txt_categoria_libro
 id Txt_categoria_libro_admin
 id Txt_descripcion_libro_item
 id Txt_fecha_libro_admin
+id Txt_leer_libro
 id Txt_tamanio_libro_admin
 id Txt_titulo_libro
 id Txt_titulo_libro_item
@@ -3319,6 +3322,7 @@ id callMeasure
 id cancel_action
 id cancel_button
 id carryVelocity
+id categoria_D
 id categoriasRv
 id center
 id centerCrop
@@ -3362,6 +3366,8 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descargas_D
+id descripcion_D
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3402,6 +3408,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id fecha_D
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3563,6 +3570,7 @@ id outline
 id outward
 id overshoot
 id packed
+id paginas_D
 id parallax
 id parent
 id parentPanel
@@ -3571,6 +3579,7 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id pdfRL
 id peekHeight
 id percent
 id pin
@@ -3667,6 +3676,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id tamanio_D
 id text
 id text2
 id textEnd
@@ -3688,12 +3698,15 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id titulo_libro_D
 id toggle
 id toolbaRLActualizar
 id toolbaRLAdmin
 id toolbaRLAdminR
 id toolbarRLAgregarC
 id toolbarRLAgregarPdf
+id toolbarRLDetalle
+id toolbarRLLeerLibro
 id toolbarRLListarPdf
 id toolbarRLLogin
 id toolbarTitulo
@@ -3722,6 +3735,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id vistas_D
 id west
 id wide
 id withText
@@ -3851,7 +3865,9 @@ layout activity_actualizar_libro
 layout activity_agregar_categoria
 layout activity_agregar_pdf
 layout activity_bienvenida
+layout activity_detalle_libro
 layout activity_elegir_rol
+layout activity_leer_libro
 layout activity_lista_pdf_admin
 layout activity_login_admin
 layout activity_main
@@ -3965,6 +3981,7 @@ raw firebase_common_keep
 string Agregar_categoria_BD
 string Btn_actualizar_libro
 string Btn_agregar_categoria
+string Btn_leer_libro
 string Btn_login_admin
 string Btn_registrar_admin
 string Btn_registro_login
@@ -3995,14 +4012,23 @@ string Txt_Agregar_pdf
 string Txt_actualizar_libro
 string Txt_agregar_categoria
 string Txt_buscar_libro_admin
+string Txt_categoria_D
 string Txt_categoria_libro
 string Txt_categoria_libro_admin
+string Txt_descargas_D
+string Txt_descripcion_D
 string Txt_descripcion_libro_item
+string Txt_detalle_libro
+string Txt_fecha_D
 string Txt_fecha_libro_admin
+string Txt_leer_libro
+string Txt_paginas_D
 string Txt_rol
+string Txt_tamanio_D
 string Txt_tamanio_libro_admin
 string Txt_titulo_libro
 string Txt_titulo_libro_item
+string Txt_vistas_D
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4046,6 +4072,7 @@ string call_notification_hang_up_action
 string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
+string categoria_D
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -4069,6 +4096,8 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
+string descargas_D
+string descripcion_D
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4077,6 +4106,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string fecha_D
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -4186,6 +4216,7 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string paginas_D
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -4199,6 +4230,9 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string tamanio_D
+string titulo_libro_D
+string vistas_D
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

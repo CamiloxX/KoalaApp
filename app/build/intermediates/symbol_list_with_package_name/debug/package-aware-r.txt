@@ -3056,13 +3056,16 @@ drawable ic_call_answer_video
 drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
+drawable ic_cambiar_imagen
 drawable ic_categoria
 drawable ic_cerrar_sesion
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_cuenta_cl
+drawable ic_editar_informacion
 drawable ic_eliminar_cat
 drawable ic_favoritos
+drawable ic_img_perfil
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3166,6 +3169,7 @@ id Agregar_pdf
 id BOTTOM_END
 id BOTTOM_START
 id Bottom_nav_cliente
+id Btn_Actualizar
 id Btn_actualizar_libro
 id Btn_agregar_categoria
 id Btn_leer_libro
@@ -3178,9 +3182,11 @@ id Btn_subir_pdf
 id Buscar_categoria
 id CTRL
 id CerrarSesion
+id Editar_Perfil
 id Eliminar_cat
 id EtTituloLibro
 id Et_Descripcion_pdf
+id Et_a_nombres
 id Et_apellidos_admin
 id Et_buscar_libro_admin
 id Et_categoria
@@ -3191,6 +3197,7 @@ id Et_password_adminR
 id Et_pdf
 id Et_user_admin
 id FUNCTION
+id FbCambiarImagen
 id Fragments_Admin
 id Ib_mas_opciones
 id Ib_regresar
@@ -3211,6 +3218,7 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id TILNombres
 id TOP_END
 id TOP_START
 id Titulo_RL_Admin
@@ -3218,9 +3226,12 @@ id Tv_categoria_libro
 id Txt_categoria_libro
 id Txt_categoria_libro_admin
 id Txt_descripcion_libro_item
+id Txt_email_admin
 id Txt_fecha_libro_admin
 id Txt_leer_libro
+id Txt_nombres_admin
 id Txt_tamanio_libro_admin
+id Txt_tiempo_registro
 id Txt_titulo_libro
 id Txt_titulo_libro_item
 id VisualizadorPDF
@@ -3427,6 +3438,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3449,6 +3461,7 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
+id img_perfil_admin
 id immediateStop
 id included
 id indeterminate
@@ -3459,6 +3472,9 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id label_email
+id label_fecha_registro
+id label_nombres
 id labeled
 id layout
 id left
@@ -3582,6 +3598,7 @@ id pathRelative
 id pdfRL
 id peekHeight
 id percent
+id perfilRL
 id pin
 id position
 id postLayout
@@ -3703,6 +3720,7 @@ id toggle
 id toolbaRLActualizar
 id toolbaRLAdmin
 id toolbaRLAdminR
+id toolbarEditarPerfil
 id toolbarRLAgregarC
 id toolbarRLAgregarPdf
 id toolbarRLDetalle
@@ -3866,6 +3884,7 @@ layout activity_agregar_categoria
 layout activity_agregar_pdf
 layout activity_bienvenida
 layout activity_detalle_libro
+layout activity_editar_perfil_admin
 layout activity_elegir_rol
 layout activity_leer_libro
 layout activity_lista_pdf_admin
@@ -3979,6 +3998,7 @@ mipmap registrologo_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep
 string Agregar_categoria_BD
+string Btn_Actualizar
 string Btn_actualizar_libro
 string Btn_agregar_categoria
 string Btn_leer_libro
@@ -3990,7 +4010,9 @@ string Btn_rol_cliente
 string Btn_subir_pdf
 string Buscar_categoria
 string CerrarSesion
+string Editar_Perfil
 string Et_Descripcion_pdf
+string Et_a_nombres
 string Et_apellidos
 string Et_categoria
 string Et_email
@@ -4009,6 +4031,7 @@ string TtxRegistroAdmin
 string Tv_categoria_libro
 string TxtLoginAdmin
 string Txt_Agregar_pdf
+string Txt_Editar_perfil
 string Txt_actualizar_libro
 string Txt_agregar_categoria
 string Txt_buscar_libro_admin
@@ -4019,13 +4042,17 @@ string Txt_descargas_D
 string Txt_descripcion_D
 string Txt_descripcion_libro_item
 string Txt_detalle_libro
+string Txt_email_admin
 string Txt_fecha_D
 string Txt_fecha_libro_admin
 string Txt_leer_libro
+string Txt_mas_opciones
+string Txt_nombres_admin
 string Txt_paginas_D
 string Txt_rol
 string Txt_tamanio_D
 string Txt_tamanio_libro_admin
+string Txt_tiempo_registro
 string Txt_titulo_libro
 string Txt_titulo_libro_item
 string Txt_vistas_D
@@ -4098,6 +4125,7 @@ string common_signin_button_text_long
 string copy_toast_msg
 string descargas_D
 string descripcion_D
+string email_admin
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4216,6 +4244,7 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string nombre_perfil
 string paginas_D
 string password_toggle_content_description
 string path_password_eye
@@ -4231,6 +4260,7 @@ string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
 string tamanio_D
+string tiempo_registro
 string titulo_libro_D
 string vistas_D
 style AlertDialog_AppCompat

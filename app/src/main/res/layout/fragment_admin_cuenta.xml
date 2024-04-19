@@ -3,27 +3,150 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Administrador.Fragmentos_Admin.Fragment_admin_cuenta">
 
-<com.google.android.material.card.MaterialCardView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="2dp"
-    android:clickable="true"
-    android:focusable="true"
-    android:foreground="?selectableItemBackground"
-    app:cardCornerRadius="10dp"
-    app:contentPadding="10dp">
-    <TextView
-        android:id="@+id/CerrarSesion"
-        android:text="@string/CerrarSesion"
+    <RelativeLayout
         android:layout_width="match_parent"
-        app:drawableStartCompat="@drawable/ic_cerrar_sesion"
-        android:drawablePadding="10dp"
-        app:drawableEndCompat="@drawable/ic_siguiente"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_perfil_admin"
+            android:src="@drawable/ic_img_perfil"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+        <!-- Etiqueta para Nombres -->
+        <TextView
+            android:id="@+id/label_nombres"
+            android:text="@string/nombre_perfil"
+            android:layout_below="@id/img_perfil_admin"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Valor de Nombres -->
+        <TextView
+            android:id="@+id/Txt_nombres_admin"
+            android:layout_toEndOf="@id/label_nombres"
+            android:layout_alignTop="@id/label_nombres"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Etiqueta para Email -->
+        <TextView
+            android:id="@+id/label_email"
+            android:text="@string/email_admin"
+            android:layout_below="@id/Txt_nombres_admin"
+            android:layout_marginTop="20dp"
+            android:layout_alignStart="@id/label_nombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Valor de Email -->
+        <TextView
+            android:id="@+id/Txt_email_admin"
+            android:layout_toEndOf="@id/label_email"
+            android:layout_alignTop="@id/label_email"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Etiqueta para Fecha de Registro -->
+        <TextView
+            android:id="@+id/label_fecha_registro"
+            android:text="@string/tiempo_registro"
+            android:layout_below="@id/Txt_email_admin"
+            android:layout_marginTop="20dp"
+            android:layout_alignStart="@id/label_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Valor de Fecha de Registro -->
+        <TextView
+            android:id="@+id/Txt_tiempo_registro"
+            android:layout_toEndOf="@id/label_fecha_registro"
+            android:layout_alignTop="@id/label_fecha_registro"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Otras opciones y cierre de sesión -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_below="@id/Txt_tiempo_registro"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/Txt_mas_opciones"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+<!--Editar Perfil-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp">
+                <TextView
+                    android:id="@+id/Editar_Perfil"
+                    android:text="@string/Editar_Perfil"
+                    android:layout_width="match_parent"
+                    app:drawableStartCompat="@drawable/ic_editar_informacion"
+                    android:drawablePadding="10dp"
+                    app:drawableEndCompat="@drawable/ic_siguiente"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.card.MaterialCardView>
 
 
-</com.google.android.material.card.MaterialCardView>
+
+<!--Cerrar Sesion-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp">
+                <TextView
+                    android:id="@+id/CerrarSesion"
+                    android:text="@string/CerrarSesion"
+                    android:layout_width="match_parent"
+                    app:drawableStartCompat="@drawable/ic_cerrar_sesion"
+                    android:drawablePadding="10dp"
+                    app:drawableEndCompat="@drawable/ic_siguiente"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
 </ScrollView>

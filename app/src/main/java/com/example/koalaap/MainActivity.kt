@@ -4,7 +4,6 @@ import com.example.koalaap.Administrador.Fragmentos_Admin.Fragment_admin_dashboa
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.example.koalaap.Administrador.Fragmentos_Admin.Fragment_admin_cuenta
 import com.example.koalaap.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -79,7 +78,7 @@ class MainActivity : AppCompatActivity() {
     private fun ComprobarSesion() {
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser == null) {
-            startActivity(Intent(this, Elegir_Rol::class.java))
+            startActivity(Intent(this, pueba::class.java))
             finishAffinity()
         } else {
             /*Toast.makeText(

@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../android-sdk-windows-1.6_r1/icons/material/materialicons/book/baseline_book_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/add_photo_alternate/baseline_add_photo_alternate_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_leer_libro" />
+                            <entry key="color" value="666666" />
+                            <entry key="outputName" value="ic_cambiar_imagen" />
                             <entry key="sourceFile" value="C:\Users\Camilo\Desktop\ProyectoLibros\Koalas" />
                           </map>
                         </option>

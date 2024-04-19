@@ -22,7 +22,7 @@ class Login_Admin : AppCompatActivity() {
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
-
+ //Se pone aviso de que se esta iniciando sesion
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Iniciando Sesion")
         progressDialog.setCanceledOnTouchOutside(false)
@@ -58,7 +58,7 @@ class Login_Admin : AppCompatActivity() {
             loginAdmin()
         }
     }
-
+//Autentica si el inicio de sesion es exitoso
     private fun loginAdmin() {
         progressDialog.setMessage("Iniciando Sesion")
         progressDialog.show()

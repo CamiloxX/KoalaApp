@@ -1,0 +1,128 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Administrador.EditarPerfilAdmin">
+
+
+    <!--ToolBar-->
+    <RelativeLayout
+        android:id="@+id/toolbarEditarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height">
+        
+        <ImageButton
+            android:id="@+id/Ib_regresar"
+            android:src="@drawable/ic_regresar"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="@string/Txt_Editar_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+
+<ScrollView
+    android:layout_below="@+id/toolbarEditarPerfil"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/perfilRL"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true">
+
+                <!--Imagen Perfil -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_perfil_admin"
+                android:src="@drawable/ic_img_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <!--Cambiar Vista-->
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/FbCambiarImagen"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:fabSize="mini"
+                app:maxImageSize="24dp"
+                 android:src="@drawable/ic_cambiar_imagen"
+                app:fabCustomSize="40dp"/>
+
+
+
+
+        </RelativeLayout>
+
+        <!--Nombres-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/perfilRL"
+            android:layout_marginTop="10dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp">
+
+            <EditText
+                android:id="@+id/Et_a_nombres"
+                android:inputType="textPersonName|textCapWords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Et_a_nombres" />
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Actualizar Perfil-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Btn_Actualizar"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/TILNombres"
+            android:text="@string/Btn_Actualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        
+    </RelativeLayout>
+
+
+
+</ScrollView>
+
+
+</RelativeLayout>
+

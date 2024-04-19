@@ -6,7 +6,7 @@ import android.widget.Toast
 import com.example.koalaap.Administrador.Registrar_Admin
 import com.example.koalaap.databinding.ActivityElegirRolBinding
 
-class Elegir_Rol : AppCompatActivity() {
+class pueba : AppCompatActivity() {
 
     private lateinit var binding : ActivityElegirRolBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +17,7 @@ class Elegir_Rol : AppCompatActivity() {
         binding.BtnRolAdministrador.setOnClickListener{
 
            // Toast.makeText(applicationContext, "Rol administrador",Toast.LENGTH_SHORT).show()
-        startActivity(Intent(this@Elegir_Rol,Registrar_Admin::class.java))
+        startActivity(Intent(this@pueba,Registrar_Admin::class.java))
         }
         binding.BtnRolCliente.setOnClickListener {
             Toast.makeText(applicationContext, "Rol Cliente",Toast.LENGTH_SHORT).show()

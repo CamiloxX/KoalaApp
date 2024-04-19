@@ -80,4 +80,19 @@
 
     <string name="Txt_leer_libro">Lectura de libro</string>
 
+
+    <!--Perfil del admin-->
+    <string name="nombre_perfil">Nombres</string>
+    <string name="Txt_nombres_admin">--</string>
+    <string name="email_admin">Email</string>
+    <string name="Txt_email_admin">--</string>
+    <string name="tiempo_registro">Fecha de Creacion Cuenta</string>
+    <string name="Txt_tiempo_registro">--</string>
+    <string name="Txt_mas_opciones">Mas opciones</string>
+    <string name="Editar_Perfil">Editar Perfil </string>
+    <string name="Txt_Editar_perfil">Editar Perfil</string>
+
+    <string name="Et_a_nombres">Nombres</string>
+    <string name="Btn_Actualizar">Actualizar </string>
+
 </resources>

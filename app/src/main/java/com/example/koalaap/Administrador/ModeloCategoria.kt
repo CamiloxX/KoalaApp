@@ -1,6 +1,6 @@
 package com.example.koalaap.Administrador
 
-class ModeloCategoria {
+class  ModeloCategoria {
 
     var id: String=""
     var categoria: String=""

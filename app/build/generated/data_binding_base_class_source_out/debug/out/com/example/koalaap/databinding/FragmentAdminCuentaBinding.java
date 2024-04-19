@@ -8,6 +8,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.koalaap.R;
@@ -22,9 +23,45 @@ public final class FragmentAdminCuentaBinding implements ViewBinding {
   @NonNull
   public final TextView CerrarSesion;
 
-  private FragmentAdminCuentaBinding(@NonNull ScrollView rootView, @NonNull TextView CerrarSesion) {
+  @NonNull
+  public final TextView EditarPerfil;
+
+  @NonNull
+  public final TextView TxtEmailAdmin;
+
+  @NonNull
+  public final TextView TxtNombresAdmin;
+
+  @NonNull
+  public final TextView TxtTiempoRegistro;
+
+  @NonNull
+  public final AppCompatImageView imgPerfilAdmin;
+
+  @NonNull
+  public final TextView labelEmail;
+
+  @NonNull
+  public final TextView labelFechaRegistro;
+
+  @NonNull
+  public final TextView labelNombres;
+
+  private FragmentAdminCuentaBinding(@NonNull ScrollView rootView, @NonNull TextView CerrarSesion,
+      @NonNull TextView EditarPerfil, @NonNull TextView TxtEmailAdmin,
+      @NonNull TextView TxtNombresAdmin, @NonNull TextView TxtTiempoRegistro,
+      @NonNull AppCompatImageView imgPerfilAdmin, @NonNull TextView labelEmail,
+      @NonNull TextView labelFechaRegistro, @NonNull TextView labelNombres) {
     this.rootView = rootView;
     this.CerrarSesion = CerrarSesion;
+    this.EditarPerfil = EditarPerfil;
+    this.TxtEmailAdmin = TxtEmailAdmin;
+    this.TxtNombresAdmin = TxtNombresAdmin;
+    this.TxtTiempoRegistro = TxtTiempoRegistro;
+    this.imgPerfilAdmin = imgPerfilAdmin;
+    this.labelEmail = labelEmail;
+    this.labelFechaRegistro = labelFechaRegistro;
+    this.labelNombres = labelNombres;
   }
 
   @Override
@@ -60,7 +97,57 @@ public final class FragmentAdminCuentaBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAdminCuentaBinding((ScrollView) rootView, CerrarSesion);
+      id = R.id.Editar_Perfil;
+      TextView EditarPerfil = ViewBindings.findChildViewById(rootView, id);
+      if (EditarPerfil == null) {
+        break missingId;
+      }
+
+      id = R.id.Txt_email_admin;
+      TextView TxtEmailAdmin = ViewBindings.findChildViewById(rootView, id);
+      if (TxtEmailAdmin == null) {
+        break missingId;
+      }
+
+      id = R.id.Txt_nombres_admin;
+      TextView TxtNombresAdmin = ViewBindings.findChildViewById(rootView, id);
+      if (TxtNombresAdmin == null) {
+        break missingId;
+      }
+
+      id = R.id.Txt_tiempo_registro;
+      TextView TxtTiempoRegistro = ViewBindings.findChildViewById(rootView, id);
+      if (TxtTiempoRegistro == null) {
+        break missingId;
+      }
+
+      id = R.id.img_perfil_admin;
+      AppCompatImageView imgPerfilAdmin = ViewBindings.findChildViewById(rootView, id);
+      if (imgPerfilAdmin == null) {
+        break missingId;
+      }
+
+      id = R.id.label_email;
+      TextView labelEmail = ViewBindings.findChildViewById(rootView, id);
+      if (labelEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.label_fecha_registro;
+      TextView labelFechaRegistro = ViewBindings.findChildViewById(rootView, id);
+      if (labelFechaRegistro == null) {
+        break missingId;
+      }
+
+      id = R.id.label_nombres;
+      TextView labelNombres = ViewBindings.findChildViewById(rootView, id);
+      if (labelNombres == null) {
+        break missingId;
+      }
+
+      return new FragmentAdminCuentaBinding((ScrollView) rootView, CerrarSesion, EditarPerfil,
+          TxtEmailAdmin, TxtNombresAdmin, TxtTiempoRegistro, imgPerfilAdmin, labelEmail,
+          labelFechaRegistro, labelNombres);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

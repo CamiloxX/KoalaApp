@@ -119,7 +119,7 @@ class MisFunciones : Application() {
             storageReference.delete()
                 .addOnSuccessListener {
                     val ref = FirebaseDatabase.getInstance().getReference("Libros")
-                    ref.child(idlibro)
+                    ref.child(idlibro)  
                         .removeValue()
                         .addOnSuccessListener {
                             progressDialog.dismiss()

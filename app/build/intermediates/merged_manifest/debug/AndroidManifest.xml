@@ -34,6 +34,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProyectoLibros" >
         <activity
+            android:name="com.example.koalaap.Administrador.EditarPerfilAdmin"
+            android:exported="false" />
+        <activity
             android:name="com.example.koalaap.LeerLibro"
             android:exported="false" />
         <activity
@@ -58,7 +61,7 @@
             android:name="com.example.koalaap.Administrador.Registrar_Admin"
             android:exported="false" />
         <activity
-            android:name="com.example.koalaap.Elegir_Rol"
+            android:name="com.example.koalaap.pueba"
             android:exported="false" />
         <activity
             android:name="com.example.koalaap.Bienvenida"

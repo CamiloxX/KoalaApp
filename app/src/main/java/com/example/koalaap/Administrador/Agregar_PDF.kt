@@ -1,29 +1,24 @@
 package com.example.koalaap.Administrador
 
 import android.app.ProgressDialog
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
-import com.example.koalaap.R
 import com.example.koalaap.databinding.ActivityAgregarPdfBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.ktx.Firebase
 import android.net.Uri
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
-import com.example.koalaap.Elegir_Rol
 import com.google.android.gms.tasks.Task
-import com.google.firebase.auth.ktx.auth
 import com.google.firebase.storage.FirebaseStorage
 
 

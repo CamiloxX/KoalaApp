@@ -68,14 +68,18 @@
             <com.google.android.material.floatingactionbutton.FloatingActionButton
 
                 android:id="@+id/FbCambiarImagen"
-                android:layout_alignParentEnd="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/green"
+                android:src="@drawable/ic_cambiar_imagen"
+                app:fabCustomSize="40dp"
                 app:fabSize="mini"
-                app:maxImageSize="24dp"
-                 android:src="@drawable/ic_cambiar_imagen"
-                app:fabCustomSize="40dp"/>
+                app:maxImageSize="24dp" />
 
 
 
@@ -114,7 +118,8 @@
             android:layout_below="@id/TILNombres"
             android:text="@string/Btn_Actualizar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"/>
 
         
     </RelativeLayout>

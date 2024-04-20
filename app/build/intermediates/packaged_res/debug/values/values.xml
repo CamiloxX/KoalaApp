@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="green">#27856A</color>
     <color name="ic_koala_background">#45A68D</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="m_bottom_height">60dp</dimen>
@@ -9,6 +10,8 @@
     <string name="Btn_Actualizar">Actualizar </string>
     <string name="Btn_actualizar_libro">Actualizar</string>
     <string name="Btn_agregar_categoria">Agregar categoría</string>
+    <string name="Btn_descargar_libro">Descargar</string>
+    <string name="Btn_favoritos_libro">Favorito</string>
     <string name="Btn_leer_libro"> Leer </string>
     <string name="Btn_login_admin">Iniciar</string>
     <string name="Btn_registrar_admin">Regitrarme</string>

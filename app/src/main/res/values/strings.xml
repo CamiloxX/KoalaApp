@@ -94,5 +94,6 @@
 
     <string name="Et_a_nombres">Nombres</string>
     <string name="Btn_Actualizar">Actualizar </string>
-
+    <string name="Btn_descargar_libro">Descargar</string>
+    <string name="Btn_favoritos_libro">Favorito</string>
 </resources>

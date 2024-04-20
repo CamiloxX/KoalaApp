@@ -201,7 +201,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:text="@string/Btn_registrar_admin" />
+                android:text="@string/Btn_registrar_admin"
+                android:backgroundTint="@color/green"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

@@ -1440,6 +1440,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_koala_background
@@ -3048,6 +3049,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_abajo
 drawable ic_adjuntar_pdf
+drawable ic_agregar_favorito
 drawable ic_arrow_back_black_24
 drawable ic_buscar
 drawable ic_call_answer
@@ -3062,6 +3064,7 @@ drawable ic_cerrar_sesion
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_cuenta_cl
+drawable ic_descargar
 drawable ic_editar_informacion
 drawable ic_eliminar_cat
 drawable ic_favoritos
@@ -3172,6 +3175,8 @@ id Bottom_nav_cliente
 id Btn_Actualizar
 id Btn_actualizar_libro
 id Btn_agregar_categoria
+id Btn_agregar_favorito
+id Btn_descargar_libro
 id Btn_leer_libro
 id Btn_login_admin
 id Btn_register
@@ -4001,6 +4006,8 @@ string Agregar_categoria_BD
 string Btn_Actualizar
 string Btn_actualizar_libro
 string Btn_agregar_categoria
+string Btn_descargar_libro
+string Btn_favoritos_libro
 string Btn_leer_libro
 string Btn_login_admin
 string Btn_registrar_admin

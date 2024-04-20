@@ -286,15 +286,41 @@
         
     </ScrollView>
 
-<com.google.android.material.button.MaterialButton
-    android:id="@+id/Btn_leer_libro"
-    android:text="@string/Btn_leer_libro"
-    android:drawableTop="@drawable/ic_leer_libro"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true">
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-</com.google.android.material.button.MaterialButton>
-    
+        <!-- Leer Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Btn_leer_libro"
+            android:text="@string/Btn_leer_libro"
+            android:drawableTop="@drawable/ic_leer_libro"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green" />
+
+        <!-- Descargar Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Btn_descargar_libro"
+            android:text="@string/Btn_descargar_libro"
+            android:drawableTop="@drawable/ic_descargar"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green" />
+
+        <!-- Agregar a Favorito Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Btn_agregar_favorito"
+            android:text="@string/Btn_favoritos_libro"
+            android:drawableTop="@drawable/ic_agregar_favorito"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green" />
+    </LinearLayout>
 
 </RelativeLayout>

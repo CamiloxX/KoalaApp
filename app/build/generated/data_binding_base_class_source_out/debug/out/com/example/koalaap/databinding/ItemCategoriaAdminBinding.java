@@ -4,7 +4,6 @@ package com.example.koalaap.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,15 +20,11 @@ public final class ItemCategoriaAdminBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
-  public final ImageButton EliminarCat;
-
-  @NonNull
   public final TextView ItemNombreCatA;
 
   private ItemCategoriaAdminBinding(@NonNull MaterialCardView rootView,
-      @NonNull ImageButton EliminarCat, @NonNull TextView ItemNombreCatA) {
+      @NonNull TextView ItemNombreCatA) {
     this.rootView = rootView;
-    this.EliminarCat = EliminarCat;
     this.ItemNombreCatA = ItemNombreCatA;
   }
 
@@ -60,20 +55,13 @@ public final class ItemCategoriaAdminBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Eliminar_cat;
-      ImageButton EliminarCat = ViewBindings.findChildViewById(rootView, id);
-      if (EliminarCat == null) {
-        break missingId;
-      }
-
       id = R.id.Item_nombre_cat_a;
       TextView ItemNombreCatA = ViewBindings.findChildViewById(rootView, id);
       if (ItemNombreCatA == null) {
         break missingId;
       }
 
-      return new ItemCategoriaAdminBinding((MaterialCardView) rootView, EliminarCat,
-          ItemNombreCatA);
+      return new ItemCategoriaAdminBinding((MaterialCardView) rootView, ItemNombreCatA);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

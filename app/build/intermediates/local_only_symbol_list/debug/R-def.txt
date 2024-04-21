@@ -36,15 +36,15 @@ drawable registrologo_background
 id AdjuntarPdf
 id AdjuntarPdfIb
 id Agregar_categoria_BD
-id Agregar_pdf
 id Bottom_nav_cliente
 id Btn_Actualizar
 id Btn_actualizar_libro
-id Btn_agregar_categoria
 id Btn_agregar_favorito
 id Btn_descargar_libro
 id Btn_leer_libro
 id Btn_login_admin
+id Btn_mas_descargados
+id Btn_mas_vistos
 id Btn_register
 id Btn_registrar_Admin
 id Btn_rol_administrador
@@ -53,7 +53,6 @@ id Btn_subir_pdf
 id Buscar_categoria
 id CerrarSesion
 id Editar_Perfil
-id Eliminar_cat
 id EtTituloLibro
 id Et_Descripcion_pdf
 id Et_a_nombres
@@ -72,6 +71,7 @@ id Ib_mas_opciones
 id Ib_regresar
 id Item_nombre_cat_a
 id IvActualizarL
+id LibrosMVMD
 id Ll_adjuntarpdf
 id Ll_dashboard
 id Menu_cuenta_cl
@@ -80,6 +80,8 @@ id Menu_favoritos_cl
 id Menu_subir_cl
 id RLPdf
 id Rv_libros_admin
+id Rv_top_descargados
+id Rv_top_vistos
 id TILNombres
 id Titulo_RL_Admin
 id Tv_categoria_libro
@@ -137,6 +139,8 @@ layout activity_lista_pdf_admin
 layout activity_login_admin
 layout activity_main
 layout activity_registrar_admin
+layout activity_top_descargados
+layout activity_top_vistos
 layout fragment_admin_archivo
 layout fragment_admin_cuenta
 layout fragment_admin_dashboard
@@ -159,6 +163,8 @@ string Btn_descargar_libro
 string Btn_favoritos_libro
 string Btn_leer_libro
 string Btn_login_admin
+string Btn_mas_descargados
+string Btn_mas_vistos
 string Btn_registrar_admin
 string Btn_registro_login
 string Btn_rol_administrador

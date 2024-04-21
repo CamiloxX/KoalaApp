@@ -13,6 +13,8 @@ import android.view.ViewGroup
 import com.example.koalaap.Administrador.AdaptadorCategoria
 import com.example.koalaap.Administrador.Agregar_PDF
 import com.example.koalaap.Administrador.ModeloCategoria
+import com.example.koalaap.Administrador.TopDescargados
+import com.example.koalaap.Administrador.TopVistos
 import com.example.koalaap.databinding.FragmentAdminDashboardBinding
 import com.google.firebase.database.*
 import java.lang.Exception
@@ -57,15 +59,14 @@ class Fragment_admin_dashboard : Fragment(){
             }
         })
 
-        binding.BtnAgregarCategoria.setOnClickListener {
-            startActivity(Intent(mContext, Agregar_Categoria::class.java))
+
+        binding.BtnMasVistos.setOnClickListener{
+              startActivity(Intent(mContext, TopVistos::class.java))
         }
 
-        binding.AgregarPdf.setOnClickListener{
-            val intent = Intent(mContext, Agregar_PDF::class.java)
-            startActivity(intent)
+        binding.BtnMasDescargados.setOnClickListener{
+              startActivity(Intent(mContext,TopDescargados::class.java))
         }
-
 
     }
 

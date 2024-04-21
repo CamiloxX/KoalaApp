@@ -14,6 +14,8 @@
     <string name="Btn_favoritos_libro">Favorito</string>
     <string name="Btn_leer_libro"> Leer </string>
     <string name="Btn_login_admin">Iniciar</string>
+    <string name="Btn_mas_descargados">Más descargados</string>
+    <string name="Btn_mas_vistos">Más vistos</string>
     <string name="Btn_registrar_admin">Regitrarme</string>
     <string name="Btn_registro_login">Registrarme</string>
     <string name="Btn_rol_administrador">Admin</string>

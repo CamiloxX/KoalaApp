@@ -14,7 +14,6 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.koalaap.R;
 import com.google.android.material.button.MaterialButton;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,13 +23,16 @@ public final class FragmentAdminDashboardBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final FloatingActionButton AgregarPdf;
+  public final MaterialButton BtnMasDescargados;
 
   @NonNull
-  public final MaterialButton BtnAgregarCategoria;
+  public final MaterialButton BtnMasVistos;
 
   @NonNull
   public final EditText BuscarCategoria;
+
+  @NonNull
+  public final LinearLayoutCompat LibrosMVMD;
 
   @NonNull
   public final LinearLayoutCompat LlDashboard;
@@ -39,13 +41,14 @@ public final class FragmentAdminDashboardBinding implements ViewBinding {
   public final RecyclerView categoriasRv;
 
   private FragmentAdminDashboardBinding(@NonNull RelativeLayout rootView,
-      @NonNull FloatingActionButton AgregarPdf, @NonNull MaterialButton BtnAgregarCategoria,
-      @NonNull EditText BuscarCategoria, @NonNull LinearLayoutCompat LlDashboard,
-      @NonNull RecyclerView categoriasRv) {
+      @NonNull MaterialButton BtnMasDescargados, @NonNull MaterialButton BtnMasVistos,
+      @NonNull EditText BuscarCategoria, @NonNull LinearLayoutCompat LibrosMVMD,
+      @NonNull LinearLayoutCompat LlDashboard, @NonNull RecyclerView categoriasRv) {
     this.rootView = rootView;
-    this.AgregarPdf = AgregarPdf;
-    this.BtnAgregarCategoria = BtnAgregarCategoria;
+    this.BtnMasDescargados = BtnMasDescargados;
+    this.BtnMasVistos = BtnMasVistos;
     this.BuscarCategoria = BuscarCategoria;
+    this.LibrosMVMD = LibrosMVMD;
     this.LlDashboard = LlDashboard;
     this.categoriasRv = categoriasRv;
   }
@@ -77,21 +80,27 @@ public final class FragmentAdminDashboardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Agregar_pdf;
-      FloatingActionButton AgregarPdf = ViewBindings.findChildViewById(rootView, id);
-      if (AgregarPdf == null) {
+      id = R.id.Btn_mas_descargados;
+      MaterialButton BtnMasDescargados = ViewBindings.findChildViewById(rootView, id);
+      if (BtnMasDescargados == null) {
         break missingId;
       }
 
-      id = R.id.Btn_agregar_categoria;
-      MaterialButton BtnAgregarCategoria = ViewBindings.findChildViewById(rootView, id);
-      if (BtnAgregarCategoria == null) {
+      id = R.id.Btn_mas_vistos;
+      MaterialButton BtnMasVistos = ViewBindings.findChildViewById(rootView, id);
+      if (BtnMasVistos == null) {
         break missingId;
       }
 
       id = R.id.Buscar_categoria;
       EditText BuscarCategoria = ViewBindings.findChildViewById(rootView, id);
       if (BuscarCategoria == null) {
+        break missingId;
+      }
+
+      id = R.id.LibrosMVMD;
+      LinearLayoutCompat LibrosMVMD = ViewBindings.findChildViewById(rootView, id);
+      if (LibrosMVMD == null) {
         break missingId;
       }
 
@@ -107,8 +116,8 @@ public final class FragmentAdminDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAdminDashboardBinding((RelativeLayout) rootView, AgregarPdf,
-          BtnAgregarCategoria, BuscarCategoria, LlDashboard, categoriasRv);
+      return new FragmentAdminDashboardBinding((RelativeLayout) rootView, BtnMasDescargados,
+          BtnMasVistos, BuscarCategoria, LibrosMVMD, LlDashboard, categoriasRv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

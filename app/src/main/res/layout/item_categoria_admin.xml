@@ -30,14 +30,7 @@
 
 
 
-        <!--Eliminar la categoria-->
-        <ImageButton
-            android:id="@+id/Eliminar_cat"
-            android:src="@drawable/ic_eliminar_cat"
-            android:layout_width="40dp"
-            android:layout_height="40dp">
 
-        </ImageButton>
         
         
     </androidx.appcompat.widget.LinearLayoutCompat>

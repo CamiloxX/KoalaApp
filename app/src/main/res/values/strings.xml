@@ -96,4 +96,10 @@
     <string name="Btn_Actualizar">Actualizar </string>
     <string name="Btn_descargar_libro">Descargar</string>
     <string name="Btn_favoritos_libro">Favorito</string>
+
+
+    <string name="Btn_mas_vistos">Más vistos</string>
+    <string name="Btn_mas_descargados">Más descargados</string>
+
+
 </resources>

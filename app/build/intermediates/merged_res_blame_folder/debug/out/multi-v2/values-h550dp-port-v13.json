@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.koalaap.app-mergeDebugResources-37:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.example.koalaap.app-mergeDebugResources-3:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Camilo\\.gradle\\caches\\transforms-3\\971da9f924e6ae2ba19c1d0f36bc48dd\\transformed\\material-1.11.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\William Tovar\\.gradle\\caches\\transforms-3\\971da9f924e6ae2ba19c1d0f36bc48dd\\transformed\\material-1.11.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

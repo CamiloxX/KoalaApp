@@ -54,21 +54,7 @@ class AdaptadorCategoria : RecyclerView.Adapter<AdaptadorCategoria.HolderCategor
 
         holder.categoriaTv.text=categoria
 
-        holder.eliminarCatIb.setOnClickListener{
 
-            val builder= AlertDialog.Builder(m_context)
-            builder.setTitle("Eliminar categoria")
-                .setMessage("¿Estás seguro de eliminar esta categoría?")
-                .setPositiveButton("Confirmar"){a,d->
-                 Toast.makeText(m_context, "Eliminando categoria",Toast.LENGTH_SHORT).show()
-                    EliminarCategoria(modelo,holder)
-
-                }
-                .setNegativeButton("Cancelar"){a,d->
-                    a.dismiss()
-                }
-            builder.show()
-        }
 
         holder.itemView.setOnClickListener{
             val intent = Intent(m_context, ListaPdfAdmin::class.java)
@@ -95,7 +81,7 @@ class AdaptadorCategoria : RecyclerView.Adapter<AdaptadorCategoria.HolderCategor
     inner class HolderCategoria(itemView : View) : RecyclerView.ViewHolder(itemView){
 
         var categoriaTv : TextView = binding.ItemNombreCatA
-        var eliminarCatIb : ImageButton= binding.EliminarCat
+
 
     }
 

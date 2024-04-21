@@ -35,6 +35,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProyectoLibros" >
         <activity
+            android:name="com.example.koalaap.Administrador.TopDescargados"
+            android:exported="false" />
+        <activity
+            android:name="com.example.koalaap.Administrador.TopVistos"
+            android:exported="false" />
+        <activity
             android:name="com.example.koalaap.Administrador.EditarPerfilAdmin"
             android:exported="false" />
         <activity

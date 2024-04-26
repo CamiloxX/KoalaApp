@@ -13,6 +13,7 @@ drawable ic_abajo
 drawable ic_adjuntar_pdf
 drawable ic_agregar_favorito
 drawable ic_buscar
+drawable ic_buscar_cl
 drawable ic_cambiar_imagen
 drawable ic_categoria
 drawable ic_cerrar_sesion
@@ -22,11 +23,13 @@ drawable ic_editar_informacion
 drawable ic_eliminar_cat
 drawable ic_favoritos
 drawable ic_img_perfil
+drawable ic_item_eliminar_favorito
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_leer_libro
 drawable ic_mas_opciones
 drawable ic_menu_cl
+drawable ic_no_favorito
 drawable ic_pdf
 drawable ic_regresar
 drawable ic_siguiente
@@ -67,6 +70,7 @@ id Et_pdf
 id Et_user_admin
 id FbCambiarImagen
 id Fragments_Admin
+id Ib_eliminar_fav
 id Ib_mas_opciones
 id Ib_regresar
 id Item_nombre_cat_a
@@ -74,12 +78,14 @@ id IvActualizarL
 id LibrosMVMD
 id Ll_adjuntarpdf
 id Ll_dashboard
+id Menu_buscar_cl
 id Menu_cuenta_cl
 id Menu_dashboard_cl
 id Menu_favoritos_cl
 id Menu_subir_cl
 id RLPdf
 id Rv_libros_admin
+id Rv_libros_favoritos
 id Rv_top_descargados
 id Rv_top_vistos
 id TILNombres
@@ -144,8 +150,10 @@ layout activity_top_vistos
 layout fragment_admin_archivo
 layout fragment_admin_cuenta
 layout fragment_admin_dashboard
+layout fragment_admin_favoritos
 layout item_categoria_admin
 layout item_libro_admin
+layout item_libro_favorito
 menu menu_bottom_cliente
 mipmap ic_koala
 mipmap ic_koala_foreground
@@ -184,6 +192,7 @@ string Et_password_adminR
 string Et_pdf
 string Et_user
 string Item_nombre_cat_a
+string Menu_buscar_cl
 string Menu_cuenta_cl
 string Menu_dashboard_cl
 string Menu_favoritos_cl

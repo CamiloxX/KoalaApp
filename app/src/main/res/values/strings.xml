@@ -6,6 +6,7 @@
     <string name="Menu_subir_cl">Subir</string>
     <string name="Menu_favoritos_cl">Favoritos</string>
     <string name="Menu_cuenta_cl">Cuenta</string>
+    <string name="Menu_buscar_cl">Buscar</string>
 
     <string name="Txt_rol">Elegir Tipo de cuenta </string>
     <string name="Btn_rol_administrador">Admin</string>

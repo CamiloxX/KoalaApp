@@ -35,6 +35,7 @@
     <string name="Et_pdf">Titulo PDF</string>
     <string name="Et_user">Nombre Usuario</string>
     <string name="Item_nombre_cat_a">Nombre categoria</string>
+    <string name="Menu_buscar_cl">Buscar</string>
     <string name="Menu_cuenta_cl">Cuenta</string>
     <string name="Menu_dashboard_cl">Dashboard</string>
     <string name="Menu_favoritos_cl">Favoritos</string>

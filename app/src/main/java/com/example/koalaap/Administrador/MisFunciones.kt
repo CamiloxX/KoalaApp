@@ -16,6 +16,7 @@ import java.util.Calendar
 import java.util.Locale
 import android.content.Context
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 
 class MisFunciones : Application() {
 
@@ -137,6 +138,18 @@ class MisFunciones : Application() {
 
                 }
 
+        }
+        fun eliminarFavoritos(context: Context, idLibro : String){
+            val firebaseAuth = FirebaseAuth.getInstance()
+            val ref = FirebaseDatabase.getInstance().getReference("Usuarios")
+            ref.child(firebaseAuth.uid!!).child("Favoritos").child(idLibro)
+                .removeValue()
+                .addOnSuccessListener {
+                    Toast.makeText(context,"Libro eliminado de favoritos", Toast.LENGTH_SHORT).show()
+                }
+                .addOnFailureListener{e->
+                    Toast.makeText(context,"No se elimino de favoritos debido a ${e.message} ", Toast.LENGTH_SHORT).show()
+                }
         }
 
     }

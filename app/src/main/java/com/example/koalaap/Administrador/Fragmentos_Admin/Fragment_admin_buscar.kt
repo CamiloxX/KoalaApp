@@ -1,6 +1,5 @@
 package com.example.koalaap.Administrador.Fragmentos_Admin
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +10,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.koalaap.Administrador.AdaptadorCategoria
-import com.example.koalaap.Administrador.Agregar_PDF
 import com.example.koalaap.Administrador.ModeloCategoria
 import com.example.koalaap.Administrador.TopDescargados
 import com.example.koalaap.Administrador.TopVistos
@@ -19,7 +17,7 @@ import com.example.koalaap.databinding.FragmentAdminDashboardBinding
 import com.google.firebase.database.*
 import java.lang.Exception
 
-class Fragment_admin_dashboard : Fragment(){
+class Fragment_admin_buscar : Fragment(){
 
     private lateinit var binding : FragmentAdminDashboardBinding
     private lateinit var mContext : Context

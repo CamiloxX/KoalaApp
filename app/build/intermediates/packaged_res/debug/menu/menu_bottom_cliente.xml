@@ -5,6 +5,10 @@
         android:title="@string/Menu_dashboard_cl"
         android:icon="@drawable/ic_menu_cl"/>
     <item
+        android:id="@+id/Menu_buscar_cl"
+        android:title="@string/Menu_buscar_cl"
+        android:icon="@drawable/ic_buscar"/>
+    <item
         android:id="@+id/Menu_subir_cl"
         android:title="@string/Menu_subir_cl"
         android:icon="@drawable/ic_subir_cl"/>

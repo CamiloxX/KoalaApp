@@ -11,6 +11,7 @@ class Modelopdf {
     var tiempo : Long = 0
     var contadorVistas : Long = 0
     var contadorDescargas : Long = 0
+    var esFavoritos = false
 
     constructor()
     constructor(
@@ -22,7 +23,8 @@ class Modelopdf {
         url: String,
         tiempo: Long,
         contadorVistas: Long,
-        contadorDescargas: Long
+        contadorDescargas: Long,
+        esFavoritos : Boolean
     ) {
         this.uid = uid
         this.id = id
@@ -33,6 +35,7 @@ class Modelopdf {
         this.tiempo = tiempo
         this.contadorVistas = contadorVistas
         this.contadorDescargas = contadorDescargas
+        this.esFavoritos = esFavoritos
     }
 
 

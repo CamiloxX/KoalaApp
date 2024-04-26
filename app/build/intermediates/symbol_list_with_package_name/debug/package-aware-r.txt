@@ -3052,6 +3052,7 @@ drawable ic_adjuntar_pdf
 drawable ic_agregar_favorito
 drawable ic_arrow_back_black_24
 drawable ic_buscar
+drawable ic_buscar_cl
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -3069,6 +3070,7 @@ drawable ic_editar_informacion
 drawable ic_eliminar_cat
 drawable ic_favoritos
 drawable ic_img_perfil
+drawable ic_item_eliminar_favorito
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3082,6 +3084,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_no_favorito
 drawable ic_pdf
 drawable ic_regresar
 drawable ic_search_black_24
@@ -3203,6 +3206,7 @@ id Et_user_admin
 id FUNCTION
 id FbCambiarImagen
 id Fragments_Admin
+id Ib_eliminar_fav
 id Ib_mas_opciones
 id Ib_regresar
 id Item_nombre_cat_a
@@ -3211,6 +3215,7 @@ id LibrosMVMD
 id Ll_adjuntarpdf
 id Ll_dashboard
 id META
+id Menu_buscar_cl
 id Menu_cuenta_cl
 id Menu_dashboard_cl
 id Menu_favoritos_cl
@@ -3218,6 +3223,7 @@ id Menu_subir_cl
 id NO_DEBUG
 id RLPdf
 id Rv_libros_admin
+id Rv_libros_favoritos
 id Rv_top_descargados
 id Rv_top_vistos
 id SHIFT
@@ -3921,10 +3927,12 @@ layout design_text_input_start_icon
 layout fragment_admin_archivo
 layout fragment_admin_cuenta
 layout fragment_admin_dashboard
+layout fragment_admin_favoritos
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_categoria_admin
 layout item_libro_admin
+layout item_libro_favorito
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4035,6 +4043,7 @@ string Et_password_adminR
 string Et_pdf
 string Et_user
 string Item_nombre_cat_a
+string Menu_buscar_cl
 string Menu_cuenta_cl
 string Menu_dashboard_cl
 string Menu_favoritos_cl

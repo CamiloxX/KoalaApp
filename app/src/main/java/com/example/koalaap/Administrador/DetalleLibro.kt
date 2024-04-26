@@ -9,6 +9,7 @@ import android.widget.Toast
 import com.example.koalaap.LeerLibro
 import com.example.koalaap.R
 import com.example.koalaap.databinding.ActivityDetalleLibroBinding
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -22,7 +23,12 @@ class DetalleLibro : AppCompatActivity() {
     private lateinit var binding : ActivityDetalleLibroBinding
     private var  tituloLibro = ""
     private var  urlLibro = ""
+
+    private lateinit var firebaseAuth: FirebaseAuth
+
     private lateinit var  progressDialog : ProgressDialog
+
+    private var esFavorito = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,13 +40,12 @@ class DetalleLibro : AppCompatActivity() {
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Por favor espere")
         progressDialog.setCanceledOnTouchOutside(false)
+
+        firebaseAuth = FirebaseAuth.getInstance()
+
         binding.IbRegresar.setOnClickListener{
             onBackPressedDispatcher.onBackPressed()
         }
-
-
-
-
 
         binding.BtnLeerLibro.setOnClickListener{
             val intent = Intent(this@DetalleLibro, LeerLibro::class.java)
@@ -54,9 +59,68 @@ class DetalleLibro : AppCompatActivity() {
             descargarLibro()
         }
 
+        binding.BtnAgregarFavorito.setOnClickListener{
+        if(esFavorito){
+            MisFunciones.eliminarFavoritos(this@DetalleLibro,idLibro)
+        }else{
+            agregarFavoritos()
+        }
+        }
+        comprobarFavorito()
         cargarDetalleLibro()
 
     }
+
+    private fun comprobarFavorito() {
+        val ref = FirebaseDatabase.getInstance().getReference("Usuarios")
+        ref.child(firebaseAuth.uid!!).child("Favoritos").child(idLibro)
+            .addValueEventListener(object : ValueEventListener{
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    esFavorito = snapshot.exists()
+                    if(esFavorito){
+                        binding.BtnAgregarFavorito.setCompoundDrawablesRelativeWithIntrinsicBounds(
+                           0,
+                            R.drawable.ic_agregar_favorito,
+                            0,
+                            0
+                        )
+                        binding.BtnAgregarFavorito.text = "Eliminar de favoritos"
+                    }else{
+                        binding.BtnAgregarFavorito.setCompoundDrawablesRelativeWithIntrinsicBounds(
+                            0,
+                            R.drawable.ic_no_favorito,
+                            0,
+                            0
+                        )
+                        binding.BtnAgregarFavorito.text="Agregar a favoritos"
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    TODO("Not yet implemented")
+                }
+
+            })
+    }
+
+    private fun agregarFavoritos(){
+        val tiempo = System.currentTimeMillis()
+
+        val hasMap = HashMap<String, Any>()
+        hasMap["id"] = idLibro
+        hasMap["tiempo"] = tiempo
+
+        val ref = FirebaseDatabase.getInstance().getReference("Usuarios")
+        ref.child(firebaseAuth.uid!!).child("Favoritos").child(idLibro)
+            .setValue(hasMap)
+            .addOnSuccessListener {
+                Toast.makeText(applicationContext,"Libro añadido a favoritos", Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener{e->
+                Toast.makeText(applicationContext,"No se agrego a favortios debido a ${e.message}", Toast.LENGTH_SHORT).show()
+            }
+    }
+
 
     private fun descargarLibro() {
         progressDialog.setMessage("Descargando Libro")

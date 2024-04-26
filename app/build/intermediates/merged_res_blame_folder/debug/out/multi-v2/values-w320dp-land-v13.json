@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.koalaap.app-mergeDebugResources-3:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.example.koalaap.app-mergeDebugResources-37:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\William Tovar\\.gradle\\caches\\transforms-3\\971da9f924e6ae2ba19c1d0f36bc48dd\\transformed\\material-1.11.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "C:\\Users\\Andres\\.gradle\\caches\\transforms-3\\971da9f924e6ae2ba19c1d0f36bc48dd\\transformed\\material-1.11.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

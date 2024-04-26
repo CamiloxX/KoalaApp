@@ -1,6 +1,6 @@
 package com.example.koalaap
 
-import com.example.koalaap.Administrador.Fragmentos_Admin.Fragment_admin_dashboard
+import com.example.koalaap.Administrador.Fragmentos_Admin.Fragment_admin_buscar
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +8,7 @@ import com.example.koalaap.Administrador.Fragmentos_Admin.Fragment_admin_cuenta
 import com.example.koalaap.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.example.koalaap.Administrador.Fragmentos_Admin.Fragment_admin_archivo
+import com.example.koalaap.Administrador.Fragmentos_Admin.Fragment_admin_favoritos
 
 
 private lateinit var binding: ActivityMainBinding
@@ -38,6 +39,10 @@ class MainActivity : AppCompatActivity() {
                     VerFragmentoArchivo()
                     true
                 }
+                R.id.Menu_favoritos_cl->{
+                    VerFragmentoFavoritos()
+                    true
+                }
                 else->{
                     false
                 }
@@ -49,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     private fun  VerFragmentoDashBoard(){
         val nombre_titulo ="Dashboard"
         binding.TituloRLAdmin.text=nombre_titulo
-        val fragment = Fragment_admin_dashboard()
+        val fragment = Fragment_admin_buscar()
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(binding.FragmentsAdmin.id ,fragment,"Fragment DashBoard")
         fragmentTransaction.commit()
@@ -65,6 +70,7 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.commit()
 
     }
+
     private fun VerFragmentoArchivo() {
         val nombre_titulo = ""
         binding.TituloRLAdmin.text = nombre_titulo
@@ -72,6 +78,15 @@ class MainActivity : AppCompatActivity() {
         val fragment = Fragment_admin_archivo()
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(binding.FragmentsAdmin.id, fragment, "Fragment Archivo")
+        fragmentTransaction.commit()
+    }
+    private fun VerFragmentoFavoritos() {
+        val nombre_titulo = ""
+        binding.TituloRLAdmin.text = nombre_titulo
+
+        val fragment = Fragment_admin_favoritos()
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(binding.FragmentsAdmin.id, fragment, "Fragment Favoritos")
         fragmentTransaction.commit()
     }
 

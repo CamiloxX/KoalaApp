@@ -2,6 +2,7 @@ package com.example.koalaap.Administrador
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.koalaap.Modelos.Modelopdf
 import com.example.koalaap.R
 import com.example.koalaap.databinding.ActivityTopDescargadosBinding
 import com.google.firebase.database.DataSnapshot

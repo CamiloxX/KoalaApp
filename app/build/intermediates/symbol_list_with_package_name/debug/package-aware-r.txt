@@ -3049,6 +3049,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_abajo
 drawable ic_adjuntar_pdf
+drawable ic_agregar_comentario
 drawable ic_agregar_favorito
 drawable ic_arrow_back_black_24
 drawable ic_buscar
@@ -3061,6 +3062,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_cambiar_imagen
 drawable ic_categoria
+drawable ic_cerrar
 drawable ic_cerrar_sesion
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
@@ -3177,6 +3179,7 @@ id Bottom_nav_cliente
 id Btn_Actualizar
 id Btn_actualizar_libro
 id Btn_agregar_favorito
+id Btn_comentar
 id Btn_descargar_libro
 id Btn_leer_libro
 id Btn_login_admin
@@ -3194,6 +3197,7 @@ id Editar_Perfil
 id EtTituloLibro
 id Et_Descripcion_pdf
 id Et_a_nombres
+id Et_agregar_comentario
 id Et_apellidos_admin
 id Et_buscar_libro_admin
 id Et_categoria
@@ -3206,11 +3210,14 @@ id Et_user_admin
 id FUNCTION
 id FbCambiarImagen
 id Fragments_Admin
+id Ib_agregar_comenatio
+id Ib_cerrar
 id Ib_eliminar_fav
 id Ib_mas_opciones
 id Ib_regresar
 id Item_nombre_cat_a
 id IvActualizarL
+id Iv_img_perfil
 id LibrosMVMD
 id Ll_adjuntarpdf
 id Ll_dashboard
@@ -3222,6 +3229,7 @@ id Menu_favoritos_cl
 id Menu_subir_cl
 id NO_DEBUG
 id RLPdf
+id Rv_comentarios
 id Rv_libros_admin
 id Rv_libros_favoritos
 id Rv_top_descargados
@@ -3232,10 +3240,14 @@ id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
 id TILNombres
+id TIL_comentario
 id TOP_END
 id TOP_START
 id Titulo_RL_Admin
 id Tv_categoria_libro
+id Tv_comentario
+id Tv_fecha_c
+id Tv_nombres_c
 id Txt_categoria_libro
 id Txt_categoria_libro_admin
 id Txt_descripcion_libro_item
@@ -3924,6 +3936,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_agregar_comentario
 layout fragment_admin_archivo
 layout fragment_admin_cuenta
 layout fragment_admin_dashboard
@@ -3931,6 +3944,7 @@ layout fragment_admin_favoritos
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_categoria_admin
+layout item_comentario
 layout item_libro_admin
 layout item_libro_favorito
 layout m3_alert_dialog
@@ -4018,6 +4032,7 @@ string Agregar_categoria_BD
 string Btn_Actualizar
 string Btn_actualizar_libro
 string Btn_agregar_categoria
+string Btn_comentar
 string Btn_descargar_libro
 string Btn_favoritos_libro
 string Btn_leer_libro
@@ -4034,6 +4049,7 @@ string CerrarSesion
 string Editar_Perfil
 string Et_Descripcion_pdf
 string Et_a_nombres
+string Et_agregar_comentario
 string Et_apellidos
 string Et_categoria
 string Et_email
@@ -4051,15 +4067,20 @@ string Menu_subir_cl
 string Titulo_RL_Admin
 string TtxRegistroAdmin
 string Tv_categoria_libro
+string Tv_comentario
+string Tv_fecha_c
+string Tv_nombres_c
 string TxtLoginAdmin
 string Txt_Agregar_pdf
 string Txt_Editar_perfil
 string Txt_actualizar_libro
 string Txt_agregar_categoria
+string Txt_agregar_comentario
 string Txt_buscar_libro_admin
 string Txt_categoria_D
 string Txt_categoria_libro
 string Txt_categoria_libro_admin
+string Txt_comentarios
 string Txt_descargas_D
 string Txt_descripcion_D
 string Txt_descripcion_libro_item

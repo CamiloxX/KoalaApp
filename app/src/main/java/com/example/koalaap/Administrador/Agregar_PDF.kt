@@ -18,6 +18,7 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
+import com.example.koalaap.Modelos.ModeloCategoria
 import com.google.android.gms.tasks.Task
 import com.google.firebase.storage.FirebaseStorage
 

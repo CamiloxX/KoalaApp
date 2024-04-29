@@ -6,8 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.koalaap.Administrador.AdaptadorPdfFavoritos
-import com.example.koalaap.Administrador.Modelopdf
-import com.example.koalaap.R
+import com.example.koalaap.Modelos.Modelopdf
 import com.example.koalaap.databinding.FragmentAdminFavoritosBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot

@@ -1,14 +1,19 @@
 package com.example.koalaap.Administrador
 
+import android.app.AlertDialog
 import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
+import android.view.LayoutInflater
 import android.widget.Toast
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable.ProgressDrawableSize
 import com.example.koalaap.LeerLibro
+import com.example.koalaap.Modelos.ModeloComentario
 import com.example.koalaap.R
 import com.example.koalaap.databinding.ActivityDetalleLibroBinding
+import com.example.koalaap.databinding.DialogAgregarComentarioBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -29,6 +34,8 @@ class DetalleLibro : AppCompatActivity() {
     private lateinit var  progressDialog : ProgressDialog
 
     private var esFavorito = false
+    private lateinit var comentarioArrayList: ArrayList<ModeloComentario>
+    private lateinit var adaptadorComentario: AdaptadorComentario
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,9 +73,89 @@ class DetalleLibro : AppCompatActivity() {
             agregarFavoritos()
         }
         }
+
+        binding.IbAgregarComenatio.setOnClickListener{
+            dialogComentar()
+        }
+
+
         comprobarFavorito()
         cargarDetalleLibro()
+        listarComentarios()
 
+    }
+
+    private fun listarComentarios() {
+        comentarioArrayList = ArrayList()
+
+        val ref = FirebaseDatabase.getInstance().getReference("Libros")
+        ref.child(idLibro).child("Comentarios")
+            .addValueEventListener(object : ValueEventListener{
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    comentarioArrayList.clear()
+                    for(ds in snapshot.children){
+                        val modelo = ds.getValue(ModeloComentario::class.java)
+                        comentarioArrayList.add(modelo!!)
+                    }
+                    adaptadorComentario = AdaptadorComentario(this@DetalleLibro,comentarioArrayList)
+                    binding.RvComentarios.adapter = adaptadorComentario
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    TODO("Not yet implemented")
+                }
+            })
+    }
+
+    private var comentario = ""
+    private fun dialogComentar() {
+        val agregar_comentario_binding = DialogAgregarComentarioBinding.inflate(LayoutInflater.from(this))
+
+        val builder = AlertDialog.Builder(this)
+        builder.setView(agregar_comentario_binding.root)
+
+        val alertDialog = builder.create()
+        alertDialog.show()
+        alertDialog.setCanceledOnTouchOutside(false)
+
+        agregar_comentario_binding.IbCerrar.setOnClickListener{
+            alertDialog.dismiss()
+        }
+        agregar_comentario_binding.BtnComentar.setOnClickListener{
+            comentario = agregar_comentario_binding.EtAgregarComentario.text.toString().trim()
+            if(comentario.isEmpty()){
+                Toast.makeText(applicationContext, "Agrege un comentario", Toast.LENGTH_SHORT).show()
+            }else{
+                alertDialog.dismiss()
+                agregarComentario()
+            }
+        }
+    }
+
+    private fun agregarComentario() {
+        progressDialog.setMessage("Agregando comentario")
+        progressDialog.show()
+
+        val tiempo = "${System.currentTimeMillis()}"
+
+        val hashMap = HashMap<String, Any>()
+        hashMap["id"] = "$tiempo"
+        hashMap["idLibro"] = "${idLibro}"
+        hashMap["tiempo"] = "$tiempo"
+        hashMap["comentario"] = "${comentario}"
+        hashMap["uid"] = "${firebaseAuth.uid}"
+
+        val ref = FirebaseDatabase.getInstance().getReference("Libros")
+        ref.child(idLibro).child("Comentarios").child(tiempo)
+            .setValue(hashMap)
+            .addOnSuccessListener {
+                progressDialog.dismiss()
+                Toast.makeText(applicationContext, "Su comentario se ha publicado", Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener{e->
+                progressDialog.dismiss()
+                Toast.makeText(applicationContext, "${e.message}", Toast.LENGTH_SHORT).show()
+            }
     }
 
     private fun comprobarFavorito() {

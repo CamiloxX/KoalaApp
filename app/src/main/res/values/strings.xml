@@ -102,5 +102,14 @@
     <string name="Btn_mas_vistos">Más vistos</string>
     <string name="Btn_mas_descargados">Más descargados</string>
 
+    <string name="Txt_comentarios">Comentarios</string>
+    <string name="Txt_agregar_comentario">Agregar Comentario</string>
+    <string name="Et_agregar_comentario">Escriba un comentario</string>
+    <string name="Btn_comentar">Comentar</string>
+
+    <string name="Tv_nombres_c">Nombres Cliente</string>
+    <string name="Tv_fecha_c">dd/MM/yyyy</string>
+    <string name="Tv_comentario">Comentario de Usuario</string>
+
 
 </resources>

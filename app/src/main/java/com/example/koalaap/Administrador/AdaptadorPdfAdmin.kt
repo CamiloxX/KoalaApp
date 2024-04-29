@@ -11,6 +11,7 @@ import android.content.Intent
 import android.widget.Filter
 import android.widget.Filterable
 import android.widget.Toast
+import com.example.koalaap.Modelos.Modelopdf
 
 class AdaptadorPdfAdmin : RecyclerView.Adapter<AdaptadorPdfAdmin.HolderPdfAdmin> , Filterable{
 

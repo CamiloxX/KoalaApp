@@ -1,7 +1,6 @@
 package com.example.koalaap.Administrador
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.koalaap.databinding.ItemLibroFavoritoBinding
@@ -11,7 +10,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.example.koalaap.Administrador.Modelopdf
+import com.example.koalaap.Modelos.Modelopdf
 
 class AdaptadorPdfFavoritos(
     private val context: Context,

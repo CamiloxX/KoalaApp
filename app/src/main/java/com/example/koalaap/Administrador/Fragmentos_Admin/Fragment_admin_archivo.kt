@@ -37,12 +37,14 @@ class Fragment_admin_archivo : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View {
         _binding = FragmentAdminArchivoBinding.inflate(inflater, container, false)
         firebaseAuth = FirebaseAuth.getInstance()
         progressDialog = ProgressDialog(context)
         categoriaArrayList = ArrayList()
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

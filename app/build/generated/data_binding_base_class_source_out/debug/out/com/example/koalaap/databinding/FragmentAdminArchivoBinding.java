@@ -44,14 +44,11 @@ public final class FragmentAdminArchivoBinding implements ViewBinding {
   @NonNull
   public final TextView TvCategoriaLibro;
 
-  @NonNull
-  public final RelativeLayout toolbarRLAgregarPdf;
-
   private FragmentAdminArchivoBinding(@NonNull RelativeLayout rootView,
       @NonNull LinearLayoutCompat AdjuntarPdf, @NonNull ImageButton AdjuntarPdfIb,
       @NonNull MaterialButton BtnSubirPdf, @NonNull EditText EtDescripcionPdf,
       @NonNull EditText EtPdf, @NonNull LinearLayoutCompat LlAdjuntarpdf,
-      @NonNull TextView TvCategoriaLibro, @NonNull RelativeLayout toolbarRLAgregarPdf) {
+      @NonNull TextView TvCategoriaLibro) {
     this.rootView = rootView;
     this.AdjuntarPdf = AdjuntarPdf;
     this.AdjuntarPdfIb = AdjuntarPdfIb;
@@ -60,7 +57,6 @@ public final class FragmentAdminArchivoBinding implements ViewBinding {
     this.EtPdf = EtPdf;
     this.LlAdjuntarpdf = LlAdjuntarpdf;
     this.TvCategoriaLibro = TvCategoriaLibro;
-    this.toolbarRLAgregarPdf = toolbarRLAgregarPdf;
   }
 
   @Override
@@ -132,15 +128,8 @@ public final class FragmentAdminArchivoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.toolbarRLAgregarPdf;
-      RelativeLayout toolbarRLAgregarPdf = ViewBindings.findChildViewById(rootView, id);
-      if (toolbarRLAgregarPdf == null) {
-        break missingId;
-      }
-
       return new FragmentAdminArchivoBinding((RelativeLayout) rootView, AdjuntarPdf, AdjuntarPdfIb,
-          BtnSubirPdf, EtDescripcionPdf, EtPdf, LlAdjuntarpdf, TvCategoriaLibro,
-          toolbarRLAgregarPdf);
+          BtnSubirPdf, EtDescripcionPdf, EtPdf, LlAdjuntarpdf, TvCategoriaLibro);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

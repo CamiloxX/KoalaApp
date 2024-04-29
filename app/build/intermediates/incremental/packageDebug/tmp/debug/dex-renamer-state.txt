@@ -1,4 +1,4 @@
-#Mon Apr 29 10:53:01 COT 2024
+#Mon Apr 29 13:27:31 COT 2024
 base.0=C\:\\Users\\Andres\\AndroidStudioProjects\\KoalaApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Andres\\AndroidStudioProjects\\KoalaApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\Andres\\AndroidStudioProjects\\KoalaApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex

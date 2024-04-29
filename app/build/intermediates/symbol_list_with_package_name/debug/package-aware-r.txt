@@ -3215,6 +3215,7 @@ id Ib_cerrar
 id Ib_eliminar_fav
 id Ib_mas_opciones
 id Ib_regresar
+id Imagen_RL_Admin
 id Item_nombre_cat_a
 id IvActualizarL
 id Iv_img_perfil
@@ -3232,6 +3233,7 @@ id RLPdf
 id Rv_comentarios
 id Rv_libros_admin
 id Rv_libros_favoritos
+id Rv_libros_fragment
 id Rv_top_descargados
 id Rv_top_vistos
 id SHIFT
@@ -3938,9 +3940,10 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_agregar_comentario
 layout fragment_admin_archivo
+layout fragment_admin_buscar
 layout fragment_admin_cuenta
-layout fragment_admin_dashboard
 layout fragment_admin_favoritos
+layout fragment_admin_principal
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_categoria_admin

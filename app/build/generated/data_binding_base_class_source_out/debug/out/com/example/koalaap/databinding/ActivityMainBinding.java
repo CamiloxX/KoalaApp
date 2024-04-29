@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -28,6 +29,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FrameLayout FragmentsAdmin;
 
   @NonNull
+  public final ImageView ImagenRLAdmin;
+
+  @NonNull
   public final TextView TituloRLAdmin;
 
   @NonNull
@@ -35,10 +39,12 @@ public final class ActivityMainBinding implements ViewBinding {
 
   private ActivityMainBinding(@NonNull RelativeLayout rootView,
       @NonNull BottomNavigationView BottomNavCliente, @NonNull FrameLayout FragmentsAdmin,
-      @NonNull TextView TituloRLAdmin, @NonNull RelativeLayout toolbaRLAdmin) {
+      @NonNull ImageView ImagenRLAdmin, @NonNull TextView TituloRLAdmin,
+      @NonNull RelativeLayout toolbaRLAdmin) {
     this.rootView = rootView;
     this.BottomNavCliente = BottomNavCliente;
     this.FragmentsAdmin = FragmentsAdmin;
+    this.ImagenRLAdmin = ImagenRLAdmin;
     this.TituloRLAdmin = TituloRLAdmin;
     this.toolbaRLAdmin = toolbaRLAdmin;
   }
@@ -82,6 +88,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.Imagen_RL_Admin;
+      ImageView ImagenRLAdmin = ViewBindings.findChildViewById(rootView, id);
+      if (ImagenRLAdmin == null) {
+        break missingId;
+      }
+
       id = R.id.Titulo_RL_Admin;
       TextView TituloRLAdmin = ViewBindings.findChildViewById(rootView, id);
       if (TituloRLAdmin == null) {
@@ -95,7 +107,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((RelativeLayout) rootView, BottomNavCliente, FragmentsAdmin,
-          TituloRLAdmin, toolbaRLAdmin);
+          ImagenRLAdmin, TituloRLAdmin, toolbaRLAdmin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

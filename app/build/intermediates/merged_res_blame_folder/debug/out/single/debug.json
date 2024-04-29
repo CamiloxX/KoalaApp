@@ -24,12 +24,12 @@
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\drawable_registrologo_background.xml.flat",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\drawable\\registrologo_background.xml"
-    },
-    {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\drawable_registrologo_background.xml.flat",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\drawable\\registrologo_background.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-xxhdpi_registrologo_round.webp.flat",
@@ -50,6 +50,10 @@
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\layout_item_libro_favorito.xml.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\item_libro_favorito.xml"
+    },
+    {
+        "merged": "com.example.koalaap.app-merged_res-39:/layout_fragment_admin_principal.xml.flat",
+        "source": "com.example.koalaap.app-main-41:/layout/fragment_admin_principal.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-mdpi_registrologo_round.webp.flat",
@@ -88,8 +92,8 @@
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\menu\\menu_bottom_cliente.xml"
     },
     {
-        "merged": "com.example.koalaap.app-merged_res-39:/layout_item_comentario.xml.flat",
-        "source": "com.example.koalaap.app-main-41:/layout/item_comentario.xml"
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\layout_item_comentario.xml.flat",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\item_comentario.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\drawable_ic_regresar.xml.flat",
@@ -102,10 +106,6 @@
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\drawable_ic_cuenta_cl.xml.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\drawable\\ic_cuenta_cl.xml"
-    },
-    {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\layout_fragment_admin_dashboard.xml.flat",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_dashboard.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -128,12 +128,16 @@
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\drawable\\ic_abajo.xml"
     },
     {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-mdpi_ic_koala_foreground.webp.flat",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\mipmap-mdpi\\ic_koala_foreground.webp"
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\layout_fragment_admin_buscar.xml.flat",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_buscar.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\drawable_ic_buscar.xml.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\drawable\\ic_buscar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-mdpi_ic_koala_foreground.webp.flat",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\mipmap-mdpi\\ic_koala_foreground.webp"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\layout_fragment_admin_archivo.xml.flat",
@@ -166,10 +170,6 @@
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-xxxhdpi_ic_koala_foreground.webp.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\mipmap-xxxhdpi\\ic_koala_foreground.webp"
-    },
-    {
-        "merged": "com.example.koalaap.app-merged_res-39:/layout_activity_detalle_libro.xml.flat",
-        "source": "com.example.koalaap.app-main-41:/layout/activity_detalle_libro.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -384,12 +384,12 @@
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\mipmap-anydpi-v26\\registrologo_round.xml"
     },
     {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-xhdpi_ic_koala_round.webp.flat",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\mipmap-xhdpi\\ic_koala_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-xhdpi_ic_koala_round.webp.flat",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\mipmap-xhdpi\\ic_koala_round.webp"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\mipmap-xhdpi_registrologo_foreground.webp.flat",
@@ -430,6 +430,10 @@
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\drawable_ic_agregar_favorito.xml.flat",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\drawable\\ic_agregar_favorito.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\layout_fragment_admin_principal.xml.flat",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_principal.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\layout_activity_top_vistos.xml.flat",

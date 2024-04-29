@@ -13,13 +13,13 @@ import com.example.koalaap.Administrador.AdaptadorCategoria
 import com.example.koalaap.Modelos.ModeloCategoria
 import com.example.koalaap.Administrador.TopDescargados
 import com.example.koalaap.Administrador.TopVistos
-import com.example.koalaap.databinding.FragmentAdminDashboardBinding
+import com.example.koalaap.databinding.FragmentAdminBuscarBinding
 import com.google.firebase.database.*
 import java.lang.Exception
 
 class Fragment_admin_buscar : Fragment(){
 
-    private lateinit var binding : FragmentAdminDashboardBinding
+    private lateinit var binding : FragmentAdminBuscarBinding
     private lateinit var mContext : Context
     private lateinit var categoriaArrayList : ArrayList<ModeloCategoria>
     private lateinit var adaptadorCategoria: AdaptadorCategoria
@@ -31,7 +31,7 @@ class Fragment_admin_buscar : Fragment(){
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = FragmentAdminDashboardBinding.inflate(layoutInflater, container, false)
+        binding = FragmentAdminBuscarBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 

@@ -10,32 +10,12 @@
 
     <!--Adjuntar-->
 
-    <RelativeLayout
-        android:id="@+id/toolbarRLAgregarPdf"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/m_toolbar_height">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/Txt_Agregar_pdf" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_alignParentBottom="true"
-            android:background="#cccccc" />
-
-
-    </RelativeLayout>
-
     <androidx.appcompat.widget.LinearLayoutCompat
     android:id="@+id/AdjuntarPdf"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_below="@+id/toolbarRLAgregarPdf">
+    >
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="120dp"

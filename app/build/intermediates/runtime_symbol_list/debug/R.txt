@@ -3214,6 +3214,7 @@ int id Ib_cerrar 0x7f080265
 int id Ib_eliminar_fav 0x7f08025f
 int id Ib_mas_opciones 0x7f080027
 int id Ib_regresar 0x7f080028
+int id Imagen_RL_Admin 0x7f08026e
 int id Item_nombre_cat_a 0x7f080029
 int id IvActualizarL 0x7f08002a
 int id Iv_img_perfil 0x7f080267
@@ -3231,6 +3232,7 @@ int id RLPdf 0x7f080034
 int id Rv_comentarios 0x7f080268
 int id Rv_libros_admin 0x7f080035
 int id Rv_libros_favoritos 0x7f080260
+int id Rv_libros_fragment 0x7f08026c
 int id Rv_top_descargados 0x7f080036
 int id Rv_top_vistos 0x7f080037
 int id SHIFT 0x7f080038
@@ -3937,9 +3939,10 @@ int layout design_text_input_end_icon 0x7f0b003a
 int layout design_text_input_start_icon 0x7f0b003b
 int layout dialog_agregar_comentario 0x7f0b008b
 int layout fragment_admin_archivo 0x7f0b003c
+int layout fragment_admin_buscar 0x7f0b008e
 int layout fragment_admin_cuenta 0x7f0b003d
-int layout fragment_admin_dashboard 0x7f0b003e
 int layout fragment_admin_favoritos 0x7f0b0089
+int layout fragment_admin_principal 0x7f0b008d
 int layout ime_base_split_test_activity 0x7f0b003f
 int layout ime_secondary_split_test_activity 0x7f0b0040
 int layout item_categoria_admin 0x7f0b0041

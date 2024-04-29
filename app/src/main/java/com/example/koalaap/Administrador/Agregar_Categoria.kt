@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.koalaap.MainActivity
 import com.example.koalaap.databinding.ActivityAgregarCategoriaBinding
-import com.example.koalaap.databinding.FragmentAdminDashboardBinding
+import com.example.koalaap.databinding.FragmentAdminBuscarBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 

@@ -17,6 +17,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <ImageView
+            android:id="@+id/Imagen_RL_Admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bienvenida_img" />
+
     </RelativeLayout>
     <View
         android:background="#cccccc"

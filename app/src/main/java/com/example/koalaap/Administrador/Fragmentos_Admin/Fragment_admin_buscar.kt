@@ -10,7 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.koalaap.Administrador.AdaptadorCategoria
-import com.example.koalaap.Administrador.ModeloCategoria
+import com.example.koalaap.Modelos.ModeloCategoria
 import com.example.koalaap.Administrador.TopDescargados
 import com.example.koalaap.Administrador.TopVistos
 import com.example.koalaap.databinding.FragmentAdminDashboardBinding

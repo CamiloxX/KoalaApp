@@ -4,14 +4,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.view.Display.Mode
-import com.example.koalaap.R
+import com.example.koalaap.Modelos.Modelopdf
 import com.example.koalaap.databinding.ActivityListaPdfAdminBinding
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.getValue
 import java.lang.Exception
 
 class ListaPdfAdmin : AppCompatActivity() {

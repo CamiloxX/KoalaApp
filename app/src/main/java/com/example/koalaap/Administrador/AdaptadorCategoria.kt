@@ -1,22 +1,18 @@
 package com.example.koalaap.Administrador
 
-import android.app.AlertDialog
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import android.widget.TextView
-import com.example.koalaap.databinding.FragmentAdminDashboardBinding
 import com.example.koalaap.databinding.ItemCategoriaAdminBinding
 import android.content.Context
 import android.content.Intent
 import android.widget.Filter
 import android.widget.Filterable
 import android.widget.Toast
+import com.example.koalaap.Modelos.ModeloCategoria
 import com.google.firebase.database.FirebaseDatabase
-
-import java.nio.file.attribute.AclFileAttributeView
 
 class AdaptadorCategoria : RecyclerView.Adapter<AdaptadorCategoria.HolderCategoria>, Filterable {
 

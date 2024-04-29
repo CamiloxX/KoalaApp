@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.koalaap.databinding.FragmentAdminArchivoBinding
-import com.example.koalaap.Administrador.ModeloCategoria
+import com.example.koalaap.Modelos.ModeloCategoria
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot

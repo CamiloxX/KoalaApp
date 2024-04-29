@@ -1,6 +1,7 @@
 package com.example.koalaap.Administrador
 
 import android.widget.Filter
+import com.example.koalaap.Modelos.Modelopdf
 
 class FiltroPdfAdmin : Filter{
 

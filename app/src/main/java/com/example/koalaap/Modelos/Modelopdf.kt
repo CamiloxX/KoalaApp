@@ -1,4 +1,4 @@
-package com.example.koalaap.Administrador
+package com.example.koalaap.Modelos
 
 class Modelopdf {
 

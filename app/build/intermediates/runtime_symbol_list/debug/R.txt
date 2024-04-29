@@ -3048,6 +3048,7 @@ int drawable googleg_disabled_color_18 0x7f0700a1
 int drawable googleg_standard_color_18 0x7f0700a2
 int drawable ic_abajo 0x7f0700a3
 int drawable ic_adjuntar_pdf 0x7f0700a4
+int drawable ic_agregar_comentario 0x7f07011b
 int drawable ic_agregar_favorito 0x7f0700a5
 int drawable ic_arrow_back_black_24 0x7f0700a6
 int drawable ic_buscar 0x7f0700a7
@@ -3060,6 +3061,7 @@ int drawable ic_call_decline 0x7f0700ac
 int drawable ic_call_decline_low 0x7f0700ad
 int drawable ic_cambiar_imagen 0x7f0700ae
 int drawable ic_categoria 0x7f0700af
+int drawable ic_cerrar 0x7f07011c
 int drawable ic_cerrar_sesion 0x7f0700b0
 int drawable ic_clear_black_24 0x7f0700b1
 int drawable ic_clock_black_24dp 0x7f0700b2
@@ -3176,6 +3178,7 @@ int id Bottom_nav_cliente 0x7f080006
 int id Btn_Actualizar 0x7f080007
 int id Btn_actualizar_libro 0x7f080008
 int id Btn_agregar_favorito 0x7f080009
+int id Btn_comentar 0x7f080263
 int id Btn_descargar_libro 0x7f08000a
 int id Btn_leer_libro 0x7f08000b
 int id Btn_login_admin 0x7f08000c
@@ -3193,6 +3196,7 @@ int id Editar_Perfil 0x7f080017
 int id EtTituloLibro 0x7f080018
 int id Et_Descripcion_pdf 0x7f080019
 int id Et_a_nombres 0x7f08001a
+int id Et_agregar_comentario 0x7f080264
 int id Et_apellidos_admin 0x7f08001b
 int id Et_buscar_libro_admin 0x7f08001c
 int id Et_categoria 0x7f08001d
@@ -3205,11 +3209,14 @@ int id Et_user_admin 0x7f080023
 int id FUNCTION 0x7f080024
 int id FbCambiarImagen 0x7f080025
 int id Fragments_Admin 0x7f080026
+int id Ib_agregar_comenatio 0x7f080262
+int id Ib_cerrar 0x7f080265
 int id Ib_eliminar_fav 0x7f08025f
 int id Ib_mas_opciones 0x7f080027
 int id Ib_regresar 0x7f080028
 int id Item_nombre_cat_a 0x7f080029
 int id IvActualizarL 0x7f08002a
+int id Iv_img_perfil 0x7f080267
 int id LibrosMVMD 0x7f08002b
 int id Ll_adjuntarpdf 0x7f08002c
 int id Ll_dashboard 0x7f08002d
@@ -3221,6 +3228,7 @@ int id Menu_favoritos_cl 0x7f080031
 int id Menu_subir_cl 0x7f080032
 int id NO_DEBUG 0x7f080033
 int id RLPdf 0x7f080034
+int id Rv_comentarios 0x7f080268
 int id Rv_libros_admin 0x7f080035
 int id Rv_libros_favoritos 0x7f080260
 int id Rv_top_descargados 0x7f080036
@@ -3231,10 +3239,14 @@ int id SHOW_PATH 0x7f08003a
 int id SHOW_PROGRESS 0x7f08003b
 int id SYM 0x7f08003c
 int id TILNombres 0x7f08003d
+int id TIL_comentario 0x7f080266
 int id TOP_END 0x7f08003e
 int id TOP_START 0x7f08003f
 int id Titulo_RL_Admin 0x7f080040
 int id Tv_categoria_libro 0x7f080041
+int id Tv_comentario 0x7f080269
+int id Tv_fecha_c 0x7f08026a
+int id Tv_nombres_c 0x7f08026b
 int id Txt_categoria_libro 0x7f080042
 int id Txt_categoria_libro_admin 0x7f080043
 int id Txt_descripcion_libro_item 0x7f080044
@@ -3923,6 +3935,7 @@ int layout design_navigation_menu 0x7f0b0038
 int layout design_navigation_menu_item 0x7f0b0039
 int layout design_text_input_end_icon 0x7f0b003a
 int layout design_text_input_start_icon 0x7f0b003b
+int layout dialog_agregar_comentario 0x7f0b008b
 int layout fragment_admin_archivo 0x7f0b003c
 int layout fragment_admin_cuenta 0x7f0b003d
 int layout fragment_admin_dashboard 0x7f0b003e
@@ -3930,6 +3943,7 @@ int layout fragment_admin_favoritos 0x7f0b0089
 int layout ime_base_split_test_activity 0x7f0b003f
 int layout ime_secondary_split_test_activity 0x7f0b0040
 int layout item_categoria_admin 0x7f0b0041
+int layout item_comentario 0x7f0b008c
 int layout item_libro_admin 0x7f0b0042
 int layout item_libro_favorito 0x7f0b008a
 int layout m3_alert_dialog 0x7f0b0043
@@ -4017,6 +4031,7 @@ int string Agregar_categoria_BD 0x7f110000
 int string Btn_Actualizar 0x7f110001
 int string Btn_actualizar_libro 0x7f110002
 int string Btn_agregar_categoria 0x7f110003
+int string Btn_comentar 0x7f110110
 int string Btn_descargar_libro 0x7f110004
 int string Btn_favoritos_libro 0x7f110005
 int string Btn_leer_libro 0x7f110006
@@ -4033,6 +4048,7 @@ int string CerrarSesion 0x7f110010
 int string Editar_Perfil 0x7f110011
 int string Et_Descripcion_pdf 0x7f110012
 int string Et_a_nombres 0x7f110013
+int string Et_agregar_comentario 0x7f110111
 int string Et_apellidos 0x7f110014
 int string Et_categoria 0x7f110015
 int string Et_email 0x7f110016
@@ -4050,15 +4066,20 @@ int string Menu_subir_cl 0x7f110020
 int string Titulo_RL_Admin 0x7f110021
 int string TtxRegistroAdmin 0x7f110022
 int string Tv_categoria_libro 0x7f110023
+int string Tv_comentario 0x7f110113
+int string Tv_fecha_c 0x7f110114
+int string Tv_nombres_c 0x7f110115
 int string TxtLoginAdmin 0x7f110024
 int string Txt_Agregar_pdf 0x7f110025
 int string Txt_Editar_perfil 0x7f110026
 int string Txt_actualizar_libro 0x7f110027
 int string Txt_agregar_categoria 0x7f110028
+int string Txt_agregar_comentario 0x7f110112
 int string Txt_buscar_libro_admin 0x7f110029
 int string Txt_categoria_D 0x7f11002a
 int string Txt_categoria_libro 0x7f11002b
 int string Txt_categoria_libro_admin 0x7f11002c
+int string Txt_comentarios 0x7f11010f
 int string Txt_descargas_D 0x7f11002d
 int string Txt_descripcion_D 0x7f11002e
 int string Txt_descripcion_libro_item 0x7f11002f

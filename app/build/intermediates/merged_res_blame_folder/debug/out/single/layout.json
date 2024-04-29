@@ -1,27 +1,15 @@
 [
     {
+        "merged": "com.example.koalaap.app-mergeDebugResources-38:/layout/item_comentario.xml",
+        "source": "com.example.koalaap.app-main-41:/layout/item_comentario.xml"
+    },
+    {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_elegir_rol.xml",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_elegir_rol.xml"
     },
     {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\fragment_admin_favoritos.xml",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_favoritos.xml"
-    },
-    {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_registrar_admin.xml",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_registrar_admin.xml"
-    },
-    {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\item_categoria_admin.xml",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\item_categoria_admin.xml"
-    },
-    {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_leer_libro.xml",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_leer_libro.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_top_vistos.xml",
@@ -32,20 +20,8 @@
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_agregar_pdf.xml"
     },
     {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\fragment_admin_cuenta.xml",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_cuenta.xml"
-    },
-    {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_agregar_categoria.xml",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_agregar_categoria.xml"
-    },
-    {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_editar_perfil_admin.xml",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_editar_perfil_admin.xml"
-    },
-    {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\fragment_admin_dashboard.xml",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_dashboard.xml"
     },
     {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_detalle_libro.xml",
@@ -60,6 +36,50 @@
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_bienvenida.xml"
     },
     {
+        "merged": "com.example.koalaap.app-mergeDebugResources-38:/layout/activity_detalle_libro.xml",
+        "source": "com.example.koalaap.app-main-41:/layout/activity_detalle_libro.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_actualizar_libro.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_actualizar_libro.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\fragment_admin_archivo.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_archivo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\dialog_agregar_comentario.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\dialog_agregar_comentario.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\fragment_admin_favoritos.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_favoritos.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_registrar_admin.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_registrar_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\item_categoria_admin.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\item_categoria_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_leer_libro.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_leer_libro.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\fragment_admin_cuenta.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_cuenta.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_editar_perfil_admin.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_editar_perfil_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\fragment_admin_dashboard.xml",
+        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_dashboard.xml"
+    },
+    {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_top_descargados.xml",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_top_descargados.xml"
     },
@@ -68,23 +88,11 @@
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\item_libro_admin.xml"
     },
     {
-        "merged": "com.example.koalaap.app-mergeDebugResources-38:/layout/fragment_admin_dashboard.xml",
-        "source": "com.example.koalaap.app-main-41:/layout/fragment_admin_dashboard.xml"
-    },
-    {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_lista_pdf_admin.xml",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_lista_pdf_admin.xml"
     },
     {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_actualizar_libro.xml",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_actualizar_libro.xml"
-    },
-    {
         "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\activity_login_admin.xml",
         "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_login_admin.xml"
-    },
-    {
-        "merged": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-38:\\layout\\fragment_admin_archivo.xml",
-        "source": "C:\\Users\\Andres\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_archivo.xml"
     }
 ]

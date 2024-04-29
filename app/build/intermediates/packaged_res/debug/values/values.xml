@@ -10,6 +10,7 @@
     <string name="Btn_Actualizar">Actualizar </string>
     <string name="Btn_actualizar_libro">Actualizar</string>
     <string name="Btn_agregar_categoria">Agregar categoría</string>
+    <string name="Btn_comentar">Comentar</string>
     <string name="Btn_descargar_libro">Descargar</string>
     <string name="Btn_favoritos_libro">Favorito</string>
     <string name="Btn_leer_libro"> Leer </string>
@@ -26,6 +27,7 @@
     <string name="Editar_Perfil">Editar Perfil </string>
     <string name="Et_Descripcion_pdf">Descripcion PDF</string>
     <string name="Et_a_nombres">Nombres</string>
+    <string name="Et_agregar_comentario">Escriba un comentario</string>
     <string name="Et_apellidos">Apellidos</string>
     <string name="Et_categoria">Ingrese categoría</string>
     <string name="Et_email">Email</string>
@@ -43,15 +45,20 @@
     <string name="Titulo_RL_Admin">Titulo</string>
     <string name="TtxRegistroAdmin">Registro </string>
     <string name="Tv_categoria_libro">Categoria</string>
+    <string name="Tv_comentario">Comentario de Usuario</string>
+    <string name="Tv_fecha_c">dd/MM/yyyy</string>
+    <string name="Tv_nombres_c">Nombres Cliente</string>
     <string name="TxtLoginAdmin">Login</string>
     <string name="Txt_Agregar_pdf">Agregar PDF</string>
     <string name="Txt_Editar_perfil">Editar Perfil</string>
     <string name="Txt_actualizar_libro">Actualizar libro</string>
     <string name="Txt_agregar_categoria">Agregar categoria</string>
+    <string name="Txt_agregar_comentario">Agregar Comentario</string>
     <string name="Txt_buscar_libro_admin">Buscar Libro</string>
     <string name="Txt_categoria_D">Categoria:</string>
     <string name="Txt_categoria_libro">Categoria</string>
     <string name="Txt_categoria_libro_admin">Categoria</string>
+    <string name="Txt_comentarios">Comentarios</string>
     <string name="Txt_descargas_D">Descargas:</string>
     <string name="Txt_descripcion_D">Descripción:</string>
     <string name="Txt_descripcion_libro_item">Descripcion Libro</string>

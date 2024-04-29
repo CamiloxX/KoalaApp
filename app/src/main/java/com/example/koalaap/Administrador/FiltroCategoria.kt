@@ -1,6 +1,6 @@
 package com.example.koalaap.Administrador
 import android.widget.Filter
-
+import com.example.koalaap.Modelos.ModeloCategoria
 
 
 class FiltroCategoria : Filter{

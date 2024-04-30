@@ -1376,12 +1376,15 @@ int color browser_actions_text_color 0x7f05002a
 int color browser_actions_title_color 0x7f05002b
 int color button_material_dark 0x7f05002c
 int color button_material_light 0x7f05002d
+int color cafe 0x7f050316
+int color cafeclaro 0x7f050317
 int color call_notification_answer_color 0x7f05002e
 int color call_notification_decline_color 0x7f05002f
 int color cardview_dark_background 0x7f050030
 int color cardview_light_background 0x7f050031
 int color cardview_shadow_end_color 0x7f050032
 int color cardview_shadow_start_color 0x7f050033
+int color color_item_bottom_nav 0x7f050318
 int color common_google_signin_btn_text_dark 0x7f050034
 int color common_google_signin_btn_text_dark_default 0x7f050035
 int color common_google_signin_btn_text_dark_disabled 0x7f050036

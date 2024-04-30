@@ -1,6 +1,9 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color cafe
+color cafeclaro
+color color_item_bottom_nav
 color green
 color ic_koala_background
 color white

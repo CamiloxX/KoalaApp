@@ -29,7 +29,7 @@ private lateinit var adapatadorPdfAdmin : AdaptadorPdfAdmin
     private fun topVistos() {
        pdfArrayList= ArrayList()
        val ref = FirebaseDatabase.getInstance().getReference("Libros")
-        ref.orderByChild("contadorvistas").limitToLast(10)
+        ref.orderByChild("contadorVistas").limitToLast(5)
             .addValueEventListener(object : ValueEventListener{
                 override fun onDataChange(snapshot: DataSnapshot) {
                      pdfArrayList.clear()

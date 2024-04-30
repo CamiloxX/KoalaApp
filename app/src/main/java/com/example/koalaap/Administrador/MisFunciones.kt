@@ -152,5 +152,33 @@ class MisFunciones : Application() {
                 }
         }
 
+        fun incrementarVistas(idLibro: String){
+            val ref= FirebaseDatabase.getInstance().getReference("Libros")
+            ref.child(idLibro)
+                .addListenerForSingleValueEvent(object : ValueEventListener{
+                    override fun onDataChange(snapshot: DataSnapshot) {
+                       var vistasActuales= "${snapshot.child("contadorVistas").value}"
+                        if(vistasActuales == "" || vistasActuales == "null" ){
+                            vistasActuales= "0"
+                        }
+                        val nuevaVista= vistasActuales.toLong()+1
+
+                        val hashMap = HashMap<String, Any> ()
+                        hashMap["contadorVistas"] = nuevaVista
+
+                        val BDRef= FirebaseDatabase.getInstance().getReference("Libros")
+                        BDRef.child(idLibro)
+                            .updateChildren(hashMap)
+
+                    }
+
+                    override fun onCancelled(error: DatabaseError) {
+                        TODO("Not yet implemented")
+                    }
+                })
+        }
+
+
+
     }
 }

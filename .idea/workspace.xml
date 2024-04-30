@@ -106,7 +106,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e889567-cc02-4dde-b83a-c1f02b33aaf4" name="Changes" comment="sea agrego la imagen actualizar" />
+    <list default="true" id="4e889567-cc02-4dde-b83a-c1f02b33aaf4" name="Changes" comment="sea agrego la imagen actualizar">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/koalaap/Administrador/DetalleLibro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/koalaap/Administrador/DetalleLibro.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/koalaap/Administrador/MisFunciones.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/koalaap/Administrador/MisFunciones.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/koalaap/Administrador/TopDescargados.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/koalaap/Administrador/TopDescargados.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/koalaap/Administrador/TopVistos.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/koalaap/Administrador/TopVistos.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +124,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Camilo\.android\avd\Emulador_Api34.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[627dab87]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -124,10 +133,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="Kotlin Object" />
         <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -195,6 +204,8 @@
       <recent name="com.example.koalaap.Administrador" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Camilo\AndroidStudioProjects\KoalaApp11\app\src\main\res\color" />
+      <recent name="C:\Users\Camilo\AndroidStudioProjects\KoalaApp11\app\src\main\res\values" />
       <recent name="C:\Users\Andres\AndroidStudioProjects\KoalaApp\app\src\main\res\drawable" />
     </key>
     <key name="android.template.1922682465">

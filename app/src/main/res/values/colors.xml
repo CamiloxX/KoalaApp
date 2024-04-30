@@ -2,4 +2,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#27856A</color>
+    <color name="cafe">#A09082</color>
+    <color name="cafeclaro">#D7C4AD</color>
 </resources>

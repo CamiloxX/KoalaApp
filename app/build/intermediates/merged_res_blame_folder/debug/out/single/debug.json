@@ -88,12 +88,12 @@
         "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\activity_leer_libro.xml"
     },
     {
-        "merged": "com.example.koalaap.app-merged_res-39:/layout_activity_actualizar_libro.xml.flat",
-        "source": "com.example.koalaap.app-main-41:/layout/activity_actualizar_libro.xml"
-    },
-    {
         "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\drawable_ic_agregar_favorito.xml.flat",
         "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\drawable\\ic_agregar_favorito.xml"
+    },
+    {
+        "merged": "com.example.koalaap.app-merged_res-39:/color_color_item_bottom_nav.xml.flat",
+        "source": "com.example.koalaap.app-main-41:/color/color_item_bottom_nav.xml"
     },
     {
         "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\drawable_ic_mas_opciones.xml.flat",
@@ -342,6 +342,10 @@
     {
         "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\layout_fragment_admin_archivo.xml.flat",
         "source": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-41:\\layout\\fragment_admin_archivo.xml"
+    },
+    {
+        "merged": "com.example.koalaap.app-merged_res-39:/layout_activity_main.xml.flat",
+        "source": "com.example.koalaap.app-main-41:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\Camilo\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-39:\\drawable_ic_menu_cl.xml.flat",

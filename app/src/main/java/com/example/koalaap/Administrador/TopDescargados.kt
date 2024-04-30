@@ -22,14 +22,14 @@ class TopDescargados : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityTopDescargadosBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_top_descargados)
+        setContentView(binding.root)
         topDescargados()
     }
 
     private fun topDescargados() {
         pdfArrayList= ArrayList()
         val ref = FirebaseDatabase.getInstance().getReference("Libros")
-        ref.orderByChild("contadorDescargas").limitToLast(10)
+        ref.orderByChild("contadorDescargas").limitToLast(5)
             .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     pdfArrayList.clear()

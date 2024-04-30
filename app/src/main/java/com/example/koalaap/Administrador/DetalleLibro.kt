@@ -44,6 +44,10 @@ class DetalleLibro : AppCompatActivity() {
 
         idLibro= intent.getStringExtra("idLibro")!!
 
+
+        MisFunciones.incrementarVistas(idLibro)
+
+
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Por favor espere")
         progressDialog.setCanceledOnTouchOutside(false)
@@ -239,6 +243,7 @@ class DetalleLibro : AppCompatActivity() {
 
             Toast.makeText(applicationContext,"Pdf Guardado",Toast.LENGTH_SHORT).show()
             progressDialog.dismiss()
+            incrementarNumeroDesc()
 
         }catch (e: Exception){
 
@@ -297,4 +302,30 @@ class DetalleLibro : AppCompatActivity() {
             })
 
     }
+
+    private fun incrementarNumeroDesc(){
+        val ref = FirebaseDatabase.getInstance().getReference("Libros")
+        ref.child(idLibro)
+            .addListenerForSingleValueEvent(object : ValueEventListener{
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    var contadorDescarActual= "${snapshot.child("contadorDescargas").value}"
+                    if(contadorDescarActual == "" || contadorDescarActual == "null" ){
+                        contadorDescarActual= "0"
+                    }
+                    val nuevaDes= contadorDescarActual.toLong()+1
+
+                    val hashMap = HashMap<String, Any> ()
+                    hashMap["contadorDescargas"] = nuevaDes
+
+                    val BDRef= FirebaseDatabase.getInstance().getReference("Libros")
+                    BDRef.child(idLibro)
+                        .updateChildren(hashMap)
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+
+                }
+            })
+    }
+
 }

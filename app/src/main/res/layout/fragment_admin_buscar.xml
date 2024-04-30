@@ -35,7 +35,8 @@ android:orientation="horizontal">
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:text="@string/Btn_mas_vistos"
-    android:layout_weight="1">
+    android:layout_weight="1"
+    android:backgroundTint="@color/green">
 
 </com.google.android.material.button.MaterialButton>
 
@@ -46,7 +47,8 @@ android:orientation="horizontal">
     android:layout_height="wrap_content"
     android:layout_marginStart="5dp"
     android:text="@string/Btn_mas_descargados"
-    android:layout_weight="1">
+    android:layout_weight="1"
+    android:backgroundTint="@color/green">
 
 </com.google.android.material.button.MaterialButton>
 

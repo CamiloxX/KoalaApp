@@ -4,7 +4,7 @@
             "outputFile": "com.example.koalaap.app-mergeDebugResources-37:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Andres\\.gradle\\caches\\transforms-3\\971da9f924e6ae2ba19c1d0f36bc48dd\\transformed\\material-1.11.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\Camilo\\.gradle\\caches\\transforms-3\\971da9f924e6ae2ba19c1d0f36bc48dd\\transformed\\material-1.11.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Andres\\.gradle\\caches\\transforms-3\\59bc9db0b691a7db9a14e2be247a6587\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\Camilo\\.gradle\\caches\\transforms-3\\59bc9db0b691a7db9a14e2be247a6587\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

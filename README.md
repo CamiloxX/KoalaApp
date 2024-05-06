@@ -78,7 +78,7 @@ La manera en el que autenticamos estos datos de inicio de sesion es mediante el 
 
 <h1 id="fragmentos">Fragmentos</h1>
 <!-- Contenido para Fragmentos -->
-![image](https://github.com/CamiloxX/KoalaApp/assets/28693419/4f8d3320-cd6a-48f6-a41e-0dbd5b0b1e7e)
+<img src https://github.com/CamiloxX/KoalaApp/assets/28693419/4f8d3320-cd6a-48f6-a41e-0dbd5b0b1e7e>
 
 <p>Nuesta app Cuenta principalmente con 4 Fragmentos , dentros de estos esta  Dashboard, Buscar,Subir,Favoritos y Cuenta 
 Como primera pantalla se mostrara los PDFs que se hayan subido a la plataforma</p>

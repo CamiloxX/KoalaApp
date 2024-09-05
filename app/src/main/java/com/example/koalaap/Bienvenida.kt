@@ -1,5 +1,5 @@
 /*
-    Copyright (C) 2024 Barragán, Tovar & Rodríguez.
+    Copyright (C) 2024 Barragán, Rodríguez & Tovar.
 
     This file is part of KoalaApp.
 

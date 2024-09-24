@@ -3180,6 +3180,7 @@ int id BOTTOM_START 0x7f080005
 int id Bottom_nav_cliente 0x7f080006
 int id Btn_Actualizar 0x7f080007
 int id Btn_actualizar_libro 0x7f080008
+int id Btn_agregar_categoria 0x7f08026e
 int id Btn_agregar_favorito 0x7f080009
 int id Btn_comentar 0x7f08000a
 int id Btn_descargar_libro 0x7f08000b

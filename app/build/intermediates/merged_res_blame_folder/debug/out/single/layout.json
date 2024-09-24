@@ -32,6 +32,10 @@
         "source": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-7:\\layout\\activity_editar_perfil_admin.xml"
     },
     {
+        "merged": "com.example.koalaap.app-mergeDebugResources-4:/layout/activity_main.xml",
+        "source": "com.example.koalaap.app-main-7:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-4:\\layout\\activity_main.xml",
         "source": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-7:\\layout\\activity_main.xml"
     },
@@ -46,10 +50,6 @@
     {
         "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-4:\\layout\\activity_actualizar_libro.xml",
         "source": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-7:\\layout\\activity_actualizar_libro.xml"
-    },
-    {
-        "merged": "com.example.koalaap.app-mergeDebugResources-4:/layout/activity_registrar_admin.xml",
-        "source": "com.example.koalaap.app-main-7:/layout/activity_registrar_admin.xml"
     },
     {
         "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-mergeDebugResources-4:\\layout\\fragment_admin_cuenta.xml",

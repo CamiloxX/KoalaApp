@@ -14,6 +14,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.koalaap.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,6 +25,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final BottomNavigationView BottomNavCliente;
+
+  @NonNull
+  public final MaterialButton BtnAgregarCategoria;
 
   @NonNull
   public final FrameLayout FragmentsAdmin;
@@ -38,11 +42,12 @@ public final class ActivityMainBinding implements ViewBinding {
   public final RelativeLayout toolbaRLAdmin;
 
   private ActivityMainBinding(@NonNull RelativeLayout rootView,
-      @NonNull BottomNavigationView BottomNavCliente, @NonNull FrameLayout FragmentsAdmin,
-      @NonNull ImageView ImagenRLAdmin, @NonNull TextView TituloRLAdmin,
-      @NonNull RelativeLayout toolbaRLAdmin) {
+      @NonNull BottomNavigationView BottomNavCliente, @NonNull MaterialButton BtnAgregarCategoria,
+      @NonNull FrameLayout FragmentsAdmin, @NonNull ImageView ImagenRLAdmin,
+      @NonNull TextView TituloRLAdmin, @NonNull RelativeLayout toolbaRLAdmin) {
     this.rootView = rootView;
     this.BottomNavCliente = BottomNavCliente;
+    this.BtnAgregarCategoria = BtnAgregarCategoria;
     this.FragmentsAdmin = FragmentsAdmin;
     this.ImagenRLAdmin = ImagenRLAdmin;
     this.TituloRLAdmin = TituloRLAdmin;
@@ -82,6 +87,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.Btn_agregar_categoria;
+      MaterialButton BtnAgregarCategoria = ViewBindings.findChildViewById(rootView, id);
+      if (BtnAgregarCategoria == null) {
+        break missingId;
+      }
+
       id = R.id.Fragments_Admin;
       FrameLayout FragmentsAdmin = ViewBindings.findChildViewById(rootView, id);
       if (FragmentsAdmin == null) {
@@ -106,8 +117,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((RelativeLayout) rootView, BottomNavCliente, FragmentsAdmin,
-          ImagenRLAdmin, TituloRLAdmin, toolbaRLAdmin);
+      return new ActivityMainBinding((RelativeLayout) rootView, BottomNavCliente,
+          BtnAgregarCategoria, FragmentsAdmin, ImagenRLAdmin, TituloRLAdmin, toolbaRLAdmin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

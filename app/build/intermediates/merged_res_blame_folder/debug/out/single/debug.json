@@ -100,12 +100,12 @@
         "source": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-7:\\drawable\\ic_item_eliminar_favorito.xml"
     },
     {
-        "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-5:\\drawable-night_ic_item_eliminar_favorito.xml.flat",
-        "source": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-7:\\drawable-night\\ic_item_eliminar_favorito.xml"
-    },
-    {
         "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-7:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-5:\\drawable-night_ic_item_eliminar_favorito.xml.flat",
+        "source": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-7:\\drawable-night\\ic_item_eliminar_favorito.xml"
     },
     {
         "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-5:\\drawable_ic_editar_informacion.xml.flat",
@@ -174,10 +174,6 @@
     {
         "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-5:\\mipmap-xhdpi_ic_koala.webp.flat",
         "source": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-7:\\mipmap-xhdpi\\ic_koala.webp"
-    },
-    {
-        "merged": "com.example.koalaap.app-merged_res-5:/layout_activity_registrar_admin.xml.flat",
-        "source": "com.example.koalaap.app-main-7:/layout/activity_registrar_admin.xml"
     },
     {
         "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-5:\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -402,6 +398,10 @@
     {
         "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-5:\\layout_activity_detalle_libro.xml.flat",
         "source": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-main-7:\\layout\\activity_detalle_libro.xml"
+    },
+    {
+        "merged": "com.example.koalaap.app-merged_res-5:/layout_activity_main.xml.flat",
+        "source": "com.example.koalaap.app-main-7:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\William Tovar\\.gradle\\daemon\\8.2\\com.example.koalaap.app-merged_res-5:\\layout_fragment_admin_archivo.xml.flat",

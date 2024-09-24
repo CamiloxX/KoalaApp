@@ -3181,6 +3181,7 @@ id BOTTOM_START
 id Bottom_nav_cliente
 id Btn_Actualizar
 id Btn_actualizar_libro
+id Btn_agregar_categoria
 id Btn_agregar_favorito
 id Btn_comentar
 id Btn_descargar_libro

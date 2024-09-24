@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.koalaap.Administrador.Fragmentos_Admin.Agregar_Categoria
 import com.example.koalaap.Administrador.Fragmentos_Admin.Fragment_admin_cuenta
 import com.example.koalaap.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -21,39 +22,44 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         firebaseAuth = FirebaseAuth.getInstance()
         ComprobarSesion()
         VerFragmentoPrincipal()
+
+        // Asignar click listener al botón de agregar categoría
+        binding.BtnAgregarCategoria.setOnClickListener {
+            VerActividadCategoria()
+        }
+
+        // Manejar selección de los items del BottomNavigationView
         binding.BottomNavCliente.setOnItemSelectedListener { item->
-            when(item.itemId){
-                R.id.Menu_dashboard_cl->{
+            when (item.itemId) {
+                R.id.Menu_dashboard_cl -> {
                     VerFragmentoPrincipal()
                     true
                 }
-                R.id.Menu_cuenta_cl->{
+                R.id.Menu_cuenta_cl -> {
                     VerFragmentoCuenta()
                     true
-
                 }
-                R.id.Menu_subir_cl->{
+                R.id.Menu_subir_cl -> {
                     VerFragmentoArchivo()
                     true
                 }
-                R.id.Menu_favoritos_cl->{
+                R.id.Menu_favoritos_cl -> {
                     VerFragmentoFavoritos()
                     true
                 }
-                R.id.Menu_buscar_cl->{
+                R.id.Menu_buscar_cl -> {
                     VerFragmentoBuscar()
                     true
                 }
-                else->{
-                    false
-                }
+                else -> false
             }
-
         }
     }
+
 
     private fun  VerFragmentoBuscar(){
         val nombre_titulo ="Dashboard"
@@ -113,6 +119,18 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.replace(binding.FragmentsAdmin.id, fragment, "Fragment Favoritos")
         fragmentTransaction.commit()
     }
+
+    private fun VerActividadCategoria() {
+        // Cambiar el título y ocultar la imagen en la toolbar
+        val nombre_titulo = "Agregar Categoria"
+        binding.TituloRLAdmin.text = nombre_titulo
+        binding.ImagenRLAdmin.visibility = View.GONE
+
+        // Crear un intent para abrir la actividad Agregar_Categoria
+        val intent = Intent(this, Agregar_Categoria::class.java)
+        startActivity(intent)
+    }
+
 
 
 

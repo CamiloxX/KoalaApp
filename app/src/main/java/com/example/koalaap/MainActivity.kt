@@ -114,6 +114,8 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.commit()
     }
 
+
+
     private fun ComprobarSesion() {
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser == null) {

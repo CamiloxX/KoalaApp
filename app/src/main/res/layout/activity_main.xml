@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <RelativeLayout
         android:id="@+id/toolbaRLAdmin"
         android:layout_width="match_parent"
@@ -15,7 +16,7 @@
             android:text="@string/Titulo_RL_Admin"
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/Imagen_RL_Admin"
@@ -23,20 +24,36 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:src="@drawable/bienvenida_img" />
-
     </RelativeLayout>
+
     <View
         android:background="#cccccc"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
-<FrameLayout
-    android:id="@+id/Fragments_Admin"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_below="@+id/toolbaRLAdmin"/>
+        android:layout_height="1dp" />
+
+    <FrameLayout
+        android:id="@+id/Fragments_Admin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/toolbaRLAdmin"
+        android:layout_above="@+id/Btn_agregar_categoria" />
 
 
+    <!-- Agregar categoria-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Btn_agregar_categoria"
+        android:text="@string/Btn_agregar_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Bottom_nav_cliente"
+        android:layout_marginBottom="8dp" />
+
+
+    
+    
+    <!--Barra de naevgación -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/Bottom_nav_cliente"
         android:layout_width="match_parent"
@@ -44,5 +61,8 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu_bottom_cliente"
         app:itemIconTint="@color/color_item_bottom_nav"
-        app:labelVisibilityMode="labeled"/>
+        app:labelVisibilityMode="labeled" />
+
 </RelativeLayout>
+
+

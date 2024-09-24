@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.koalaap.app-mergeDebugResources-37:/values-port/values-port.xml",
+            "outputFile": "com.example.koalaap.app-mergeDebugResources-3:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Camilo\\.gradle\\caches\\transforms-3\\59bc9db0b691a7db9a14e2be247a6587\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\William Tovar\\.gradle\\caches\\transforms-3\\35806d264ec2a34a7627b6d4de77ca81\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

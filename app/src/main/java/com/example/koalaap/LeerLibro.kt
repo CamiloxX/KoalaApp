@@ -17,6 +17,8 @@ class LeerLibro : AppCompatActivity() {
 
     private lateinit var binding: ActivityLeerLibroBinding
 
+
+
     var idLibro= ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

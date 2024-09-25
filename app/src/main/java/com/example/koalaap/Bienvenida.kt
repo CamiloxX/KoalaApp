@@ -28,7 +28,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 
- private lateinit var firebaseAuth: FirebaseAuth
+private lateinit var firebaseAuth: FirebaseAuth
 class Bienvenida : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,9 +45,9 @@ class Bienvenida : AppCompatActivity() {
 
                 ComprobarSesion()
                 //Dirigirnos a la actividad MainActivity
-             //   val intent = Intent(this@Bienvenida,Elegir_Rol::class.java)
-             //   startActivity(intent)
-             //   finishAffinity()
+                //   val intent = Intent(this@Bienvenida,Elegir_Rol::class.java)
+                //   startActivity(intent)
+                //   finishAffinity()
             }
 
         }.start()
@@ -66,7 +66,10 @@ class Bienvenida : AppCompatActivity() {
                     override fun onDataChange(snapshot: DataSnapshot) {
                         val rol = snapshot.child("rol").value
                         if(rol == "admin"){
-                            startActivity(Intent(this@Bienvenida,MainActivity::class.java))
+                            startActivity(Intent(this@Bienvenida,MainActivityCliente::class.java))
+                            finishAffinity()
+                        } else if (rol == "cliente"){
+                            startActivity(Intent(this@Bienvenida,MainActivityCliente::class.java))
                             finishAffinity()
                         }
 
@@ -75,6 +78,6 @@ class Bienvenida : AppCompatActivity() {
                     override fun onCancelled(error: DatabaseError) {
                     }
                 })
+            }
         }
-    }
 }

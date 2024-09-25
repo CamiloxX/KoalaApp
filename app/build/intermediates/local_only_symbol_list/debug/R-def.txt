@@ -44,6 +44,7 @@ drawable registrologo_background
 id AdjuntarPdf
 id AdjuntarPdfIb
 id Agregar_categoria_BD
+id Bottom_nav_admin
 id Bottom_nav_cliente
 id Btn_Actualizar
 id Btn_actualizar_libro
@@ -69,6 +70,7 @@ id Et_a_nombres
 id Et_agregar_comentario
 id Et_apellidos_admin
 id Et_buscar_libro_admin
+id Et_buscar_libro_cliente
 id Et_categoria
 id Et_email_admin
 id Et_nombres_admin
@@ -78,12 +80,14 @@ id Et_pdf
 id Et_user_admin
 id FbCambiarImagen
 id Fragments_Admin
+id Fragments_Cliente
 id Ib_agregar_comenatio
 id Ib_cerrar
 id Ib_eliminar_fav
 id Ib_mas_opciones
 id Ib_regresar
 id Imagen_RL_Admin
+id Imagen_RL_Cliente
 id Item_nombre_cat_a
 id IvActualizarL
 id Iv_img_perfil
@@ -98,6 +102,7 @@ id Menu_subir_cl
 id RLPdf
 id Rv_comentarios
 id Rv_libros_admin
+id Rv_libros_cliente
 id Rv_libros_favoritos
 id Rv_libros_fragment
 id Rv_top_descargados
@@ -105,6 +110,7 @@ id Rv_top_vistos
 id TILNombres
 id TIL_comentario
 id Titulo_RL_Admin
+id Titulo_RL_Cliente
 id Tv_categoria_libro
 id Tv_comentario
 id Tv_fecha_c
@@ -142,6 +148,7 @@ id titulo_libro_D
 id toolbaRLActualizar
 id toolbaRLAdmin
 id toolbaRLAdminR
+id toolbaRLCliente
 id toolbarEditarPerfil
 id toolbarRLAgregarC
 id toolbarRLAgregarPdf
@@ -160,8 +167,10 @@ layout activity_editar_perfil_admin
 layout activity_elegir_rol
 layout activity_leer_libro
 layout activity_lista_pdf_admin
+layout activity_lista_pdf_cliente
 layout activity_login_admin
 layout activity_main
+layout activity_main_cliente
 layout activity_registrar_admin
 layout activity_top_descargados
 layout activity_top_vistos
@@ -171,11 +180,15 @@ layout fragment_admin_buscar
 layout fragment_admin_cuenta
 layout fragment_admin_favoritos
 layout fragment_admin_principal
+layout fragment_cliente_principal
 layout item_categoria_admin
 layout item_comentario
 layout item_libro_admin
+layout item_libro_cliente
 layout item_libro_favorito
+layout prueba
 menu menu_bottom_cliente
+menu menu_bottom_cliente2
 mipmap ic_koala
 mipmap ic_koala_foreground
 mipmap ic_koala_round

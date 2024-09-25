@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:contentPadding="5dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/RLPdf"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="10dp"
+        android:background="#ccc">
+
+        <!---Visualizador PDF-->
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/VisualizadorPDF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+    
+<!---Titulo libro-->
+    <TextView
+        android:id="@+id/Txt_titulo_libro_item"
+        android:text="@string/Txt_titulo_libro_item"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:layout_toEndOf="@id/RLPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!---Descipcion-->
+    <TextView
+        android:id="@+id/Txt_descripcion_libro_item"
+        android:text="@string/Txt_descripcion_libro_item"
+        android:layout_toEndOf="@id/RLPdf"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="4"
+        android:layout_below="@id/Txt_titulo_libro_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!---Categoria-->
+    <TextView
+        android:id="@+id/Txt_categoria_libro_admin"
+        android:text="@string/Txt_categoria_libro_admin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!---Tamaño-->
+    <TextView
+        android:id="@+id/Txt_tamanio_libro_admin"
+        android:text="@string/Txt_tamanio_libro_admin"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/RLPdf"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Txt_fecha_libro_admin"
+        android:text="@string/Txt_fecha_libro_admin"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/Txt_categoria_libro_admin"
+        android:layout_toEndOf="@id/Txt_tamanio_libro_admin"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

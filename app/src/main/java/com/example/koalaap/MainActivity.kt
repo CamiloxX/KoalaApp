@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Manejar selección de los items del BottomNavigationView
-        binding.BottomNavCliente.setOnItemSelectedListener { item->
+        binding.BottomNavAdmin.setOnItemSelectedListener { item->
             when (item.itemId) {
                 R.id.Menu_dashboard_cl -> {
                     VerFragmentoPrincipal()

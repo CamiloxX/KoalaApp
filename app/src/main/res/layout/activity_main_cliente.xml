@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityCliente">
+
+    <RelativeLayout
+        android:id="@+id/toolbaRLCliente"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height">
+        <TextView
+            android:id="@+id/Titulo_RL_Cliente"
+            android:text="@string/Titulo_RL_Admin"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/Imagen_RL_Cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bienvenida_img" />
+    </RelativeLayout>
+
+    <View
+        android:background="#cccccc"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <FrameLayout
+        android:id="@+id/Fragments_Cliente"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/toolbaRLCliente"
+        android:layout_above="@+id/Bottom_nav_cliente" />
+
+
+    <!--Barra de naevgación -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Bottom_nav_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottom_cliente2"
+        app:itemIconTint="@color/color_item_bottom_nav"
+        app:labelVisibilityMode="labeled" />
+
+</RelativeLayout>
+
+

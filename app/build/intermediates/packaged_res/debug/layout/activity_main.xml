@@ -47,15 +47,13 @@
         android:text="@string/Btn_agregar_categoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/Bottom_nav_cliente"
+        android:layout_above="@id/Bottom_nav_admin"
         android:layout_marginBottom="8dp" />
 
 
-    
-    
     <!--Barra de naevgación -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/Bottom_nav_cliente"
+        android:id="@+id/Bottom_nav_admin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

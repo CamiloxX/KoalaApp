@@ -24,7 +24,7 @@ public final class ActivityMainBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final BottomNavigationView BottomNavCliente;
+  public final BottomNavigationView BottomNavAdmin;
 
   @NonNull
   public final MaterialButton BtnAgregarCategoria;
@@ -42,11 +42,11 @@ public final class ActivityMainBinding implements ViewBinding {
   public final RelativeLayout toolbaRLAdmin;
 
   private ActivityMainBinding(@NonNull RelativeLayout rootView,
-      @NonNull BottomNavigationView BottomNavCliente, @NonNull MaterialButton BtnAgregarCategoria,
+      @NonNull BottomNavigationView BottomNavAdmin, @NonNull MaterialButton BtnAgregarCategoria,
       @NonNull FrameLayout FragmentsAdmin, @NonNull ImageView ImagenRLAdmin,
       @NonNull TextView TituloRLAdmin, @NonNull RelativeLayout toolbaRLAdmin) {
     this.rootView = rootView;
-    this.BottomNavCliente = BottomNavCliente;
+    this.BottomNavAdmin = BottomNavAdmin;
     this.BtnAgregarCategoria = BtnAgregarCategoria;
     this.FragmentsAdmin = FragmentsAdmin;
     this.ImagenRLAdmin = ImagenRLAdmin;
@@ -81,9 +81,9 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Bottom_nav_cliente;
-      BottomNavigationView BottomNavCliente = ViewBindings.findChildViewById(rootView, id);
-      if (BottomNavCliente == null) {
+      id = R.id.Bottom_nav_admin;
+      BottomNavigationView BottomNavAdmin = ViewBindings.findChildViewById(rootView, id);
+      if (BottomNavAdmin == null) {
         break missingId;
       }
 
@@ -117,8 +117,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((RelativeLayout) rootView, BottomNavCliente,
-          BtnAgregarCategoria, FragmentsAdmin, ImagenRLAdmin, TituloRLAdmin, toolbaRLAdmin);
+      return new ActivityMainBinding((RelativeLayout) rootView, BottomNavAdmin, BtnAgregarCategoria,
+          FragmentsAdmin, ImagenRLAdmin, TituloRLAdmin, toolbaRLAdmin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

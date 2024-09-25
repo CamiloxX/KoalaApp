@@ -88,6 +88,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.koalaap.MainActivityCliente"
+            android:exported="true" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

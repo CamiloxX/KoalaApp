@@ -39,6 +39,7 @@ drawable ic_pdf
 drawable ic_regresar
 drawable ic_siguiente
 drawable ic_subir_cl
+drawable login_google
 drawable pdf
 drawable registrologo_background
 id AdjuntarPdf
@@ -54,6 +55,7 @@ id Btn_comentar
 id Btn_descargar_libro
 id Btn_leer_libro
 id Btn_login_admin
+id Btn_login_google
 id Btn_mas_descargados
 id Btn_mas_vistos
 id Btn_register
@@ -206,6 +208,7 @@ string Btn_descargar_libro
 string Btn_favoritos_libro
 string Btn_leer_libro
 string Btn_login_admin
+string Btn_login_google
 string Btn_mas_descargados
 string Btn_mas_vistos
 string Btn_registrar_admin
@@ -213,6 +216,7 @@ string Btn_registro_login
 string Btn_rol_administrador
 string Btn_rol_cliente
 string Btn_subir_pdf
+string Btn_tengo_cuenta
 string Buscar_categoria
 string CerrarSesion
 string Editar_Perfil
@@ -245,6 +249,7 @@ string Txt_Editar_perfil
 string Txt_actualizar_libro
 string Txt_agregar_categoria
 string Txt_agregar_comentario
+string Txt_alternativa
 string Txt_buscar_libro_admin
 string Txt_categoria_D
 string Txt_categoria_libro
@@ -270,10 +275,12 @@ string Txt_titulo_libro_item
 string Txt_vistas_D
 string app_name
 string categoria_D
+string default_web_client_id
 string descargas_D
 string descripcion_D
 string email_admin
 string fecha_D
+string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

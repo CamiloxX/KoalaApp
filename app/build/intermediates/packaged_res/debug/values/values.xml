@@ -17,6 +17,7 @@
     <string name="Btn_favoritos_libro">Favorito</string>
     <string name="Btn_leer_libro"> Leer </string>
     <string name="Btn_login_admin">Iniciar</string>
+    <string name="Btn_login_google">Ingresar con Google</string>
     <string name="Btn_mas_descargados">Más instalados</string>
     <string name="Btn_mas_vistos">Más vistos</string>
     <string name="Btn_registrar_admin">Regitrarme</string>
@@ -24,6 +25,7 @@
     <string name="Btn_rol_administrador">Admin</string>
     <string name="Btn_rol_cliente">Cliente</string>
     <string name="Btn_subir_pdf">Subir PDF</string>
+    <string name="Btn_tengo_cuenta">Ya tengo cuenta</string>
     <string name="Buscar_categoria">Buscar categoria</string>
     <string name="CerrarSesion">Cerrar Sesion</string>
     <string name="Editar_Perfil">Editar Perfil </string>
@@ -56,6 +58,7 @@
     <string name="Txt_actualizar_libro">Actualizar libro</string>
     <string name="Txt_agregar_categoria">Agregar categoria</string>
     <string name="Txt_agregar_comentario">Agregar Comentario</string>
+    <string name="Txt_alternativa">Alternativa</string>
     <string name="Txt_buscar_libro_admin">Buscar Libro</string>
     <string name="Txt_categoria_D">Categoria:</string>
     <string name="Txt_categoria_libro">Categoria</string>
@@ -81,10 +84,12 @@
     <string name="Txt_vistas_D">Vistas:</string>
     <string name="app_name">ProyectoLibros</string>
     <string name="categoria_D"> -- </string>
+    <string name="default_web_client_id" translatable="false">1064191765387-382329ma20ijfu26152pb67oj4sosrgb.apps.googleusercontent.com</string>
     <string name="descargas_D"> -- </string>
     <string name="descripcion_D"> -- </string>
     <string name="email_admin">Email</string>
     <string name="fecha_D"> -- </string>
+    <string name="firebase_database_url" translatable="false">https://koalapp-19fe0-default-rtdb.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">1064191765387</string>
     <string name="google_api_key" translatable="false">AIzaSyCRc2C_gLTaoRCBCXoHiJF8q4T8iC-jrH0</string>
     <string name="google_app_id" translatable="false">1:1064191765387:android:e7a27ed7ec360334d81d8e</string>

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "1064191765387",
+    "firebase_url": "https://koalapp-19fe0-default-rtdb.firebaseio.com",
     "project_id": "koalapp-19fe0",
     "storage_bucket": "koalapp-19fe0.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.koalaap"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1064191765387-gqiv8qvj24n27fd3883feva9ag4bs3k1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.koalaap",
+            "certificate_hash": "b20031e1d1618e3ee6ecd19f0f317921ef723900"
+          }
+        },
+        {
+          "client_id": "1064191765387-382329ma20ijfu26152pb67oj4sosrgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCRc2C_gLTaoRCBCXoHiJF8q4T8iC-jrH0"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064191765387-382329ma20ijfu26152pb67oj4sosrgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

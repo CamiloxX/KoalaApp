@@ -38,6 +38,7 @@ class Registrar_Admin : AppCompatActivity() {
             onBackPressedDispatcher.onBackPressed()
         }
 
+
         binding.BtnRegistrarAdmin.setOnClickListener {
             ValidarInformacion()
         }
@@ -144,7 +145,7 @@ class Registrar_Admin : AppCompatActivity() {
         datos_admin["apellidos"]= apellidos
         datos_admin["username"]= username
         datos_admin["email"]= email
-        datos_admin["rol"]= "admin"
+        datos_admin["rol"]= "cliente"
         datos_admin["tiempo de registro"]=tiempo
         datos_admin["imagen"]= ""
 

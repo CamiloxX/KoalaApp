@@ -111,5 +111,11 @@
     <string name="Tv_fecha_c">dd/MM/yyyy</string>
     <string name="Tv_comentario">Comentario de Usuario</string>
 
+    <!--Login Google-->
+    <string name="Txt_alternativa">Alternativa</string>
+    <string name="Btn_login_google">Ingresar con Google</string>
+    <string name="Btn_tengo_cuenta">Ya tengo cuenta</string>
+    <string name="default_web_client_id">1064191765387-gqiv8qvj24n27fd3883feva9ag4bs3k1.apps.googleusercontent.com</string>
+
 
 </resources>

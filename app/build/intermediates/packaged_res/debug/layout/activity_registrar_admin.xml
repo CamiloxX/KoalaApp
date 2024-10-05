@@ -43,12 +43,7 @@
 
 
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="106dp">
 
-
-            </EditText>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </RelativeLayout>
 
@@ -209,8 +204,9 @@
             app:srcCompat="@drawable/bienvenida_img" />
 
 
-    </RelativeLayout>
 
+
+    </RelativeLayout>
 
 
 </RelativeLayout>

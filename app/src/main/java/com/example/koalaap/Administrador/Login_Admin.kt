@@ -10,7 +10,6 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.koalaap.MainActivity
 import com.example.koalaap.MainActivityCliente
-import com.example.koalaap.R
 import com.example.koalaap.databinding.ActivityLoginAdminBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -19,6 +18,10 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+
 import java.lang.Exception
 
 class Login_Admin : AppCompatActivity() {
@@ -35,7 +38,7 @@ class Login_Admin : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-       //Se pone aviso de que se esta iniciando sesion
+        //Se pone aviso de que se esta iniciando sesion
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Iniciando Sesion")
         progressDialog.setCanceledOnTouchOutside(false)
@@ -45,7 +48,7 @@ class Login_Admin : AppCompatActivity() {
             .requestEmail()
             .build()
 
-        mGoogleSignInClient= GoogleSignIn.getClient(this, gso)
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
 
         binding.BtnLoginAdmin.setOnClickListener {
@@ -65,12 +68,13 @@ class Login_Admin : AppCompatActivity() {
     }
 
     private fun iniciarSesionGoogle() {
-        val googleSignIntent= mGoogleSignInClient.signInIntent
+        val googleSignIntent = mGoogleSignInClient.signInIntent
         googleSignInARL.launch(googleSignIntent)
     }
 
     private val googleSignInARL = registerForActivityResult(
-        ActivityResultContracts.StartActivityForResult()) { resultado ->
+        ActivityResultContracts.StartActivityForResult()
+    ) { resultado ->
         if (resultado.resultCode == RESULT_OK) {
             val data = resultado.data
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
@@ -79,38 +83,49 @@ class Login_Admin : AppCompatActivity() {
                 autenticarGoogleFirebase(cuenta.idToken)
             } catch (apiException: ApiException) {
                 Log.e("GoogleSignIn", "Sign in failed with status code: ${apiException.statusCode}")
-                Toast.makeText(applicationContext, "Google Sign-In failed: ${apiException.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    applicationContext,
+                    "Google Sign-In failed: ${apiException.message}",
+                    Toast.LENGTH_SHORT
+                ).show()
             } catch (e: Exception) {
                 Log.e("GoogleSignIn", "Error inesperado: ${e.message}")
-                Toast.makeText(applicationContext, "Error inesperado: ${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    applicationContext,
+                    "Error inesperado: ${e.message}",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         } else {
             Log.e("GoogleSignIn", "Sign in canceled, resultCode: ${resultado.resultCode}")
-            Toast.makeText(applicationContext, "Cancelado: resultCode: ${resultado.resultCode}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                applicationContext,
+                "Cancelado: resultCode: ${resultado.resultCode}",
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 
 
-
     private fun autenticarGoogleFirebase(idToken: String?) {
-          val credencial= GoogleAuthProvider.getCredential(idToken,null)
+        val credencial = GoogleAuthProvider.getCredential(idToken, null)
         firebaseAuth.signInWithCredential(credencial)
-            .addOnSuccessListener {authResult->
-                if (authResult.additionalUserInfo!!.isNewUser){
+            .addOnSuccessListener { authResult ->
+                if (authResult.additionalUserInfo!!.isNewUser) {
                     GuardarInformacionBD()
-                }else{
-                    startActivity(Intent(this,MainActivityCliente::class.java))
+                } else {
+                    startActivity(Intent(this, MainActivityCliente::class.java))
                     finishAffinity()
                 }
 
             }
-            .addOnFailureListener{e->
-                Toast.makeText(applicationContext,"${e.message}",Toast.LENGTH_SHORT).show()
+            .addOnFailureListener { e ->
+                Toast.makeText(applicationContext, "${e.message}", Toast.LENGTH_SHORT).show()
 
             }
     }
 
-    private fun  GuardarInformacionBD() {
+    private fun GuardarInformacionBD() {
         progressDialog.setMessage("Se está registrando su información")
         progressDialog.show()
 
@@ -120,10 +135,10 @@ class Login_Admin : AppCompatActivity() {
         val emailGoogle = firebaseAuth.currentUser?.email
         val nombreGoogle = firebaseAuth.currentUser?.displayName
 
-        val nombre_usuario_google= nombreGoogle.toString()
+        val nombre_usuario_google = nombreGoogle.toString()
         val tiempo = System.currentTimeMillis() //Tiempo con el que se crea el id del usuario
 
-        val datos_cliente = HashMap<String, Any?> ()
+        val datos_cliente = HashMap<String, Any?>()
         datos_cliente["uid"] = uidGoogle
         datos_cliente["nombres"] = nombre_usuario_google
         datos_cliente["email"] = emailGoogle
@@ -137,11 +152,15 @@ class Login_Admin : AppCompatActivity() {
             .addOnSuccessListener {
                 progressDialog.dismiss()
                 startActivity(Intent(applicationContext, MainActivityCliente::class.java))
-                Toast.makeText(applicationContext, "Se ha registrado correctamente", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    applicationContext,
+                    "Se ha registrado correctamente",
+                    Toast.LENGTH_SHORT
+                ).show()
                 finishAffinity()
             }
-            .addOnFailureListener {e->
-                Toast.makeText(applicationContext,"${e.message}", Toast.LENGTH_SHORT).show()
+            .addOnFailureListener { e ->
+                Toast.makeText(applicationContext, "${e.message}", Toast.LENGTH_SHORT).show()
 
             }
 
@@ -168,24 +187,92 @@ class Login_Admin : AppCompatActivity() {
             loginAdmin()
         }
     }
-//Autentica si el inicio de sesion es exitoso
+
+    // Autentica si el inicio de sesión es exitoso
     private fun loginAdmin() {
-        progressDialog.setMessage("Iniciando Sesion")
+        progressDialog.setMessage("Iniciando Sesión")
         progressDialog.show()
 
         firebaseAuth.signInWithEmailAndPassword(email, password)
-            .addOnSuccessListener {
-                progressDialog.dismiss()
-                startActivity(Intent(this@Login_Admin, MainActivity::class.java))
-                finishAffinity()
+            .addOnSuccessListener { authResult ->
+                val user = authResult.user
+                if (user != null) {
+                    // Verificar si el correo está verificado
+                    if (user.isEmailVerified) {
+                        val reference = FirebaseDatabase.getInstance().getReference("Usuarios")
+                        reference.child(user.uid)
+                            .addListenerForSingleValueEvent(object : ValueEventListener {
+                                override fun onDataChange(snapshot: DataSnapshot) {
+                                    val rol =
+                                        snapshot.child("rol").value as? String // Asegúrate de que 'rol' sea el nombre del campo
+                                    when (rol) {
+                                        "admin" -> {
+                                            progressDialog.dismiss()
+                                            startActivity(
+                                                Intent(
+                                                    this@Login_Admin,
+                                                    MainActivity::class.java
+                                                )
+                                            )
+                                            finishAffinity()
+                                        }
+
+                                        "cliente" -> {
+                                            progressDialog.dismiss()
+                                            startActivity(
+                                                Intent(
+                                                    this@Login_Admin,
+                                                    MainActivityCliente::class.java
+                                                )
+                                            )
+                                            finishAffinity()
+                                        }
+                                    }
+                                }
+
+                                override fun onCancelled(error: DatabaseError) {
+                                    progressDialog.dismiss()
+                                    // Manejar error aquí, si es necesario
+                                }
+                            })
+                    } else {
+                        progressDialog.dismiss()
+                        // Si el usuario no está verificado, enviar correo de verificación
+                        enviarCorreoVerificacion(email)
+                        startActivity(Intent(this, Login_Admin::class.java))
+                        finishAffinity()
+                    }
+                }
             }
             .addOnFailureListener { e ->
                 progressDialog.dismiss()
+                // Manejar errores específicos de inicio de sesión
                 Toast.makeText(
                     applicationContext,
-                    "No se pudo iniciar sesión debido a ${e.message}",
+                    "No se pudo iniciar sesión debido a: ${e.message}",
                     Toast.LENGTH_SHORT
                 ).show()
+            }
+    }
+
+    // Método para enviar correo de verificación al correo ingresado
+    private fun enviarCorreoVerificacion(email: String) {
+        // Solo necesitamos enviar el correo de verificación al usuario ya autenticado
+        firebaseAuth.currentUser?.sendEmailVerification()
+            ?.addOnCompleteListener { verificationTask ->
+                if (verificationTask.isSuccessful) {
+                    Toast.makeText(
+                        applicationContext,
+                        "Correo de verificación enviado a $email.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                } else {
+                    Toast.makeText(
+                        applicationContext,
+                        "Error al enviar el correo de verificación.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
             }
     }
 }

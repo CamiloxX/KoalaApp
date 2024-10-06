@@ -44,40 +44,41 @@ class Bienvenida : AppCompatActivity() {
             override fun onFinish() {
 
                 ComprobarSesion()
-                //Dirigirnos a la actividad MainActivity
-                //   val intent = Intent(this@Bienvenida,Elegir_Rol::class.java)
-                //   startActivity(intent)
-                //   finishAffinity()
             }
 
         }.start()
     }
 
-
     fun ComprobarSesion(){
-        val  firebaseUser = firebaseAuth.currentUser
-        if(firebaseUser ==  null){
+        val firebaseUser = firebaseAuth.currentUser
+        if (firebaseUser == null) {
             startActivity(Intent(this, Login_Admin::class.java))
             finishAffinity()
-        }else{
-            val reference = FirebaseDatabase.getInstance().getReference("Usuarios")
-            reference.child(firebaseUser.uid)
-                .addListenerForSingleValueEvent(object : ValueEventListener {
-                    override fun onDataChange(snapshot: DataSnapshot) {
-                        val rol = snapshot.child("rol").value
-                        if(rol == "admin"){
-                            startActivity(Intent(this@Bienvenida,MainActivityCliente::class.java))
-                            finishAffinity()
-                        } else if (rol == "cliente"){
-                            startActivity(Intent(this@Bienvenida,MainActivityCliente::class.java))
+        } else {
+            // Verificar si el correo está verificado
+            if (firebaseUser.isEmailVerified) {
+                val reference = FirebaseDatabase.getInstance().getReference("Usuarios")
+                reference.child(firebaseUser.uid)
+                    .addListenerForSingleValueEvent(object : ValueEventListener {
+                        override fun onDataChange(snapshot: DataSnapshot) {
+                            val rol = snapshot.child("rol").value
+                            if (rol == "admin") {
+                                startActivity(Intent(this@Bienvenida, MainActivity::class.java))
+                            } else if (rol == "cliente") {
+                                startActivity(Intent(this@Bienvenida, MainActivityCliente::class.java))
+                            }
                             finishAffinity()
                         }
 
-                    }
-
-                    override fun onCancelled(error: DatabaseError) {
-                    }
-                })
+                        override fun onCancelled(error: DatabaseError) {
+                            // Manejar error aquí, si es necesario
+                        }
+                    })
+            } else {
+                // Si el correo no está verificado, redirigir a Login_Admin
+                startActivity(Intent(this, Login_Admin::class.java))
+                finishAffinity()
             }
         }
+    }
 }

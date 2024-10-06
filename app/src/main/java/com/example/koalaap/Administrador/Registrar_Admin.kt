@@ -7,12 +7,10 @@ import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
 import com.example.koalaap.MainActivity
-import com.example.koalaap.R
 import com.example.koalaap.databinding.ActivityRegistrarAdminBinding
-import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
+
 
 class Registrar_Admin : AppCompatActivity() {
 
@@ -32,23 +30,14 @@ class Registrar_Admin : AppCompatActivity() {
         progressDialog=ProgressDialog(this)
         progressDialog.setTitle("Espere Por favor")
         progressDialog.setCanceledOnTouchOutside(false)
-
-
         binding.IbRegresar.setOnClickListener{
             onBackPressedDispatcher.onBackPressed()
         }
 
-
         binding.BtnRegistrarAdmin.setOnClickListener {
             ValidarInformacion()
         }
-
-
-
-
     }
-
-
     var nombres=""
     var apellidos=""
     var username=""
@@ -60,7 +49,7 @@ class Registrar_Admin : AppCompatActivity() {
     nombres = binding.EtNombresAdmin.text.toString().trim()
         apellidos = binding.EtApellidosAdmin.text.toString().trim()
         username = binding.EtUserAdmin.text.toString().trim()
-        email = binding.EtEmailAdmin.text.toString().trim()
+        email = binding.EtEmailAdmin.text.toString().trim()+ "@utadeo.edu.co"
         password =binding.EtPasswordAdmin.text.toString().trim()
         r_password = binding.EtPasswordAdminR.text.toString().trim()
 
@@ -109,27 +98,33 @@ class Registrar_Admin : AppCompatActivity() {
         else{
             CrearCuentaAdmin(email, password)
         }
-
-
-
-
-
-
-
-
     }
 
     private fun CrearCuentaAdmin(email: String, password: String) {
-    progressDialog.setMessage("Creando Cuenta")
+        progressDialog.setMessage("Creando Cuenta")
         progressDialog.show()
-        firebaseAuth.createUserWithEmailAndPassword(email,password)
+
+        firebaseAuth.createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener {
-                AgregarInfoBD()
+                // Enviar correo de verificación
+                firebaseAuth.currentUser?.sendEmailVerification()
+                    ?.addOnSuccessListener {
+                        Toast.makeText(applicationContext, "Correo de verificación enviado. Verifique su bandeja.", Toast.LENGTH_LONG).show()
+
+                        // Agregar datos a la base de datos
+                        AgregarInfoBD()
+
+                        // Volver a la ventana anterior después de enviar el correo
+                        startActivity(Intent(this, Login_Admin::class.java))
+                    }
+                    ?.addOnFailureListener { e ->
+                        progressDialog.dismiss()
+                        Toast.makeText(applicationContext, "Error al enviar el correo de verificación: ${e.message}", Toast.LENGTH_SHORT).show()
+                    }
             }
-            .addOnFailureListener { e->
+            .addOnFailureListener { e ->
                 progressDialog.dismiss()
-                Toast.makeText(applicationContext, "Cuenta no se ha creado debido a ${e.message}", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(applicationContext, "Cuenta no creada: ${e.message}", Toast.LENGTH_SHORT).show()
             }
     }
 
@@ -153,11 +148,10 @@ class Registrar_Admin : AppCompatActivity() {
         reference.child(uid!!)
             .setValue(datos_admin)
             .addOnSuccessListener{
-            progressDialog.dismiss()
-                Toast.makeText(applicationContext, "Cuenta creada$", Toast.LENGTH_SHORT)
-                    .show()
-                startActivity(Intent(this, MainActivity:: class.java))
-                finishAffinity()
+                progressDialog.dismiss()
+                Toast.makeText(applicationContext, "Cuenta creada. Por favor, verifique su correo.", Toast.LENGTH_SHORT).show()
+                // Redirigir solo si el correo fue verificado
+                VerificarCorreo()
             }
             .addOnFailureListener {e->
             progressDialog.dismiss()
@@ -165,12 +159,19 @@ class Registrar_Admin : AppCompatActivity() {
                     .show()
             }
 
+    }
 
-
-
-
-
-
+    private fun VerificarCorreo() {
+        firebaseAuth.currentUser?.reload()?.addOnSuccessListener {
+            if (firebaseAuth.currentUser?.isEmailVerified == true) {
+                startActivity(Intent(this, MainActivity::class.java))
+                finishAffinity()
+            } else {
+                Toast.makeText(applicationContext, "Por favor, verifique su correo antes de continuar.", Toast.LENGTH_LONG).show()
+            }
+        }
     }
 }
+
+
 

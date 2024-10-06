@@ -79,6 +79,9 @@
         <activity
             android:name=".MainActivityCliente"
             android:exported="true" />
+        <activity
+            android:name=".MainActivityP"
+            android:exported="true" />
     </application>
 
 </manifest>

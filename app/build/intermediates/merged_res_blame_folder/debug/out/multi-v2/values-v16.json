@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.koalaap.app-mergeDebugResources-3:/values-v16/values-v16.xml",
+            "outputFile": "com.example.koalaap.app-mergeDebugResources-36:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\William Tovar\\.gradle\\caches\\transforms-3\\35806d264ec2a34a7627b6d4de77ca81\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\andres\\.gradle\\caches\\transforms-3\\35806d264ec2a34a7627b6d4de77ca81\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\William Tovar\\.gradle\\caches\\transforms-3\\5ed153b164191934a1176b76771d2109\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\andres\\.gradle\\caches\\transforms-3\\5ed153b164191934a1176b76771d2109\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

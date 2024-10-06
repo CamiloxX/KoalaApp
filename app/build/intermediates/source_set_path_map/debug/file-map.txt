@@ -1,42 +1,41 @@
-com.example.koalaap.app-pngs-0 C:\Users\Public\KoalaAppGoogle\app\build\generated\res\pngs\debug
-com.example.koalaap.app-res-1 C:\Users\Public\KoalaAppGoogle\app\build\generated\res\processDebugGoogleServices
-com.example.koalaap.app-resValues-2 C:\Users\Public\KoalaAppGoogle\app\build\generated\res\resValues\debug
-com.example.koalaap.app-packageDebugResources-3 C:\Users\Public\KoalaAppGoogle\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.koalaap.app-packageDebugResources-4 C:\Users\Public\KoalaAppGoogle\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.koalaap.app-merged_res-5 C:\Users\Public\KoalaAppGoogle\app\build\intermediates\merged_res\debug
-com.example.koalaap.app-debug-6 C:\Users\Public\KoalaAppGoogle\app\src\debug\res
-com.example.koalaap.app-main-7 C:\Users\Public\KoalaAppGoogle\app\src\main\res
-com.example.koalaap.app-core-runtime-2.2.0-8 C:\Users\William Tovar\.gradle\caches\transforms-3\0610bfef523fbfccd6d9c52bc081d385\transformed\core-runtime-2.2.0\res
-com.example.koalaap.app-jetified-emoji2-views-helper-1.2.0-9 C:\Users\William Tovar\.gradle\caches\transforms-3\06dcb0ee4e7c95a63e031f5f23401129\transformed\jetified-emoji2-views-helper-1.2.0\res
-com.example.koalaap.app-lifecycle-viewmodel-2.6.1-10 C:\Users\William Tovar\.gradle\caches\transforms-3\0ec0bfee01348b88c6f4ecadf4e23c01\transformed\lifecycle-viewmodel-2.6.1\res
-com.example.koalaap.app-jetified-play-services-auth-21.2.0-11 C:\Users\William Tovar\.gradle\caches\transforms-3\195be0d79bf0063fae98dd8ad1377d86\transformed\jetified-play-services-auth-21.2.0\res
-com.example.koalaap.app-jetified-lifecycle-process-2.6.1-12 C:\Users\William Tovar\.gradle\caches\transforms-3\1e81c6c5b1f833e204a499229063b2ad\transformed\jetified-lifecycle-process-2.6.1\res
-com.example.koalaap.app-jetified-profileinstaller-1.3.0-13 C:\Users\William Tovar\.gradle\caches\transforms-3\24d2038bef3b6acc9a1551588f61f4d5\transformed\jetified-profileinstaller-1.3.0\res
-com.example.koalaap.app-drawerlayout-1.1.1-14 C:\Users\William Tovar\.gradle\caches\transforms-3\330d33e730f6b3e43060518245d338f2\transformed\drawerlayout-1.1.1\res
-com.example.koalaap.app-browser-1.4.0-15 C:\Users\William Tovar\.gradle\caches\transforms-3\330e1736db465afc7b71e810ee703746\transformed\browser-1.4.0\res
-com.example.koalaap.app-jetified-startup-runtime-1.1.1-16 C:\Users\William Tovar\.gradle\caches\transforms-3\33cf926226b4a37051a7ea2bdda3aa44\transformed\jetified-startup-runtime-1.1.1\res
-com.example.koalaap.app-appcompat-1.6.1-17 C:\Users\William Tovar\.gradle\caches\transforms-3\35806d264ec2a34a7627b6d4de77ca81\transformed\appcompat-1.6.1\res
-com.example.koalaap.app-lifecycle-livedata-core-2.6.1-18 C:\Users\William Tovar\.gradle\caches\transforms-3\3d2243dbb44a9fa9af387734287c4c54\transformed\lifecycle-livedata-core-2.6.1\res
-com.example.koalaap.app-jetified-appcompat-resources-1.6.1-19 C:\Users\William Tovar\.gradle\caches\transforms-3\44b59e314251bdc2760612eadae40b93\transformed\jetified-appcompat-resources-1.6.1\res
-com.example.koalaap.app-jetified-activity-1.8.0-20 C:\Users\William Tovar\.gradle\caches\transforms-3\4cc44a7d12f06be9a43db80d2f665151\transformed\jetified-activity-1.8.0\res
-com.example.koalaap.app-jetified-play-services-base-18.3.0-21 C:\Users\William Tovar\.gradle\caches\transforms-3\4e7ba0c8916527a0893037c501e3fbb6\transformed\jetified-play-services-base-18.3.0\res
-com.example.koalaap.app-core-1.12.0-22 C:\Users\William Tovar\.gradle\caches\transforms-3\5ed153b164191934a1176b76771d2109\transformed\core-1.12.0\res
-com.example.koalaap.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-23 C:\Users\William Tovar\.gradle\caches\transforms-3\644ccded15afb4d20ecce4939226ec2d\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\res
-com.example.koalaap.app-jetified-annotation-experimental-1.3.0-24 C:\Users\William Tovar\.gradle\caches\transforms-3\6b942fcbd228242fc8f0d25814a61b8c\transformed\jetified-annotation-experimental-1.3.0\res
-com.example.koalaap.app-jetified-android-pdf-viewer-2.8.2-25 C:\Users\William Tovar\.gradle\caches\transforms-3\6c28ac1ee1817ade1e6702a27c2be0ed\transformed\jetified-android-pdf-viewer-2.8.2\res
-com.example.koalaap.app-transition-1.2.0-26 C:\Users\William Tovar\.gradle\caches\transforms-3\6ebd156d0a9876371b7fc42cb4888642\transformed\transition-1.2.0\res
-com.example.koalaap.app-cardview-1.0.0-27 C:\Users\William Tovar\.gradle\caches\transforms-3\7217030cb9aeffd2771d3124e509468f\transformed\cardview-1.0.0\res
-com.example.koalaap.app-recyclerview-1.1.0-28 C:\Users\William Tovar\.gradle\caches\transforms-3\816826bb54a6043cb5ea12ba25a87e1d\transformed\recyclerview-1.1.0\res
-com.example.koalaap.app-jetified-emoji2-1.2.0-29 C:\Users\William Tovar\.gradle\caches\transforms-3\819f1ec58b71cb36b371ffa8785ec663\transformed\jetified-emoji2-1.2.0\res
-com.example.koalaap.app-fragment-1.5.7-30 C:\Users\William Tovar\.gradle\caches\transforms-3\89d19e3f9f5b1989d2b45821b7a491b0\transformed\fragment-1.5.7\res
-com.example.koalaap.app-constraintlayout-2.1.4-31 C:\Users\William Tovar\.gradle\caches\transforms-3\a2676c0b7bf3ff10646e6b0f91327b8b\transformed\constraintlayout-2.1.4\res
-com.example.koalaap.app-jetified-core-ktx-1.12.0-32 C:\Users\William Tovar\.gradle\caches\transforms-3\a4e56323f2ba51d5087575ae57a6a537\transformed\jetified-core-ktx-1.12.0\res
-com.example.koalaap.app-coordinatorlayout-1.1.0-33 C:\Users\William Tovar\.gradle\caches\transforms-3\a61ea4439f6cedc73d320484d48423ea\transformed\coordinatorlayout-1.1.0\res
-com.example.koalaap.app-jetified-glide-4.16.0-34 C:\Users\William Tovar\.gradle\caches\transforms-3\ac91fe04feabbfee036a2eb46c81cc52\transformed\jetified-glide-4.16.0\res
-com.example.koalaap.app-jetified-play-services-basement-18.3.0-35 C:\Users\William Tovar\.gradle\caches\transforms-3\b7d4fe7f0ba02a581e65d3ad7eb0034c\transformed\jetified-play-services-basement-18.3.0\res
-com.example.koalaap.app-material-1.11.0-36 C:\Users\William Tovar\.gradle\caches\transforms-3\c24a31c7a6b8cb759962de409f2ad345\transformed\material-1.11.0\res
-com.example.koalaap.app-jetified-savedstate-1.2.1-37 C:\Users\William Tovar\.gradle\caches\transforms-3\d48b57b4a957239e3eefb9a3c387bbd9\transformed\jetified-savedstate-1.2.1\res
-com.example.koalaap.app-jetified-viewpager2-1.0.0-38 C:\Users\William Tovar\.gradle\caches\transforms-3\e1d5436280df3980d5f25c79b222fc43\transformed\jetified-viewpager2-1.0.0\res
-com.example.koalaap.app-lifecycle-runtime-2.6.1-39 C:\Users\William Tovar\.gradle\caches\transforms-3\e915bf076c577be70c36929c21ebd95b\transformed\lifecycle-runtime-2.6.1\res
-com.example.koalaap.app-media-1.0.0-40 C:\Users\William Tovar\.gradle\caches\transforms-3\ecdbba21d7d5d5aba42be349919a2734\transformed\media-1.0.0\res
-com.example.koalaap.app-jetified-firebase-common-20.4.2-41 C:\Users\William Tovar\.gradle\caches\transforms-3\ef4ef01daae7200d3c8ca4ec195f2f2f\transformed\jetified-firebase-common-20.4.2\res
+com.example.koalaap.app-core-runtime-2.2.0-0 C:\Users\andres\.gradle\caches\transforms-3\0610bfef523fbfccd6d9c52bc081d385\transformed\core-runtime-2.2.0\res
+com.example.koalaap.app-jetified-emoji2-views-helper-1.2.0-1 C:\Users\andres\.gradle\caches\transforms-3\06dcb0ee4e7c95a63e031f5f23401129\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.example.koalaap.app-lifecycle-viewmodel-2.6.1-2 C:\Users\andres\.gradle\caches\transforms-3\0ec0bfee01348b88c6f4ecadf4e23c01\transformed\lifecycle-viewmodel-2.6.1\res
+com.example.koalaap.app-jetified-play-services-auth-21.2.0-3 C:\Users\andres\.gradle\caches\transforms-3\195be0d79bf0063fae98dd8ad1377d86\transformed\jetified-play-services-auth-21.2.0\res
+com.example.koalaap.app-jetified-lifecycle-process-2.6.1-4 C:\Users\andres\.gradle\caches\transforms-3\1e81c6c5b1f833e204a499229063b2ad\transformed\jetified-lifecycle-process-2.6.1\res
+com.example.koalaap.app-jetified-profileinstaller-1.3.0-5 C:\Users\andres\.gradle\caches\transforms-3\24d2038bef3b6acc9a1551588f61f4d5\transformed\jetified-profileinstaller-1.3.0\res
+com.example.koalaap.app-drawerlayout-1.1.1-6 C:\Users\andres\.gradle\caches\transforms-3\330d33e730f6b3e43060518245d338f2\transformed\drawerlayout-1.1.1\res
+com.example.koalaap.app-browser-1.4.0-7 C:\Users\andres\.gradle\caches\transforms-3\330e1736db465afc7b71e810ee703746\transformed\browser-1.4.0\res
+com.example.koalaap.app-jetified-startup-runtime-1.1.1-8 C:\Users\andres\.gradle\caches\transforms-3\33cf926226b4a37051a7ea2bdda3aa44\transformed\jetified-startup-runtime-1.1.1\res
+com.example.koalaap.app-appcompat-1.6.1-9 C:\Users\andres\.gradle\caches\transforms-3\35806d264ec2a34a7627b6d4de77ca81\transformed\appcompat-1.6.1\res
+com.example.koalaap.app-lifecycle-livedata-core-2.6.1-10 C:\Users\andres\.gradle\caches\transforms-3\3d2243dbb44a9fa9af387734287c4c54\transformed\lifecycle-livedata-core-2.6.1\res
+com.example.koalaap.app-jetified-appcompat-resources-1.6.1-11 C:\Users\andres\.gradle\caches\transforms-3\44b59e314251bdc2760612eadae40b93\transformed\jetified-appcompat-resources-1.6.1\res
+com.example.koalaap.app-jetified-activity-1.8.0-12 C:\Users\andres\.gradle\caches\transforms-3\4cc44a7d12f06be9a43db80d2f665151\transformed\jetified-activity-1.8.0\res
+com.example.koalaap.app-jetified-play-services-base-18.3.0-13 C:\Users\andres\.gradle\caches\transforms-3\4e7ba0c8916527a0893037c501e3fbb6\transformed\jetified-play-services-base-18.3.0\res
+com.example.koalaap.app-core-1.12.0-14 C:\Users\andres\.gradle\caches\transforms-3\5ed153b164191934a1176b76771d2109\transformed\core-1.12.0\res
+com.example.koalaap.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-15 C:\Users\andres\.gradle\caches\transforms-3\644ccded15afb4d20ecce4939226ec2d\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\res
+com.example.koalaap.app-jetified-annotation-experimental-1.3.0-16 C:\Users\andres\.gradle\caches\transforms-3\6b942fcbd228242fc8f0d25814a61b8c\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.koalaap.app-transition-1.2.0-17 C:\Users\andres\.gradle\caches\transforms-3\6ebd156d0a9876371b7fc42cb4888642\transformed\transition-1.2.0\res
+com.example.koalaap.app-cardview-1.0.0-18 C:\Users\andres\.gradle\caches\transforms-3\7217030cb9aeffd2771d3124e509468f\transformed\cardview-1.0.0\res
+com.example.koalaap.app-recyclerview-1.1.0-19 C:\Users\andres\.gradle\caches\transforms-3\816826bb54a6043cb5ea12ba25a87e1d\transformed\recyclerview-1.1.0\res
+com.example.koalaap.app-jetified-emoji2-1.2.0-20 C:\Users\andres\.gradle\caches\transforms-3\819f1ec58b71cb36b371ffa8785ec663\transformed\jetified-emoji2-1.2.0\res
+com.example.koalaap.app-fragment-1.5.7-21 C:\Users\andres\.gradle\caches\transforms-3\89d19e3f9f5b1989d2b45821b7a491b0\transformed\fragment-1.5.7\res
+com.example.koalaap.app-constraintlayout-2.1.4-22 C:\Users\andres\.gradle\caches\transforms-3\a2676c0b7bf3ff10646e6b0f91327b8b\transformed\constraintlayout-2.1.4\res
+com.example.koalaap.app-jetified-core-ktx-1.12.0-23 C:\Users\andres\.gradle\caches\transforms-3\a4e56323f2ba51d5087575ae57a6a537\transformed\jetified-core-ktx-1.12.0\res
+com.example.koalaap.app-coordinatorlayout-1.1.0-24 C:\Users\andres\.gradle\caches\transforms-3\a61ea4439f6cedc73d320484d48423ea\transformed\coordinatorlayout-1.1.0\res
+com.example.koalaap.app-jetified-glide-4.16.0-25 C:\Users\andres\.gradle\caches\transforms-3\ac91fe04feabbfee036a2eb46c81cc52\transformed\jetified-glide-4.16.0\res
+com.example.koalaap.app-jetified-play-services-basement-18.3.0-26 C:\Users\andres\.gradle\caches\transforms-3\b7d4fe7f0ba02a581e65d3ad7eb0034c\transformed\jetified-play-services-basement-18.3.0\res
+com.example.koalaap.app-material-1.11.0-27 C:\Users\andres\.gradle\caches\transforms-3\c24a31c7a6b8cb759962de409f2ad345\transformed\material-1.11.0\res
+com.example.koalaap.app-jetified-savedstate-1.2.1-28 C:\Users\andres\.gradle\caches\transforms-3\d48b57b4a957239e3eefb9a3c387bbd9\transformed\jetified-savedstate-1.2.1\res
+com.example.koalaap.app-jetified-android-pdf-viewer-3.2.0-beta.3-29 C:\Users\andres\.gradle\caches\transforms-3\e06537c30e69022d54cc827d987494f2\transformed\jetified-android-pdf-viewer-3.2.0-beta.3\res
+com.example.koalaap.app-jetified-viewpager2-1.0.0-30 C:\Users\andres\.gradle\caches\transforms-3\e1d5436280df3980d5f25c79b222fc43\transformed\jetified-viewpager2-1.0.0\res
+com.example.koalaap.app-lifecycle-runtime-2.6.1-31 C:\Users\andres\.gradle\caches\transforms-3\e915bf076c577be70c36929c21ebd95b\transformed\lifecycle-runtime-2.6.1\res
+com.example.koalaap.app-jetified-firebase-common-20.4.2-32 C:\Users\andres\.gradle\caches\transforms-3\ef4ef01daae7200d3c8ca4ec195f2f2f\transformed\jetified-firebase-common-20.4.2\res
+com.example.koalaap.app-pngs-33 C:\Users\andres\StudioProjects\KoalaApp\app\build\generated\res\pngs\debug
+com.example.koalaap.app-res-34 C:\Users\andres\StudioProjects\KoalaApp\app\build\generated\res\processDebugGoogleServices
+com.example.koalaap.app-resValues-35 C:\Users\andres\StudioProjects\KoalaApp\app\build\generated\res\resValues\debug
+com.example.koalaap.app-packageDebugResources-36 C:\Users\andres\StudioProjects\KoalaApp\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.koalaap.app-packageDebugResources-37 C:\Users\andres\StudioProjects\KoalaApp\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.koalaap.app-merged_res-38 C:\Users\andres\StudioProjects\KoalaApp\app\build\intermediates\merged_res\debug
+com.example.koalaap.app-debug-39 C:\Users\andres\StudioProjects\KoalaApp\app\src\debug\res
+com.example.koalaap.app-main-40 C:\Users\andres\StudioProjects\KoalaApp\app\src\main\res

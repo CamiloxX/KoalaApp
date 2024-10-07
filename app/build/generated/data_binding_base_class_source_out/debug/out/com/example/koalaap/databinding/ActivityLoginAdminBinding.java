@@ -28,7 +28,7 @@ public final class ActivityLoginAdminBinding implements ViewBinding {
   public final MaterialButton BtnLoginAdmin;
 
   @NonNull
-  public final MaterialButton BtnLoginGoogle;
+  public final TextView BtnRecuperarPassword;
 
   @NonNull
   public final MaterialButton BtnRegister;
@@ -52,14 +52,14 @@ public final class ActivityLoginAdminBinding implements ViewBinding {
   public final RelativeLayout toolbarRLLogin;
 
   private ActivityLoginAdminBinding(@NonNull LinearLayout rootView,
-      @NonNull MaterialButton BtnLoginAdmin, @NonNull MaterialButton BtnLoginGoogle,
+      @NonNull MaterialButton BtnLoginAdmin, @NonNull TextView BtnRecuperarPassword,
       @NonNull MaterialButton BtnRegister, @NonNull EditText EtEmailAdmin,
       @NonNull EditText EtPasswordAdmin, @NonNull ImageButton IbRegresar,
       @NonNull ImageView imageView, @NonNull TextView textViewTitulo,
       @NonNull RelativeLayout toolbarRLLogin) {
     this.rootView = rootView;
     this.BtnLoginAdmin = BtnLoginAdmin;
-    this.BtnLoginGoogle = BtnLoginGoogle;
+    this.BtnRecuperarPassword = BtnRecuperarPassword;
     this.BtnRegister = BtnRegister;
     this.EtEmailAdmin = EtEmailAdmin;
     this.EtPasswordAdmin = EtPasswordAdmin;
@@ -102,9 +102,9 @@ public final class ActivityLoginAdminBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.Btn_login_google;
-      MaterialButton BtnLoginGoogle = ViewBindings.findChildViewById(rootView, id);
-      if (BtnLoginGoogle == null) {
+      id = R.id.Btn_recuperar_password;
+      TextView BtnRecuperarPassword = ViewBindings.findChildViewById(rootView, id);
+      if (BtnRecuperarPassword == null) {
         break missingId;
       }
 
@@ -150,9 +150,9 @@ public final class ActivityLoginAdminBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginAdminBinding((LinearLayout) rootView, BtnLoginAdmin, BtnLoginGoogle,
-          BtnRegister, EtEmailAdmin, EtPasswordAdmin, IbRegresar, imageView, textViewTitulo,
-          toolbarRLLogin);
+      return new ActivityLoginAdminBinding((LinearLayout) rootView, BtnLoginAdmin,
+          BtnRecuperarPassword, BtnRegister, EtEmailAdmin, EtPasswordAdmin, IbRegresar, imageView,
+          textViewTitulo, toolbarRLLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

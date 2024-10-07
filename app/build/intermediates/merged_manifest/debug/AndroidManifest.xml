@@ -65,6 +65,9 @@
             android:name="com.example.koalaap.Administrador.Login_Admin"
             android:exported="false" />
         <activity
+            android:name="com.example.koalaap.Administrador.RecuperarPassword"
+            android:exported="false" />
+        <activity
             android:name="com.example.koalaap.Administrador.Registrar_Admin"
             android:exported="false" />
         <activity

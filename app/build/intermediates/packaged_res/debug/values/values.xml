@@ -17,7 +17,7 @@
     <string name="Btn_favoritos_libro">Favorito</string>
     <string name="Btn_leer_libro"> Leer </string>
     <string name="Btn_login_admin">Iniciar</string>
-    <string name="Btn_login_google">Ingresar con Google</string>
+    <string name="Btn_login_google"><u>Olvidé mi contraseña</u></string>
     <string name="Btn_mas_descargados">Más instalados</string>
     <string name="Btn_mas_vistos">Más vistos</string>
     <string name="Btn_registrar_admin">Regitrarme</string>
@@ -25,7 +25,6 @@
     <string name="Btn_rol_administrador">Admin</string>
     <string name="Btn_rol_cliente">Cliente</string>
     <string name="Btn_subir_pdf">Subir PDF</string>
-    <string name="Btn_tengo_cuenta">Ya tengo cuenta</string>
     <string name="Buscar_categoria">Buscar categoria</string>
     <string name="CerrarSesion">Cerrar Sesion</string>
     <string name="Editar_Perfil">Editar Perfil </string>
@@ -69,12 +68,14 @@
     <string name="Txt_descripcion_libro_item">Descripcion Libro</string>
     <string name="Txt_detalle_libro">Detalle libro</string>
     <string name="Txt_email_admin">--</string>
+    <string name="Txt_enviarCorreo">Recuperar contraseña</string>
     <string name="Txt_fecha_D">Fecha:</string>
     <string name="Txt_fecha_libro_admin">dd/MM/YYYY</string>
     <string name="Txt_leer_libro">Lectura de libro</string>
     <string name="Txt_mas_opciones">Mas opciones</string>
     <string name="Txt_nombres_admin">--</string>
     <string name="Txt_paginas_D">Páginas:</string>
+    <string name="Txt_password">Olvidé mi contraseña</string>
     <string name="Txt_rol">Elegir Tipo de cuenta </string>
     <string name="Txt_tamanio_D">Tamaño:</string>
     <string name="Txt_tamanio_libro_admin">5MB</string>

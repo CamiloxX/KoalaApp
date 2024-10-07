@@ -52,6 +52,9 @@
         <activity
             android:name=".Administrador.Login_Admin"
             android:exported="false" />
+        <activity android:name=".Administrador.RecuperarPassword"
+            android:exported="false"/>
+
         <activity
             android:name=".Administrador.Registrar_Admin"
             android:exported="false" />

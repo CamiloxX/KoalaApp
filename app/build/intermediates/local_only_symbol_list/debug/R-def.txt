@@ -53,11 +53,12 @@ id Btn_agregar_categoria
 id Btn_agregar_favorito
 id Btn_comentar
 id Btn_descargar_libro
+id Btn_enviar_correo
 id Btn_leer_libro
 id Btn_login_admin
-id Btn_login_google
 id Btn_mas_descargados
 id Btn_mas_vistos
+id Btn_recuperar_password
 id Btn_register
 id Btn_registrar_Admin
 id Btn_rol_administrador
@@ -75,6 +76,7 @@ id Et_buscar_libro_admin
 id Et_buscar_libro_cliente
 id Et_categoria
 id Et_email_admin
+id Et_email_password
 id Et_nombres_admin
 id Et_password_admin
 id Et_password_adminR
@@ -173,6 +175,7 @@ layout activity_lista_pdf_cliente
 layout activity_login_admin
 layout activity_main
 layout activity_main_cliente
+layout activity_recuperar_password
 layout activity_registrar_admin
 layout activity_top_descargados
 layout activity_top_vistos
@@ -216,7 +219,6 @@ string Btn_registro_login
 string Btn_rol_administrador
 string Btn_rol_cliente
 string Btn_subir_pdf
-string Btn_tengo_cuenta
 string Buscar_categoria
 string CerrarSesion
 string Editar_Perfil
@@ -260,12 +262,14 @@ string Txt_descripcion_D
 string Txt_descripcion_libro_item
 string Txt_detalle_libro
 string Txt_email_admin
+string Txt_enviarCorreo
 string Txt_fecha_D
 string Txt_fecha_libro_admin
 string Txt_leer_libro
 string Txt_mas_opciones
 string Txt_nombres_admin
 string Txt_paginas_D
+string Txt_password
 string Txt_rol
 string Txt_tamanio_D
 string Txt_tamanio_libro_admin

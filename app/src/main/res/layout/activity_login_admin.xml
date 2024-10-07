@@ -136,21 +136,25 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/Btn_recuperar_password"
+            android:text="@string/Btn_login_google"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+
+            />
+
     </LinearLayout>
 
-    <!-- Google -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/Btn_login_google"
-        android:text="@string/Btn_login_google"
-        android:layout_marginTop="1dp"
-        app:icon="@drawable/login_google"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
 
-        >
 
-    </com.google.android.material.button.MaterialButton>
+
+
 
 
 </LinearLayout>

@@ -3181,11 +3181,12 @@ int id Btn_agregar_categoria 0x7f08000a
 int id Btn_agregar_favorito 0x7f08000b
 int id Btn_comentar 0x7f08000c
 int id Btn_descargar_libro 0x7f08000d
+int id Btn_enviar_correo 0x7f080273
 int id Btn_leer_libro 0x7f08000e
 int id Btn_login_admin 0x7f08000f
-int id Btn_login_google 0x7f080010
 int id Btn_mas_descargados 0x7f080011
 int id Btn_mas_vistos 0x7f080012
+int id Btn_recuperar_password 0x7f080272
 int id Btn_register 0x7f080013
 int id Btn_registrar_Admin 0x7f080014
 int id Btn_rol_administrador 0x7f080015
@@ -3204,6 +3205,7 @@ int id Et_buscar_libro_admin 0x7f080021
 int id Et_buscar_libro_cliente 0x7f080022
 int id Et_categoria 0x7f080023
 int id Et_email_admin 0x7f080024
+int id Et_email_password 0x7f080274
 int id Et_nombres_admin 0x7f080025
 int id Et_password_admin 0x7f080026
 int id Et_password_adminR 0x7f080027
@@ -3921,6 +3923,7 @@ int layout activity_lista_pdf_cliente 0x7f0b0025
 int layout activity_login_admin 0x7f0b0026
 int layout activity_main 0x7f0b0027
 int layout activity_main_cliente 0x7f0b0028
+int layout activity_recuperar_password 0x7f0b008a
 int layout activity_registrar_admin 0x7f0b0029
 int layout activity_top_descargados 0x7f0b002a
 int layout activity_top_vistos 0x7f0b002b
@@ -4047,7 +4050,6 @@ int string Btn_registro_login 0x7f11000d
 int string Btn_rol_administrador 0x7f11000e
 int string Btn_rol_cliente 0x7f11000f
 int string Btn_subir_pdf 0x7f110010
-int string Btn_tengo_cuenta 0x7f110011
 int string Buscar_categoria 0x7f110012
 int string CerrarSesion 0x7f110013
 int string Editar_Perfil 0x7f110014
@@ -4091,12 +4093,14 @@ int string Txt_descripcion_D 0x7f110039
 int string Txt_descripcion_libro_item 0x7f11003a
 int string Txt_detalle_libro 0x7f11003b
 int string Txt_email_admin 0x7f11003c
+int string Txt_enviarCorreo 0x7f11011b
 int string Txt_fecha_D 0x7f11003d
 int string Txt_fecha_libro_admin 0x7f11003e
 int string Txt_leer_libro 0x7f11003f
 int string Txt_mas_opciones 0x7f110040
 int string Txt_nombres_admin 0x7f110041
 int string Txt_paginas_D 0x7f110042
+int string Txt_password 0x7f11011c
 int string Txt_rol 0x7f110043
 int string Txt_tamanio_D 0x7f110044
 int string Txt_tamanio_libro_admin 0x7f110045

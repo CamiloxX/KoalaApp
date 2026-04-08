@@ -1,6 +1,6 @@
 <h1 align="center">KoalaAPP</h1>
 <p align="center">
-<img width="1024" height="434" alt="image" src="https://github.com/user-attachments/assets/14a650d1-fd09-4762-92a8-670cbae8d115" />" alt="KoalaApp Image">
+<img width="1024" height="434" alt="image" src="https://github.com/user-attachments/assets/14a650d1-fd09-4762-92a8-670cbae8d115" alt="KoalaApp Image"/>
 </p>
 
 ## Contenido de la app móvil
@@ -12,7 +12,7 @@
 <h1 id="login-y-registro">Login y Registro</h1>
 <p align="center">
 
-  <img width="382" height="587" alt="image" src="https://github.com/user-attachments/assets/412226b8-679f-44cd-b5b6-08884d930ef0" />" alt="Login y Registro Image">
+  <img width="382" height="587" alt="image" src="https://github.com/user-attachments/assets/412226b8-679f-44cd-b5b6-08884d930ef0" alt="KoalaApp Image"/>
 </p>
 ```
   

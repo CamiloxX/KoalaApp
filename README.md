@@ -12,7 +12,7 @@
 <h1 id="login-y-registro">Login y Registro</h1>
 <p align="center">
 
-  <img src="<img width="1024" height="434" alt="image" src="https://github.com/user-attachments/assets/8d45f92b-0cfe-4d15-8acb-29ef090bbbb4"/>" alt="Login y Registro Image">
+  <img width="382" height="587" alt="image" src="https://github.com/user-attachments/assets/412226b8-679f-44cd-b5b6-08884d930ef0" />" alt="Login y Registro Image">
 
 ```
   

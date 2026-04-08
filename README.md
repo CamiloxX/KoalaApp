@@ -11,7 +11,7 @@
 
 <h1 id="login-y-registro">Login y Registro</h1>
 <p align="center">
-  <img src="https://github.com/CamiloxX/KoalaApp/assets/28693419/7a795c6c-ca9c-400d-810a-2cf3c9f0ea4f" alt="Login y Registro Image">
+  <img src="<img width="1024" height="434" alt="image" src="https://github.com/user-attachments/assets/493bbad4-6176-43c0-b578-59fd0491b07f"/>" alt="Login y Registro Image">
 ```
   
     class Login_Admin : AppCompatActivity() {

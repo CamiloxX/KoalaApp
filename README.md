@@ -1,6 +1,6 @@
 <h1 align="center">KoalaAPP</h1>
 <p align="center">
-  <img src="<img width="1024" height="434" alt="image" src="https://github.com/user-attachments/assets/eb38af71-e886-4ca2-97c7-1db0a5c0732b" />" alt="KoalaApp Image">
+<img width="1024" height="434" alt="image" src="https://github.com/user-attachments/assets/14a650d1-fd09-4762-92a8-670cbae8d115" />" alt="KoalaApp Image">
 </p>
 
 ## Contenido de la app móvil
@@ -11,7 +11,9 @@
 
 <h1 id="login-y-registro">Login y Registro</h1>
 <p align="center">
-  <img src="<img width="1024" height="434" alt="image" src="https://github.com/CamiloxX/KoalaApp/assets/28693419/7a795c6c-ca9c-400d-810a-2cf3c9f0ea4f"/>" alt="Login y Registro Image">
+
+  <img src="<img width="1024" height="434" alt="image" src="https://github.com/user-attachments/assets/8d45f92b-0cfe-4d15-8acb-29ef090bbbb4"/>" alt="Login y Registro Image">
+
 ```
   
     class Login_Admin : AppCompatActivity() {

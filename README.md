@@ -14,7 +14,6 @@
 
   <img width="382" height="587" alt="image" src="https://github.com/user-attachments/assets/412226b8-679f-44cd-b5b6-08884d930ef0" alt="KoalaApp Image"/>
 </p>
-```
   
     class Login_Admin : AppCompatActivity() {
     private lateinit var binding: ActivityLoginAdminBinding
